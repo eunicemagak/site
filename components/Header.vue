@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-transparent">
       <div class="logo">
-          <img src="../assets/images/logoblue.png" alt="">
+          <img src="../assets/images/logowhite.png" alt="">
       </div>
       <div class="nav-links">
           <nuxt-link to="/">
@@ -24,6 +24,8 @@
 </template>
 
 <script>
+
+
 export default {
     
 }
@@ -33,7 +35,16 @@ export default {
     nav{
         display: flex;
         align-items: center;
-        padding: 0 150px;
+        padding: 0.5rem calc((100vw - 1250px) / 2);
+        background-color: transparent;
+        position: absolute;
+        top:0;
+    }
+    .logo{
+        top: 41px;
+        left: 220px;
+        width: 77px;
+        height: 94px;
     }
     .nav-links{
         color: var(--navblue); 
@@ -43,6 +54,7 @@ export default {
         margin-left: 100px;
         align-items: center;
         font-size: 16px;
+        color: #FFFFFF;
     }
     .nav-btn{
         padding: 5px 20px;
@@ -50,5 +62,6 @@ export default {
         background-color: var(--red);
         border-radius: 24px;
         align-items: center;
+        z-index: 999;
     }
 </style>
