@@ -27,12 +27,15 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
+    '@nuxtjs/fontawesome',
+    
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'nuxt-material-design-icons',
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -48,7 +51,9 @@ export default {
       plugins: {
         tailwindcss: {},
         autoprefixer: {},
+        
       },
-    },
+    }, 
   },
-}
+ 
+};

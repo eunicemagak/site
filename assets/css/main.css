@@ -5,6 +5,7 @@
 *{
     --navblue: #1B75BC;
     --white:#FFFFFF;
+    --skyblue: #11CFDE; 
     --red:#F04D64;
     --orange: #F8BA2D;
     --black: #2F2D2D;
@@ -14,6 +15,11 @@
     padding: 0;
     margin: 0;
     --footerblue:#155D96;
+    --darkerblue:#155A91;
+    --darklue:#0E3B5E;
+    --purple:#351A5C;
+    --yellow: #FCBC0E;
+    --aquamarine:  #65C19C;
 }
 h1{
     font-size: 20px;

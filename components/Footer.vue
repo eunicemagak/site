@@ -69,13 +69,15 @@ export default {
     footer{
         display: flex;
         flex-direction: column;
+        
     }
     .footer-email{
         background-color: var(--orange);
         display: flex;
         align-items: center;
-        padding: 30px 200px;
+        padding: 30px calc((100vw - 1400px) / 2);
         gap: 20px;
+        z-index: 999;
     }
     .footer-email-text h1{
         font-size: 35px;
@@ -121,7 +123,7 @@ export default {
     }
     .contact-info{
         background-color: var(--black);
-        padding: 100px 150px;
+        padding: 100px calc((100vw - 1450px) / 2);
         display: grid;
         align-items: flex-start;
         grid-template-columns: repeat(2, 1fr);
@@ -142,7 +144,7 @@ export default {
     .copyright{
         background-color: var(--footerblue);
         color: var(--white);
-        padding: 20px 150px;
+        padding: 20px calc((100vw - 1400px) / 2);
         font-weight: lighter;
     }
     .submit-btn{
