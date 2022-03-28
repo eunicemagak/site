@@ -3,6 +3,8 @@
       <div class="logo">
           <img src="../assets/images/logoblue.png" alt="">
       </div>
+      <div class="navigation">
+      <img class="mobile-menu" src="../assets/images/menu.png" @click="toggleNav($event)"/>
       <div class="nav-links">
           <nuxt-link to="/">
               HOME
@@ -45,6 +47,7 @@
       Lets Enjoy
     </nuxt-link>
       </div>
+      </div>
   </nav>
 </template>
 
@@ -53,9 +56,13 @@ export default {
   methods: {
             toggleDropdown (event) {
                 event.currentTarget.classList.toggle('is-active')
+            },
+                toggleNav (event) {
+                    event.currentTarget.classList.toggle('is-active')
+                }
             }
-        }
 }
+
 </script>
 
 <style>
@@ -63,34 +70,35 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items:center;
+        position: relative;
     }
     .logo{
         width: 20%;
         max-width: 100px;
     }
-    .nav-links{
-        display: none;
+    .mobile-menu{
+        right: 20px;
+        width: 20px;
     }
-    /* .bg-transparent{
-        display: flex;
-        align-items: center;
-        width: 90%;
-        max-width: 1400px;
-        margin: 0 auto;
-        margin-left: 100px;
-        position: absolute;
-        z-index: 99;
-        top: -5vh;
-        justify-content: space-between;
+    .navigation{
+        position: relative;
     }
-    .nav-links{
+        .nav-links{
         color: var(--navblue); 
+        background: var(--white);
         font-weight: 600;
         display: flex;
+        flex-direction: column;
         gap: 50px;
         margin-left: -600px;
         align-items: center;
         font-size: 1rem;
+        position: absolute;
+        right:0;
+        width: 100vw;
+        z-index: 999;
+        padding:20px;
+        visibility: hidden;
     }
     .nav-button{
         color: var(--navblue); 
@@ -130,10 +138,14 @@ export default {
     }
     .dropdown .is-active + .dropdown-links{
         visibility: visible !important; 
-    } */
-    /* @media only screen and (max-width: 800px) {
+    }
+    .navigation .is-active + .nav-links{
+        visibility: visible;
+    }
+  
+    @media only screen and (min-width: 800px) {
         .nav-links{
-            display: none;
+            flex-direction: row;
         }
-    } */
+    }
 </style>

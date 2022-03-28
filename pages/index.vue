@@ -192,23 +192,23 @@
         </div>
       </div>
     </div>
-    <div class="partners">
-      <h1 class="title">
-        OUR PARTNERS
-      </h1>
-      <div class="partner-img">
-        <div class="partner-logo">
-          <img src="../assets/images/airtel.png"/>
-        </div>
-        <div class="partner-logo">
-          <img src="../assets/images/safaricom.png"/>
-        </div>
-        <div class="partner-logo">
-          <img src="../assets/images/telkom.png"/>
+  </div>
+      <div class="partners">
+        <h1 class="title">
+          OUR PARTNERS
+        </h1>
+        <div class="partner-wrapper">
+          <div class="partner-logo">
+            <img src="../assets/images/airtel.png"/>
+          </div>
+          <div class="partner-logo">
+            <img src="../assets/images/safaricom.png"/>
+          </div>
+          <div class="partner-logo">
+            <img src="../assets/images/telkom.png"/>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
   <div class="clients">
     <h1 class="title">
       OUR MAJOR CLIENTS
@@ -458,20 +458,13 @@ export default {
 .share{
   width: 40px;
 }
+.partner-wrapper,
 .partners{
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 50px 0;
-}
-.partner-img{
-  display:flex;
-  flex-direction: row ;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  gap: 20px;
+  margin: 50px 0;
 }
 .partner-logo{
   width: 200px;
@@ -483,7 +476,7 @@ export default {
 .partner-logo img{
   width: 100%;
   height: 100%;
-}
+} 
 .clients{
   background: url('./assets/images/clients.png'), var(--navblue);
   background-position: center top;
@@ -539,6 +532,7 @@ export default {
   border-radius: 31px;
   color: var(--white);
   position: relative;
+  width: 350px;
 }
 .review-info h1{
   position: absolute;
@@ -572,15 +566,19 @@ export default {
 }
 .reviewer-name{
   font-weight: 700;
-}
+} 
 @media only screen and (max-width: 800px) {
+    #overlay,
+  #overlay2{
+    display: none;
+  }
   .main-txt{
     font-size: 3rem;
   }
   .reviews-details,
   .choose-details,
   .main-info{
-    width: 95%;
+    width: 90%;
   }
   .title{
     font-size: 1.5rem;
@@ -588,8 +586,8 @@ export default {
   .partners{
     flex-direction: column;
   }
-  .partner-img{
-    width: 95vw;
+  .partner-wrapper{
+    flex-direction: column;
   }
   .reviews-wrapper{
     width: 90%;
@@ -601,6 +599,10 @@ export default {
   }
   .review-info h1{
     font-size: 2rem;
+  }
+  .solution-details,
+  .card-details{
+    width: 200px;
   }
 }
 </style>
