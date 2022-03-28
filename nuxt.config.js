@@ -8,7 +8,9 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },{
+      type:"stylesheet", href:""
+    }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -44,11 +46,22 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      },
-    },
-  },
+    // postcss: {
+    //   // Add plugin names as key and arguments as value
+    //   // Install them before as dependencies with npm or yarn
+    //   plugins: {
+    //     // Disable a plugin by passing false as value 
+    //     'postcss-url': false,
+    //     // 'postcss-nested': {},
+    //     // 'postcss-responsive-type': {},
+    //     // 'postcss-hexrgba': {}
+    //   },
+    //   preset: {
+    //     // Change the postcss-preset-env settings
+    //     autoprefixer: {
+    //       grid: true
+    //     }
+    //   }
+    // }
+  }
 }

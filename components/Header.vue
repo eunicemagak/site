@@ -10,39 +10,95 @@
           <nuxt-link to="/OurStory">
               OUR STORY
           </nuxt-link>
-          <nuxt-link to="/Services">
-              SERVICES
-          </nuxt-link>
+          <div class="dropdown">
+                <div class="nav-button" @click="toggleDropdown($event)"> 
+                    SERVICES
+                </div>
+                <div class="dropdown-links">
+                    <nuxt-link to="/Services/Content">
+                        Content
+                    </nuxt-link>
+                    <nuxt-link to="/Services/SMSSolutions">
+                        SMS Solutions
+                    </nuxt-link>
+                    <nuxt-link to="/Services/PayementGateway">
+                        Payement Gateway
+                    </nuxt-link>
+                    <nuxt-link to="/Services/MobileLending">
+                        Mobile Lending
+                    </nuxt-link>
+                    <nuxt-link to="/Services/PayementChannels">
+                        Payement Channels
+                    </nuxt-link>
+                    <nuxt-link to="/Services/Games&Lotteries">
+                        Games & Lotteries
+                    </nuxt-link>
+                    <nuxt-link to="/Services/More">
+                        More
+                    </nuxt-link>
+                </div>
+            </div>
           <nuxt-link to="/ContactUs">
               CONTACT
           </nuxt-link>
-          <nuxt-link to="/" class="nav-btn">
-              Lets Enjoy
-          </nuxt-link>
+    <nuxt-link to="/#solutions" class="nav-btn">
+      Lets Enjoy
+    </nuxt-link>
       </div>
   </nav>
 </template>
 
 <script>
 export default {
-    
+  methods: {
+            toggleDropdown (event) {
+                event.currentTarget.classList.toggle('is-active')
+            }
+        }
 }
 </script>
 
 <style>
-    nav{
+    .bg-transparent{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .logo{
+        width: 20%;
+        max-width: 100px;
+    }
+    .nav-links{
+        display: none;
+    }
+    /* .bg-transparent{
         display: flex;
         align-items: center;
-        padding: 0 150px;
+        width: 90%;
+        max-width: 1400px;
+        margin: 0 auto;
+        margin-left: 100px;
+        position: absolute;
+        z-index: 99;
+        top: -5vh;
+        justify-content: space-between;
     }
     .nav-links{
         color: var(--navblue); 
         font-weight: 600;
         display: flex;
         gap: 50px;
-        margin-left: 100px;
+        margin-left: -600px;
         align-items: center;
-        font-size: 16px;
+        font-size: 1rem;
+    }
+    .nav-button{
+        color: var(--navblue); 
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        cursor: pointer;
     }
     .nav-btn{
         padding: 5px 20px;
@@ -51,4 +107,33 @@ export default {
         border-radius: 24px;
         align-items: center;
     }
+    .dropdown{
+        position: relative;
+    }
+    .dropdown-links{
+       display: flex;
+       flex-direction: column; 
+       align-items: center;
+       background: var(--navblue);
+       color: var(--white);
+       visibility: hidden;
+       position: absolute;
+       z-index: 999;
+       left: -50px;
+       top: 20px;
+    }
+    .dropdown-links a{
+       width: 180px;
+    }
+    .dropdown-links a:hover{
+        background: var(--footerblue);
+    }
+    .dropdown .is-active + .dropdown-links{
+        visibility: visible !important; 
+    } */
+    /* @media only screen and (max-width: 800px) {
+        .nav-links{
+            display: none;
+        }
+    } */
 </style>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146" height="145" viewBox="0 0 146 145">
+  <defs>
+    <filter id="Union_1" x="0" y="0" width="146" height="145" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="9" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-opacity="0.243"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect width="84.321" height="52.729" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1861" data-name="Group 1861" transform="translate(12.305 10.434)">
+    <g transform="matrix(1, 0, 0, 1, -12.31, -10.43)" filter="url(#Union_1)">
+      <path id="Union_1-2" data-name="Union 1" d="M70.06,76.46H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0h97a5,5,0,0,1,5,5V71.459a5,5,0,0,1-5,5H93.683L81.871,106Z" transform="translate(12.5 10.5)" fill="#f8ba2d"/>
+    </g>
+    <g id="Repeat_Grid_2" data-name="Repeat Grid 2" transform="translate(17.034 14.182)" clip-path="url(#clip-path)">
+      <g transform="translate(-1705.5 -842.5)">
+        <line id="Line_4" data-name="Line 4" x2="67" transform="translate(1709.5 846.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+      </g>
+      <g transform="translate(-1705.5 -829.5)">
+        <line id="Line_4-2" data-name="Line 4" x2="67" transform="translate(1709.5 846.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+      </g>
+      <g transform="translate(-1705.5 -816.5)">
+        <line id="Line_4-3" data-name="Line 4" x2="67" transform="translate(1709.5 846.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+      </g>
+      <g transform="translate(-1705.5 -803.5)">
+        <line id="Line_4-4" data-name="Line 4" x2="67" transform="translate(1709.5 846.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+      </g>
+      <g transform="translate(-1705.5 -790.5)">
+        <line id="Line_4-5" data-name="Line 4" x2="67" transform="translate(1709.5 846.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>
