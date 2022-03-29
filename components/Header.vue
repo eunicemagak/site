@@ -74,9 +74,9 @@ export default {
 <style>
     .bg-transparent{
         display: flex;
+        align-items:center;
         justify-content: space-between;
-        align-items: center;
-        padding-right: 20px;
+        z-index: 999;
     }
     .logo{
         width: 20%;
@@ -94,14 +94,14 @@ export default {
         font-weight: 600;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 50px;
+        margin-left: -600px;
         align-items: center;
         font-size: 1rem;
+        position: absolute;
+        right:0;
         padding:20px;
         visibility: hidden;
-        position: absolute;
-        right: -20px;
-        z-index:999;
     }
     .nav-button{
         color: var(--navblue); 

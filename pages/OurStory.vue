@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="about">
-  <Header/>
+
     <div class="about-wrapper">
       <div>
         <h1>ABOUT US</h1>
