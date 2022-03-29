@@ -1,72 +1,81 @@
 <template>
-
-    <div class="bg-local">
-      <div class="rectangle1">
+    <div class="content-wrapper">
+      <Header/>
+      <div id="overlay"></div>
+      <div id="overlay2"></div>
+      <div class="content-main">
+        <h1 class="content-maintitle">
+          Enjoy <span>Content You Love</span>
+        </h1>
+        <button class="content-gamesbtn">LETS ENJOY</button>
       </div>
-      <div class="rectangle">
-      </div>
-      <div class="content-wrapper">
-      <h1 class="contentt"><span class="enjoytext">Enjoy</span> Content You Love</h1>
-      <button class="enjoy">LETS ENJOY</button>
-      </div>
-    
-      <div class="content-card-wrapper">
-          <div class="card-content shadow-lg  ">
-            <div class="bg-img">
-            <img src="~/assets/images/content1.png" alt="">
-            </div>
-           <div class="content-card-footer  pb-8">
-             <div class="content-purple">
-               <img class="purple"  src="~/assets/images/purpleright-arrow.png" alt="">
-             </div>
-             <h6 class="title">INFORTAINMENT</h6>
-             <p class="content-card-details"> Subscription Services</p>   
-           </div>
-         </div>
-          <div class="card-content shadow-lg ">
-           <div class="bg-img">
-            <img src="~/assets/images/content2.png" alt=""> 
-           </div>
-           <div class="content-card-footer pb-8">
-             <div class="content-red">
-               <img class="red"  src="~/assets/images/redright-arrow(2).png" alt=""> 
-             </div>
-             <h6 class="title">QUOTES</h6>
-             <p class="content-card-details"> Love | Bible | Quran | inspiration</p>
-           </div>
-         </div>
-          <div class="card-content shadow-lg">
-           <div class="bg-img">
-             <img src="~/assets/images/content3.png" alt="">
-           </div>
-           <div class="content-card-footer pb-8">
-             <div class="content-blue">
-                <img class="blue"  src="~/assets/images/blueright-arrow(3).png" alt=""> 
-             </div>
-             <h6 class="title"> BONYEZA</h6>
-             <p class="content-card-details"> Music | Bonyeza699 | Videos</p>
-           </div>
-         </div>
-          <div class="card-content shadow-lg">
-              <div class="bg-img">
-             <img src="~/assets/images/content4.png" alt="">
-           </div>
-           <div class="content-card-footer pb-8">
-              <div class="content-purple">
-               <img class="purple"  src="~/assets/images/greenright-arrow.png" alt="">
-             </div>
-             <h6 class="title"> MY SKIZA</h6>
-             <p class="content-card-details"> Music | Bonyeza699 | Videos</p>
-            
-           </div>
-         </div>
-         </div>
+      <div class="content-cardswrapper">
+        <div class="content-card shadow-lg">
+             <div class="content-img"><img src="~/assets/images/content1.png" alt=""> </div>
+          <div class="content-cardmain">
+            <a href=" ">
+              <img class="content-cardicon"  src="~/assets/images/purpleright-arrow.png" alt="">
+            </a>
+            <h4 class="content-cardtitle">
+              INFORTAINMENT
+            </h4>
+            <p class="content-carddetails">
+              Subscription Services
+            </p>
+          </div>
         </div>
+        <div class="content-card shadow-lg">
+          
+            <div class="content-img"><img src="~/assets/images/content2.png" alt=""> </div>
+          <div class="content-cardmain">
+            <a href=" ">
+              <img class="content-cardicon"  src="~/assets/images/redright-arrow(2).png" alt="">
+            </a>
+            <h4 class="content-cardtitle">
+              QUOTES
+            </h4>
+            <p class="content-carddetails">
+              Love | Bible | Quran |Inspiration
+            </p>
+          </div>
+        </div>
+        <div class="content-card shadow-lg">
+          <div class="content-img"><img src="~/assets/images/content3.png" alt=""> </div>
+          <div class="content-cardmain">
+            <a href=" ">
+              <img class="content-cardicon"  src="~/assets/images/blueright-arrow(3).png" alt="">
+            </a>
+            <h4 class="content-cardtitle">
+              BONYEZA
+            </h4>
+            <p class="content-carddetails">
+              Music | Bonyeza699 | Videos
+            </p>
+          </div>
+        </div>
+        <div class="content-card shadow-lg">
+           <div class="content-img"><img src="~/assets/images/content4.png" alt=""> </div>
+          <div class="content-cardmain">
+            <a href=" ">
+              <img class="content-cardicon"  src="~/assets/images/greenright-arrow.png" alt="">
+            </a>
+            <h4 class="content-cardtitle">
+              MY SKIZA 
+            </h4>
+            <p class="content-carddetails">
+              Music | Bonyeza699 | Videos
+            </p>
+            <p class="content-carddetails">
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 </template>
 
 <script>
 import contentImg from "assets/images/content.png";
-import Second from 'assets/images/content1.png';
 export default {
   data() {
     return {
@@ -77,163 +86,160 @@ export default {
 </script>
 
 <style>
-.bg-local {
-  background: linear-gradient( rgba(0, 23, 32, 0.5) 100%, rgba(255, 32, 32, 0.5) 100%),
-url('./assets/images/content.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-}
-.content-wrapper{
-  align-items: center;
-  
-}
-.content-title {
-  text-align: left;
-  font: normal normal 900 70px/80px ;
-  letter-spacing: 0px;
-  text-transform: capitalize;
-  left: 182px;
-  width: 878px;
-  color: var(--orange);
-}
-
-.contentt{
-  color: var(--white);
-  font: normal normal 900 70px/80px Montserrat;
-  width: 600px;
-}
-.enjoytext{
-  color: var(--orange);
-  font: normal normal 900 70px/80px Montserrat;
-}
-.content-text {
-  font: normal normal 900 70px/80px Montserrat;
-  letter-spacing: 0px;
-  text-transform: capitalize;
-  text-align: left;
-  color: var(--white);
-  margin-left: 10px;
-  padding-top: 10px;
-  /* text-align: left; */
-}
-.contentword {
-  text-align: left;
-  font: normal normal 700 60px/80px Montserrat;
-  letter-spacing: 0px;
-  text-transform: capitalize;
-  padding-left: 162px;
-  color: var(--white);
-
-}
-.enjoy {
-  padding: 5px 20px;
-  color: var(--white);
-  text-align: left;
-  font: bold 14px/23px Montserrat;
-  background: transparent linear-gradient(180deg, #F8BA2D 0%, #FF7805 100%) 0% 0% no-repeat padding-box;
-  border-radius: 43px;
-  align-items: center;
-  margin-top: 60px;
-  margin-bottom: 100px;
-  z-index: 3;
-}
-.rectangle1{
-  width: 150px;
-  height: 800px;
-  background: var(--white);
-  position: absolute;
-  border-radius: 100px;
-  top:  -300px;
-  right: 370px;
-  mix-blend-mode: overlay;
-  transform: rotate(10deg);
-  z-index: 2;
-}
-.purple {
-  height: 15px;
-  width: 15px;
-}
-.rectangle {
-  width: 150px;
-  height: 800px;
-  background: var(--orange);
-  position: absolute;
-  border-radius: 100px;
-  top:  50px;
-  right: 260px;
-  mix-blend-mode: multiply;
-  transform: rotate(10deg);
-  z-index: 2;
-}
-
-.content-card-wrapper{
-  display: flex;
-  gap: 1px;
-  width: 90%;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  z-index: 10;
-}
-.card-content{
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 300px;
-}
-.bg-img{
+  .content-wrapper{
+    background:url('./assets/images/content5.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 10rem ;
+  }
+  .content-wrapper:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 23, 32, 0.5) 100%, rgba(255, 32, 32, 0.5) 100%);
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+  }
+  #overlay,
+  #overlay2{
+    width: 180px;
+    height: 500px;
+    border-radius: 200px;
+    background: var(--white);
+    position: absolute;
+    z-index: 20;
+    overflow: visible;
+  }
+  .content-wrapper #overlay2{
+    top: -130px;
+    right: 300px;
+    transform: rotate(12deg);
+    mix-blend-mode: soft-light;
+    opacity: 40%;
+  }
+  .content-wrapper #overlay{
+    top: 100px;
+    right: 150px;
+    transform: rotate(12deg);
+    mix-blend-mode: soft-light;
+    opacity: 40%;
+  }
+  .content-main{
+    width: 90%;
+    max-width: 1400px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    z-index: 50;
+  }
+  .content-maintitle{
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 1;
+    width: 50%;
+    color: var(--yellow);
+  }
+  .content-maintitle span{
+    font-size: 5rem;
+    font-weight: bolder;
+    color: var(--white);
+  }
+  .content-maindetails{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 20px 0;
+    width: 50%;
+  }
+  .content-gamesbtn{
+    padding: 5px 20px;
+    color: var(--white);
+    text-align: left;
+    font: bold 14px/23px Montserrat;
+    background: transparent linear-gradient(180deg, #F8BA2D 0%, #FF7805 100%) 0% 0% no-repeat padding-box;
+    border-radius: 43px;
+    align-items: center;
+    margin-top: 30px;
+    width: 130px;
+    
+  }
+  .content-cardswrapper{
+    overflow-y: hidden;
+    width: 86%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    z-index: 99;
+    overflow-x: scroll;
+  } 
+  .content-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .content-cardmain{
+    margin-top: -100px;
+    padding-top: 100px;
+    background: var(--white);
+    padding-left: 20px;
+  }
+  .content-cardtitle{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: var(--black);
+  }
+  .content-carddetails{
+    font-size: .9rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: var(--black);
+  }
+  .content-cardicon{
+    margin-right: 20px;
+    float: right;
+    height: 18px;
+    margin-top: 10px;
+    width: 18px;
+    border-radius: 50%;
+    box-shadow: -3px 3px 10px rgb(41, 41, 41);
+  }
+  .content-card:nth-child(1) .content-cardbtn{
+    color:var(--orange);
+  }
+  .content-card:nth-child(2) .content-cardbtn{
+    color:var(--pinkish);
+  }
+  .content-card:nth-child(3) .content-cardbtn{
+    color:var(--greenish);
+  }
+  .content-card:nth-child(4) .content-cardbtn{
+    color:var(--realorange);
+  }
+  .content-card:nth-child(5) .content-cardbtn{
+    color:var(--othergreen);
+  }
+.content-img{
   width: 310px;
-  z-index: 10;
+  z-index: 50;
 }
-.bg-img img{
-  width: 100%;
-}
-.content-card-footer{
-  padding-top: 100px;
-  margin-top: -100px;
-  width: 100%;
-  background: var(--white);
-}
-.content-card-details{
-  color: var(--textgray);
-  font-weight: 300;
-  line-height: 1.1;
-}
-.title{
-   font-size: 24px/26px ;
-   font-weight: 800; 
-}
-.content-purple {
-  float: right;
-  margin-right: 10px;
-}
-.red {
-  height: 15px;
-  width: 15px;
-}
-.content-red {
-  float: right;
-  margin-right: 10px;
-  margin-left: 128px;
-}
-.blue {
-  height: 15px;
-  width: 15px;
-}
-.content-blue {
-  float: right;
-  margin-right: 10px;
-  margin-left: 95px;
-}
-
-
+ @media only screen and (max-width: 800px) {
+   .content-wrapper {
+      padding: 4rem 0;
+    }
+   .content-maintitle {
+    font-size: 4rem;
+    }
+    .content-maintitle span{
+    font-size: 4rem;
+    }
+    .games-cardmain {
+    width: 220px;
+    }
+ }
 </style>
