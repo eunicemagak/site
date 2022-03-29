@@ -2,6 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../font/AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('../font/AvenirNextLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 *{
     --navblue: #1B75BC;
     --white:#FFFFFF;
@@ -36,5 +44,10 @@
     --btnblue:#17ABB4;
 }
 h1{
-    font-size: 20px;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 800px) {
+    *{
+    font-size: 12px;
+    }
 }

@@ -92,5 +92,35 @@ export default {
         padding: 5px;
         border-radius: 2px;
         color: var(--black);
+        flex-direction: column;
+    }
+    .partner-img{
+        width: 95vw;
+    }
+    .reviews-wrapper{
+        width: 90%;
+        overflow-x: scroll;
+    }
+    .review{
+        width: 250px;
+    }
+    .review-info{
+        padding: 20px 20px 20px 20px;
+        width: 250px;
+    }
+    .review-info h1{
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .cta{
+            width: 50px;
+            right: 5%;
+        }
+        .cta-active{
+            right: 0;
+            top: -250px;
+            padding: 20px;
+        }
     }
 </style>
