@@ -109,6 +109,7 @@ export default {
     font-size: 1rem;
   }
   .journey{
+    text-align: center;
     margin: 70px 0 0 0; 
   }
   .journey h1{
@@ -149,7 +150,7 @@ export default {
   }
   .journey{
     text-align: center;
-    margin: 100px 0 0 0; 
+    margin: 150px 0 0 0; 
   }
   .journey-img{
     margin-top: 0;

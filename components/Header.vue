@@ -4,53 +4,50 @@
           <img src="../assets/images/logoblue.png" alt="">
       </div>
       <div class="navigation">
-      <img class="mobile-menu" src="../assets/images/menu.png" @click="toggleNav($event)"/>
-      <div class="nav-links">
-          <nuxt-link to="/">
-              HOME
-          </nuxt-link>
-          <nuxt-link to="/OurStory">
-              OUR STORY
-          </nuxt-link>
-          <div class="dropdown">
-                <div class="nav-button" @click="toggleDropdown($event)" :class="menuOpen ? 'is-active' : ''"> 
-                    SERVICES
+        <img class="mobile-menu" src="../assets/images/menu.png" @click="toggleNav($event)"/>
+        <div class="nav-links">
+            <nuxt-link to="/">
+                HOME
+            </nuxt-link>
+            <nuxt-link to="/OurStory">
+                OUR STORY
+            </nuxt-link>
+            <div class="dropdown">
+                    <div class="nav-button" @click="toggleDropdown($event)" :class="menuOpen ? 'is-active' : ''"> 
+                        SERVICES
+                    </div>
+                    <div class="dropdown-links">
+                        <nuxt-link to="/Services/Content" @click="toggleDropdown($event)">
+                            Content
+                        </nuxt-link>
+                        <nuxt-link to="/Services/SMSSolutions" @click="toggleDropdown($event)">
+                            SMS Solutions
+                        </nuxt-link>
+                        <nuxt-link to="/Services/PayementGateway" @click="toggleDropdown($event)">
+                            Payement Gateway
+                        </nuxt-link>
+                        <nuxt-link to="/Services/MobileLending" @click="toggleDropdown($event)">
+                            Mobile Lending
+                        </nuxt-link>
+                        <nuxt-link to="/Services/PayementChannels" @click="toggleDropdown($event)">
+                            Payement Channels
+                        </nuxt-link>
+                        <nuxt-link to="/Services/Games&Lotteries" @click="toggleDropdown($event)">
+                            Games & Lotteries
+                        </nuxt-link>
+                        <nuxt-link to="/Services/More" @click="toggleDropdown($event)">
+                            More
+                        </nuxt-link>
+                    </div>
                 </div>
-                <div class="dropdown-links">
-                    <nuxt-link to="/Services/Content" @click="toggleDropdown($event)">
-                        Content
-                    </nuxt-link>
-                    <nuxt-link to="/Services/SMSSolutions" @click="toggleDropdown($event)">
-                        SMS Solutions
-                    </nuxt-link>
-                    <nuxt-link to="/Services/PayementGateway" @click="toggleDropdown($event)">
-                        Payement Gateway
-                    </nuxt-link>
-                    <nuxt-link to="/Services/MobileLending" @click="toggleDropdown($event)">
-                        Mobile Lending
-                    </nuxt-link>
-                    <nuxt-link to="/Services/PayementChannels" @click="toggleDropdown($event)">
-                        Payement Channels
-                    </nuxt-link>
-                    <nuxt-link to="/Services/Games&Lotteries" @click="toggleDropdown($event)">
-                        Games & Lotteries
-                    </nuxt-link>
-                    <nuxt-link to="/Services/More" @click="toggleDropdown($event)">
-                        More
-                    </nuxt-link>
-                </div>
-            </div>
-          <nuxt-link to="/ContactUs">
-              CONTACT
-          </nuxt-link>
-    <nuxt-link to="/#solutions" class="nav-btn">
-      Lets Enjoy
-    </nuxt-link>
+            <nuxt-link to="/ContactUs">
+                CONTACT
+            </nuxt-link>
+                <nuxt-link to="/#solutions" class="nav-btn">
+                Lets Enjoy
+                </nuxt-link>
+        </div>
       </div>
-      </div>
-    <nuxt-link to="/#solutions" class="nav-btn">
-      Lets Enjoy
-    </nuxt-link>
   </nav>
 </template>
 
@@ -75,38 +72,36 @@ export default {
 </script>
 
 <style>
-   .bg-transparent{
+    .bg-transparent{
         display: flex;
-        align-items: center;
-        width: 90%;
-        max-width: 1400px;
-        margin: 0 auto;
-        position: absolute;
-        z-index: 99;
-        top: -5vh;
         justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
     }
     .logo{
         width: 20%;
         max-width: 100px;
     }
     .mobile-menu{
-        right: 20px;
         width: 20px;
     }
     .navigation{
         position: relative;
     }
-        .nav-links{
+    .nav-links{
         color: var(--navblue); 
         background: var(--white);
         font-weight: 600;
         display: flex;
         flex-direction: column;
-        gap: 50px;
-        margin-left: -400px;
+        gap: 20px;
         align-items: center;
         font-size: 1rem;
+        padding:20px;
+        visibility: hidden;
+        position: absolute;
+        right: -20px;
+        z-index:999;
     }
     .nav-button{
         color: var(--navblue); 
@@ -172,9 +167,11 @@ export default {
             width: 90%;
             max-width: 1400px;
             margin:0 auto;
+            z-index: 999;
         }
         .mobile-menu{
             display: none;
         }
     }
+
 </style>
