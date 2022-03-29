@@ -1,211 +1,313 @@
 <template>
- <div class="main">
-    <div class="bg-payment">
-      <div class="payment-wrapper">
-      <div class="rectangle1">
+  <div class="payment">
+    <div class="payment-wrapper">
+      <div id="overlay"></div>
+      <div id="overlay2"></div>
+      <div class="payment-main">
+        <h1 class="payment-maintitle">
+            Payment Channels
+        </h1>
+        <p class="payment-maindetails">
+          Roamtech specializes in the development of mobile solutions and services that help businesses communicate and connect with their audiences.
+        </p>
       </div>
-      <div class="rectangle2">
+    </div>
+    <div class="payment-cardswrapper">
+      <div class="payment-card">
+        <div class="payment-cardheader">
+          <img src="~/assets/images/short.svg">
+        </div>
+        <div class="payment-cardmain">
+          <h4 class="payment-cardtitle">
+            Short-Code
+          </h4>
+          <p class="payment-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="payment-cardbtn">
+             Get Short Code
+            </button>
+          </a>
+        </div>
       </div>
-      <div class="content-wrapper">
-      <h1 class="content text-gray-50">Payment <br> Channels</h1>
-      <p class="text-gray-50">Roamtech specializes in the development of <br>mobile solutions and services that help businesses <br>communicate and connect with their audiences.</p>
-       </div>
+      <div class="payment-card">
+        <div class="payment-cardheader">
+          <img src="~/assets/images/USSD.svg">
+        </div>
+        <div class="payment-cardmain">
+          <h4 class="payment-cardtitle">
+            USSD Codes
+          </h4>
+          <p class="payment-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/ussd">
+            <button class="payment-cardbtn">
+              Get USSD
+            </button>
+          </a>
+        </div>
       </div>
-   </div>
-   <div class="pc-card-wrapper">
-        
-          <div class="pc-card bg-white shadow-lg">
-             <div class="rounded-b-full h-48 w-28 bg-red-400">
-               <img class="pr-2 pt-10" src="~/assets/images/short.svg" alt="">
-            </div>
-           <div class="pc-title">
-             Short-Code
-           </div>
-           <div class="pc-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pc-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-400 rounded-full w-36 text-red-400 font-bold">
-               <a href="https://emalify.com">Get Short Code</a></button>
-           </div>
-         </div>
-          <div class="pc-card bg-white shadow-lg">
-             <div class="rounded-b-full h-48 w-28 bg-yellow-300">
-               <img class="pl-8 pt-12 w-20" src="~/assets/images/USSD.svg" alt="">
-            </div>
-           <div class="pc-title">
-             USSD Codes
-           </div>
-           <div class="pc-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pc-card-footer pb-8">
-             <button class=" shadow-lg shadow-gray-400 rounded-full w-28 text-yellow-400 font-bold" >
-               <a href="https://emalify.com/ussd">
-               Get USSD</a></button>
-           </div>
-         </div>
-           <div class="pc-card bg-white shadow-lg">
-            <div class="rounded-b-full h-48 w-28 bg-blue-300">
-              <img class="pl-9 pt-8 w-20" src="~/assets/images/mobiapp.svg" alt="">
-            </div>
-           <div class="pc-title">
-             Mobile App
-           </div>
-           <div class="pc-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pc-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-400 rounded-full w-28 text-blue-400 font-bold">            
-               <a href="https://emalify.com">Discover</a></button>
-           </div>
-         </div>
-          <div class="pc-card bg-white shadow-lg">
-            <div class="rounded-b-full h-48 w-28 bg-blue-700">
-              <img class="pl-7 pt-10 w-20" src="~/assets/images/message.svg" alt="">
-            </div>
-           <div class="pc-title">
-             Bulk Airtime
-           </div>
-           <div class="pc-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pc-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-400 rounded-full w-28 text-fuchsia-600 font-bold">            
-               <a href="https://emalify.com">Get</a></button>
-           </div>
-         </div>
-          <div class="pc-card bg-white shadow-lg">
-             <div class="rounded-b-full h-48 w-28 bg-orange-400">
-               <img class=" pl-7 pt-10 w-20" src="~/assets/images/music.svg" alt="">
-            </div>
-           <div class="pc-title">
-             API Intergration
-           </div>
-           <div class="pc-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pc-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-400 rounded-full w-28 text-green-600 font-bold">
-                <a href="https://emalify.com">Get</a></button>
-           </div>
-         </div>
-         <div class="pc-card bg-white shadow-lg">
-             <div class="rounded-b-full h-48 w-28 bg-green-600">
-               <img class="w-20 pl-5 pt-7" src="~/assets/images/chat.svg" alt="">
-            </div>
-           <div class="pc-title">
-             API Intergration
-           </div>
-           <div class="pc-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pc-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-400 rounded-full w-28 text-green-600 font-bold">Get</button>
-           </div>
-         </div>
-         <div class="pc-card bg-white shadow-lg">
-             <div class="rounded-b-full h-48 w-28 bg-fuchsia-600">
-               <img class="w-20 pl-5 pt-7" src="~/assets/images/chat.svg" alt="">
-            </div>
-           <div class="pc-title">
-             API Intergration
-           </div>
-           <div class="pc-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pc-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-400 rounded-full w-28 text-green-600 font-bold">Get</button>
-           </div>
-         </div>
-   </div>
- </div>
+      <div class="payment-card">
+        <div class="payment-cardheader">
+          <img src="~/assets/images/mobiapp.svg">
+        </div>
+        <div class="payment-cardmain">
+          <h4 class="payment-cardtitle">
+            Mobile App
+          </h4>
+          <p class="payment-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="payment-cardbtn">
+              Discover
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-cardheader">
+          <img src="~/assets/images/message.svg">
+        </div>
+        <div class="payment-cardmain">
+          <h4 class="payment-cardtitle">
+            Bulk Airtime
+          </h4>
+          <p class="payment-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="payment-cardbtn">
+              Get
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-cardheader">
+          <img src="~/assets/images/music.svg">
+        </div>
+        <div class="payment-cardmain">
+          <h4 class="payment-cardtitle">
+            API Intergration
+          </h4>
+          <p class="payment-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="payment-cardbtn">
+              Get 
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-cardheader">
+          <img src="~/assets/images/chat.svg">
+        </div>
+        <div class="payment-cardmain">
+          <h4 class="payment-cardtitle">
+            API Intergration
+          </h4>
+          <p class="payment-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="payment-cardbtn">
+              Get 
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-cardheader">
+          <img src="~/assets/images/chat.svg">
+        </div>
+        <div class="payment-cardmain">
+          <h4 class="payment-cardtitle">
+            API Intergration
+          </h4>
+          <p class="payment-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="payment-cardbtn">
+              Get 
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+
 <script>
-import PaymentImg from "assets/images/payment.png";
 export default {
-  data() {
-    return {
-      image: {backgroundImage:`url(${PaymentImg})`},
-    };
-  }
-};
+
+}
 </script>
 
 <style>
-.bg-payment {
- background: linear-gradient( rgba(0, 23, 32, 0.5) 100%, rgba(255, 32, 32, 0.5) 100%),
-url('./assets/images/payment.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
+.payment{
+  background: var(--gray);
+  padding-bottom: 100px;
 }
-.content-wrapper{
-   padding: 0.5rem calc((100vw - 1250px) / 2);
-}
-.content{
-  font: normal normal 900 70px/80px Montserrat;
-  text-transform: capitalize;
-  width: 878px;
-
-}
-.pc-card-wrapper{
-   padding: 0.5rem calc((100vw - 1200px) / 2);
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  overflow-y: hidden;
-  margin-top: -100px;
-  
-}
-.pc-card{
+  .payment-wrapper{
+    background:url('./assets/images/payment.png'), var(--black);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 95vh;
+  }  
+  .payment-wrapper:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+  }
+  #overlay,
+  #overlay2{
+    width: 200px;
+    height: 700px;
+    border-radius: 200px;
+    background: var(--white);
+    position: absolute;
+    z-index: 20;
+    overflow: visible;
+  }
+  .payment-wrapper #overlay2{
+    top: -150px;
+    right: 500px;
+    transform: rotate(12deg);
+    mix-blend-mode: overlay;
+    opacity: 40%;
+  }
+  .payment-wrapper #overlay{
+    top: 200px;
+    right: 350px;
+    transform: rotate(12deg);
+    mix-blend-mode: overlay;
+    opacity: 40%;
+  }
+  .payment-main{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10rem 0;
+    flex-direction: column;
+    color: var(--white);
+    z-index: 3;
+  }
+  .payment-maintitle{
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 1;
+    width: 30%;
+  }
+  .payment-maindetails{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 20px 0;
+    width: 40%;
+  }
+  .payment-cardswrapper{
+    width: 90%;
+    max-width: 1400px;
+    margin: -100px auto 0 auto;
+    display: flex;
+    z-index: 99;
+    overflow-x: scroll;
+    box-shadow: 3px 3px 10px #ccc;
+  } 
+  .payment-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px 40px 30px;
+    background: var(--white);
+    box-shadow: 3px 3px 10px #ccc;
+  }
  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-  z-index: 99;
-}
-.pc-card-details{
-  width: 300px;
-   color: var(--textgray);
-  font-weight: 100;
-  line-height: 1.1;
-}
-.pc-title{
+  .payment-cardheader{
+    width: 100px;
+    height: 200px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    background:var(--gray);
+    justify-content: center;
+  }
+      .payment-card:nth-child(1) .payment-cardheader{
+    background:var(--red);
+  }
+  .payment-card:nth-child(2) .payment-cardheader{
+    background:var(--yellow);
+  }
+  .payment-card:nth-child(3) .payment-cardheader{
+    background:var(--skyblue);
+  }
+  .payment-card:nth-child(4) .payment-cardheader{
+    background:var(--navblue);
+  }
+  .payment-card:nth-child(5) .payment-cardheader{
+    background:var(--orange);
+  }
+  .payment-card:nth-child(6) .payment-cardheader{
+    background:var(--green);
+  }
+  .payment-card:nth-child(7) .payment-cardheader{
+    background:var(--purple);
+  }
+
+  .payment-cardheader img{
+    width: 80%;
+  }
+  .payment-cardmain{
+    width: 270px;
+  }
+  .payment-cardtitle{
+    font-weight: bold;
     font-size: 1.2rem;
-  font-weight: 600;
-}
-.rectangle1{
-  width: 200px;
-  height: 800px;
-  background: var(--white);
-  position: absolute;
-  border-radius: 100px;
-  top:  -300px;
-  right: 370px;
-  mix-blend-mode: overlay;
-  transform: rotate(10deg);
-  z-index: 2;
-}
-.rectangle2 {
-  width: 200px;
-  height: 800px;
-  background: var(--white);
-  position: absolute;
-  border-radius: 100px;
-  top:  50px;
-  right: 200px;
-  mix-blend-mode: overlay;
-  transform: rotate(10deg);
-  z-index: 2;
-}
+    margin: 20px 0 10px 0;
+  }
+  .payment-carddetails{
+    font-size: .9rem;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+  .payment-cardbtn{
+    margin-left: 50%;
+    background: var(--white);
+    border-radius: 50px;
+    padding: 5px;
+    width: 150px;
+    box-shadow: -3px 3px 10px #ccc;
+    font-weight: bold;
+  }
+  .payment-card:nth-child(1) .payment-cardbtn{
+    color:var(--orange);
+  }
+  .payment-card:nth-child(2) .payment-cardbtn{
+    color:var(--pinkish);
+  }
+  .payment-card:nth-child(3) .payment-cardbtn{
+    color:var(--greenish);
+  }
+  .payment-card:nth-child(4) .payment-cardbtn{
+    color:var(--realorange);
+  }
+  .payment-card:nth-child(5) .payment-cardbtn{
+    color:var(--othergreen);
+  }
 </style>

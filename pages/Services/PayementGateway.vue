@@ -1,175 +1,259 @@
 <template>
- <div class="main">
-    <div class="bg-gateway">
-      <div class="gateway-wrapper">
-      <div class="rectangle1">
+  <div class="gateway">
+    <div class="gateway-wrapper">
+      <div id="overlay"></div>
+      <div id="overlay2"></div>
+      <div class="gateway-main">
+        <h1 class="gateway-maintitle">
+            Payment Gateway
+        </h1>
+        <p class="gateway-maindetails">
+          Roamtech specializes in the development of mobile solutions and services that help businesses communicate and connect with their audiences.
+        </p>
       </div>
-      <div class="rectangle2">
+    </div>
+    <div class="gateway-cardswrapper">
+      <div class="gateway-card">
+        <div class="gateway-cardheader">
+          <img src="~/assets/images/pg.svg">
+        </div>
+        <div class="gateway-cardmain">
+          <h4 class="gateway-cardtitle">
+            Payement Gateway
+          </h4>
+          <p class="gateway-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="gateway-cardbtn">
+             Get
+            </button>
+          </a>
+        </div>
       </div>
-      <div class="content-wrapper">
-      <h1 class="content text-gray-50">Payment <br> Gateway</h1>
-      <p class="text-gray-50">Roamtech specializes in the development of <br>mobile solutions and services that help businesses <br>communicate and connect with their audiences.</p>
-       </div>
+      <div class="gateway-card">
+        <div class="gateway-cardheader">
+          <img src="~/assets/images/paykit.png">
+        </div>
+        <div class="gateway-cardmain">
+          <h4 class="gateway-cardtitle">
+            Paykit
+          </h4>
+          <p class="gateway-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.roamtech.emalipayapp&hl=sw">
+            <button class="gateway-cardbtn">
+              Download
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="gateway-card">
+        <div class="gateway-cardheader">
+          <img src="~/assets/images/utility.svg">
+        </div>
+        <div class="gateway-cardmain">
+          <h4 class="gateway-cardtitle">
+            Utility Payment
+          </h4>
+          <p class="gateway-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="gateway-cardbtn">
+              Get
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="gateway-card">
+        <div class="gateway-cardheader">
+          <img src="~/assets/images/airtime.svg">
+        </div>
+        <div class="gateway-cardmain">
+          <h4 class="gateway-cardtitle">
+            Bulk Airtime
+          </h4>
+          <p class="gateway-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="gateway-cardbtn">
+              Get
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="gateway-card">
+        <div class="gateway-cardheader">
+          <img src="~/assets/images/Image 35.png">
+        </div>
+        <div class="gateway-cardmain">
+          <h4 class="gateway-cardtitle">
+            API Intergration
+          </h4>
+          <p class="gateway-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="gateway-cardbtn">
+              Get 
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
-    </div>
-       <div class="pg-card-wrapper">
-        
-          <div class="pg-card bg-white shadow-lg">
-            <div class="rounded-b-full h-48 w-28 bg-gray-300">
- <img class="pl-5 w-20 pt-14" src="~/assets/images/pg.svg" alt="">
-            </div>
-           <div class="pg-title">
-             Payement Gateway
-           </div>
-           <div class="pg-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pg-card-footer left pb-8">
-             <button class="shadow-lg shadow-gray-400 rounded-full w-28 text-blue-600 font-bold">
-               <a href="https://play.google.com/store/apps/details?id=com.roamtech.emalipayapp&hl=swGet">Get</a></button>
-           </div>
-         </div>
-          <div class="pg-card bg-white shadow-lg">
-            <div class="rounded-b-full h-48 w-28 bg-gray-300">
-            <img class=" pl-7 w-20 pt-14" src="~/assets/images/paykit.png" alt="">
-            </div>
-           <div class="pg-title">
-             Paykit
-           </div>
-           <div class="pg-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pg-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-400 rounded-full w-28 text-blue-600 font-bold">
-               <a href="https://play.google.com/store/apps/details?id=com.roamtech.emalipayapp&hl=sw">Download</a></button>
-           </div>
-         </div>
-          <div class="pg-card bg-white shadow-lg">
-            <div class="rounded-b-full h-48 w-28 bg-gray-300">
- <img class="pl-5 w-20 pt-14" src="~/assets/images/utility.svg" alt="">
-            </div>
-           <div class="pg-title">
-             Utility Payment
-           </div>
-           <div class="pg-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pg-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-400 rounded-full w-28 text-red-600 font-bold"> <a href="https://emalify.com">Get</a></button>
-           </div>
-         </div>
-          <div class="pg-card bg-white shadow-lg">
-            <div class="rounded-b-full h-48 w-28 bg-gray-300">
- <img class="w-20 pl-5 pt-14" src="~/assets/images/airtime.svg" alt="">
-            </div>
+    <div class="gateway-footer">
 
-           <div class="pg-title">
-             Bulk Airtime
-           </div>
-           <div class="pg-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="pg-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-400 rounded-full w-28 text-fuchsia-600 font-bold"> 
-               <a href="https://emalify.com">Get</a></button>
-           </div>
-         </div>
-          
-         
-       </div>
- </div>
+    </div>
+  </div>
 </template>
+
 <script>
-import PaymentImg from "assets/images/gateway.png";
 export default {
-  data() {
-    return {
-      image: {backgroundImage:`url(${PaymentImg})`},
-    };
-  }
-};
+
+}
 </script>
 
 <style>
-.bg-gateway {
- background: linear-gradient( rgba(0, 23, 32, 0.534) 100%, rgba(255, 32, 32, 0.5) 100%),
-url('./assets/images/gateway.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
+.gateway{
+  background: var(--gray);
+   padding-bottom: 100px;
 }
-.gateway-wrapper,
-.content-wrapper{
-   padding: 0.5rem calc((100vw - 1400px) / 2);
-  
-}
-.content{
-  font: normal normal 900 70px/80px Montserrat;
-  text-transform: capitalize;
-  width: 878px;
-
-}
-
-.pg-card-wrapper{
-   padding: 0.5rem calc((100vw - 1200px) / 2);
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  overflow-y: hidden;
-  margin-top: -100px;
-  
-  
-  
-}
-.pg-card{
+  .gateway-wrapper{
+    background:url('./assets/images/paymentgt.png'), var(--black);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 95vh;
+  }  
+  .gateway-wrapper:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+  }
+  #overlay,
+  #overlay2{
+    width: 200px;
+    height: 700px;
+    border-radius: 200px;
+    background: var(--white);
+    position: absolute;
+    z-index: 20;
+    overflow: visible;
+  }
+  .gateway-wrapper #overlay2{
+    top: -150px;
+    right: 500px;
+    transform: rotate(12deg);
+    mix-blend-mode: overlay;
+    opacity: 40%;
+  }
+  .gateway-wrapper #overlay{
+    top: 200px;
+    right: 350px;
+    transform: rotate(12deg);
+    mix-blend-mode: overlay;
+    opacity: 40%;
+  }
+  .gateway-main{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10rem 0;
+    flex-direction: column;
+    color: var(--white);
+    z-index: 3;
+  }
+  .gateway-maintitle{
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 1;
+    width: 30%;
+  }
+  .gateway-maindetails{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 20px 0;
+    width: 40%;
+  }
+  .gateway-cardswrapper{
+    width: 90%;
+    max-width: 1400px;
+    margin: -100px auto 0px auto;
+    display: flex;
+    z-index: 99;
+    overflow-x: scroll;
+    box-shadow: 3px 3px 10px #ccc;
+  } 
+  .gateway-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px 40px 30px;
+    background: var(--white);
+    box-shadow: 3px 3px 10px #ccc;
+  }
  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-  z-index: 99;
-}
-.pg-card-details{
-  width: 300px;
-   color: var(--textgray);
-  font-weight: 100;
-  line-height: 1.1;
-}
-.pg-title{
-    font-size: 1.2rem;
-  font-weight: 600;
-}
-.rectangle1{
-  width: 200px;
-  height: 800px;
-  background: var(--white);
-  position: absolute;
-  border-radius: 100px;
-  top:  -300px;
-  right: 370px;
-  mix-blend-mode: overlay;
-  transform: rotate(10deg);
-  z-index: 2;
-}
-.rectangle2 {
-  width: 200px;
-  height: 800px;
-  background: var(--white);
-  position: absolute;
-  border-radius: 100px;
-  top:  50px;
-  right: 200px;
-  mix-blend-mode: overlay;
-  transform: rotate(10deg);
-  z-index: 2;
-}
+  .gateway-cardheader{
+    width: 100px;
+    height: 200px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    background:var(--gray);
+    justify-content: center;
+  }
 
+  .gateway-cardheader img{
+    width: 70%;
+  }
+  .gateway-cardmain{
+    width: 270px;
+  }
+  .gateway-cardtitle{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 20px 0 10px 0;
+  }
+  .gateway-carddetails{
+    font-size: .9rem;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+  .gateway-cardbtn{
+    margin-left: 50%;
+    background: var(--white);
+    border-radius: 50px;
+    padding: 5px;
+    width: 120px;
+    box-shadow: -3px 3px 10px #ccc;
+    font-weight: bold;
+  }
+  .gateway-card:nth-child(1) .gateway-cardbtn{
+    color:var(--greengreen);
+  }
+  .gateway-card:nth-child(2) .gateway-cardbtn{
+    color:var(--navblue);
+  }
+  .gateway-card:nth-child(3) .gateway-cardbtn{
+    color:var(--red);
+  }
+  .gateway-card:nth-child(4) .gateway-cardbtn{
+    color:var(--purple);
+  }
+  .gateway-card:nth-child(5) .gateway-cardbtn{
+    color:var(--greenish);
+  }
 </style>

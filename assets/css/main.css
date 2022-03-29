@@ -9,11 +9,31 @@
     --orange: #F8BA2D;
     --black: #2F2D2D;
     --blackish:#9B9B9B;
+    --cardblack: #484546;
+    
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     padding: 0;
     margin: 0;
     --footerblue:#155D96;
+    --gray:#F0F0F0;
+    --textgray:#5E5E5F;
+    --darkerblue:#1765A2;
+    --darkblue:#0E3B5E;
+    --cardgray:#F0F0F0;
+    position: relative;
+    --lightblue:#7BC7F7;
+    --reddish:#B41128;
+    --pinkish:#E65C70;
+    --green:#3FC459;
+    --greenish:#4BCE65;
+    --realorange:#FC8523;
+    --othergreen:#65C19C;
+    --skyblue:#79D9E0;
+    --purple:#A20EC6;
+    --yellow:#F8BA2D;
+    --greengreen:#17ABB4;
+    --btnblue:#17ABB4;
 }
 h1{
     font-size: 20px;

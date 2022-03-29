@@ -1,181 +1,262 @@
 <template>
- <div class="main">
-    <div class="bg-mobile">
-      <div class="mobile-wrapper">
-        <div class="rectangle1">
+  <div class="sm-sol">
+    <div class="smsol-wrapper">
+      <div id="overlay"></div>
+      <div id="overlay2"></div>
+      <div class="smsol-main">
+        <h1 class="smsol-maintitle">
+            Fintech Solutions
+        </h1>
+        <p class="smsol-maindetails">
+          Roamtech specializes in the development of mobile solutions and services that help businesses communicate and connect with their audiences.
+        </p>
       </div>
+    </div>
+    <div class="smsol-cardswrapper">
+      <div class="smsol-card">
+        <div class="smsol-cardheader">
+          <img src="~/assets/images/senti.png">
+        </div>
+        <div class="smsol-cardmain">
+          <h4 class="smsol-cardtitle">
+            Senti
+          </h4>
+          <p class="smsol-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://senti.co.ke">
+            <button class="smsol-cardbtn">
       
-      <div class="content-wrapper">
-      <h1 class="content text-blue-500">Fintech <br>Solutions</h1>
-      <p class="text-gray-900">Roamtech specializes in the development of <br>mobile solutions and services that help businesses <br>communicate and connect with their audiences.</p>
-       </div>
+            <i class='fa fa-chevron-right'></i>
+    
+               </button>
+          </a>
+        </div>
+      </div>
+      <div class="smsol-card">
+        <div class="smsol-cardheader">
+          <img src="~/assets/images/loans.png">
+        </div>
+        <div class="smsol-cardmain">
+          <h4 class="smsol-cardtitle">
+            Business Loan
+          </h4>
+          <p class="smsol-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://senti.co.ke">
+            <button class="smsol-cardbtn">
+             <i class='fa fa-chevron-right'></i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="smsol-card">
+        <div class="smsol-cardheader">
+          <img src="~/assets/images/lending.png">
+        </div>
+        <div class="smsol-cardmain">
+          <h4 class="smsol-cardtitle">
+            Lending App
+          </h4>
+          <p class="smsol-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="smsol-cardbtn">
+             <i class='fa fa-chevron-right'></i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="smsol-card">
+        <div class="smsol-cardheader">
+          <img src="~/assets/images/fintech.png">
+        </div>
+        <div class="smsol-cardmain">
+          <h4 class="smsol-cardtitle">
+            Fintech
+          </h4>
+          <p class="smsol-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="smsol-cardbtn">
+              <i class='fa fa-chevron-right'></i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="smsol-card">
+        <div class="smsol-cardheader">
+          <img src="~/assets/images/fintech.png">
+        </div>
+        <div class="smsol-cardmain">
+          <h4 class="smsol-cardtitle">
+            Fintech
+          </h4>
+          <p class="smsol-carddetails">
+            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          </p>
+          <a href="https://emalify.com/">
+            <button class="smsol-cardbtn">
+              <i class='fa fa-chevron-right'></i>
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
+    <div class="smsol-footer">
+
     </div>
-       <div class="ml-card-wrapper">
-        
-        <div class="ml-card bg-white shadow-lg">
-            <div class="rounded-b-full h-48 w-28 bg-blue-500">
-                <img class="w-20 pl-7 pt-12" src="~/assets/images/senti.png" alt="">
-            </div>
-           <div class="ml-title">
-             Senti
-           </div>
-           <div class="ml-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="ml-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-700 w-6 text-right rounded-full  text-blue-600 font-bold"> 
-               <a href="https://senti.co.ke">></a></button>
-           </div>
-         </div>
-          <div class="ml-card shadow-lg bg-gray-200">
-            <div class="rounded-b-full h-48 w-28 bg-white ">
-               <img class="pt-10" src="~/assets/images/loans.png" alt="">
-            </div>
-           <div class="ml-title">
-             Business Loan
-           </div>
-           <div class="ml-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="ml-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-700 w-6 text-right rounded-full text-red-600 font-bold">
-              <a href="https://senti.co.ke">></a></button>
-           </div>
-         </div>
-          <div class="ml-card bg-white shadow-lg">
-            <div class="rounded-b-full h-48 w-28 bg-blue-500">
-              <img class="pt-10" src="~/assets/images/lending.png" alt="">
-            </div>
-           <div class="ml-title text-left ">
-             Lending App
-           </div>
-           <div class="ml-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="ml-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-700 w-6 text-right rounded-full text-yellow-600 font-bold">
-             <a href="https://senti.co.ke">></a></button>
-           </div>
-         </div>
-          <div class="ml-card shadow-lg bg-gray-200">
-            <div class="rounded-b-full h-48 w-28 bg-white">
-              <img class="pt-10" src="~/assets/images/fintech.png" alt="">
-            </div>
-
-           <div class="ml-title">
-             Fintech
-           </div>
-           <div class="ml-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="ml-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-700 rounded-full w-6 text-right text-fuchsia-600 font-bold">
-            <a href="https://senti.co.ke">></a></button>
-           </div>
-         </div>
-          <div class="ml-card shadow-lg bg-white">
-            <div class="rounded-b-full h-48 w-28 bg-green-600">
-              <img class="pt-10" src="~/assets/images/fintech.png" alt="">
-            </div>
-
-           <div class="ml-title">
-             Fintech
-           </div>
-           <div class="ml-card-details">
-             Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-           </div>
-           <div class="ml-card-footer pb-8">
-             <button class="shadow-lg shadow-gray-700 rounded-full w-6 text-right text-green-600 font-bold">
-              <a href="https://senti.co.ke">></a></button>
-           </div>
-         </div>
-         
-       </div>
- </div>
+  </div>
 </template>
+
 <script>
-import MobiImg from "assets/images/mobilelending.png";
 export default {
-  data() {
-    return {
-      image: {backgroundImage:`url(${MobiImg})`},
-    };
-  }
-};
+
+}
 </script>
 
 <style>
-.bg-mobile {
- background:linear-gradient( rgba(201, 202, 202, 0.534) 100%, #F0F0F0 0%),
-url('./assets/images/mobilelending.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size:contain;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-.mobile-wrapper,
-.content-wrapper{
-   padding: 0.5rem calc((100vw - 1400px) / 2);
-}
-.content{
-  font: normal normal 900 70px/80px Montserrat;
-  text-transform: capitalize;
-  width: 878px;
-
-}
-.bg-gray{
-  background-color: grey;
-  height:300px;
-}
-.ml-card-wrapper{
-   padding: 0.5rem calc((100vw - 1200px) / 2);
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  overflow-y: hidden;
-  margin-top: -100px;
-  
+.sm-sol{
+  background: var(--gray);
   
 }
-.ml-card{
+  .smsol-wrapper{
+    background:url('./assets/images/mobilelending.png');
+    background-color: var(--gray);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    height: 95vh;
+  }  
+  #overlay,
+  #overlay2{
+    width: 200px;
+    height: 700px;
+    border-radius: 200px;
+    background: var(--white);
+    position: absolute;
+    z-index: 20;
+    overflow: visible;
+  }
+  .smsol-wrapper #overlay2{
+    top: -150px;
+    right: 500px;
+    transform: rotate(12deg);
+    mix-blend-mode: overlay;
+    opacity: 40%;
+  }
+  .smsol-wrapper #overlay{
+    top: 200px;
+    right: 350px;
+    transform: rotate(12deg);
+    mix-blend-mode: overlay;
+    opacity: 40%;
+  }
+  .smsol-main{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10rem 0;
+    flex-direction: column;
+    z-index: 3;
+  }
+  .smsol-maintitle{
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 1;
+    width: 30%;
+    color: var(--navblue);
+  }
+  .smsol-maindetails{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 20px 0;
+    width: 40%;
+    color: var(--black);
+  }
+  .smsol-cardswrapper{
+    width: 90%;
+    max-width: 1400px;
+    margin: -100px auto 200px auto;
+    display: flex;
+    z-index: 99;
+    overflow-x: scroll;
+    box-shadow: 3px 3px 10px #ccc;
+  } 
+  .smsol-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px 40px 30px;
+    background: var(--white);
+    box-shadow: 3px 3px 10px #ccc;
+  }
  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-}
-.ml-card-details{
-  width: 300px;
-   color: var(--textgray);
-  font-weight: 100;
-  line-height: 1.1;
-  text-align: center;
-}
-.ml-title{
+  .smsol-cardheader{
+    width: 100px;
+    height: 200px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+      .smsol-card:nth-child(odd) .smsol-cardheader{
+    background:var(--navblue);
+  }
+  .smsol-card:nth-child(even) .smsol-cardheader{
+    background:var(--white);
+  }
+  .smsol-card:nth-child(even){
+    background:var(--gray);
+  }
+
+  .smsol-cardheader img{
+    width: 70%;
+  }
+  .smsol-cardmain{
+    width: 270px;
+  }
+  .smsol-cardtitle{
+    font-weight: bold;
     font-size: 1.2rem;
-  font-weight: 600;
-
-}
-.rectangle1{
-  width: 200px;
-  height: 800px;
-  background: var(--white);
-  position: absolute;
-  border-radius: 100px;
-  top:  -300px;
-  right: 370px;
-  mix-blend-mode: soft-light;
-  transform: rotate(10deg);
-  z-index: 2;
-}
-
-
+    margin: 20px 0 10px 0;
+  }
+  .smsol-carddetails{
+    font-size: .9rem;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+  .smsol-cardbtn{
+    margin-left: 90%;
+    background: var(--white);
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: -3px 3px 10px rgb(182, 180, 180);
+    font-weight: bold;
+  }
+  .smsol-card:nth-child(1) .smsol-cardbtn{
+    color:var(--navblue);
+  }
+  .smsol-card:nth-child(2) .smsol-cardbtn{
+    color:var(--red);
+  }
+  .smsol-card:nth-child(3) .smsol-cardbtn{
+    color:var(--yellow);
+  }
+  .smsol-card:nth-child(4) .smsol-cardbtn{
+    color:var(--othergreen);
+  }
+  .smsol-card:nth-child(5) .smsol-cardbtn{
+    color:var(--othergreen);
+  }
 </style>
