@@ -1,6 +1,7 @@
 <template>
   <div class="sm-sol">
     <div class="smsol-wrapper">
+      <Header/>
       <div id="overlay"></div>
       <div id="overlay2"></div>
       <div class="smsol-main">
@@ -53,7 +54,7 @@
       </div>
       <div class="smsol-card">
         <div class="smsol-cardheader">
-          <img src="~/assets/images/lending.png">
+          <img src="~/assets/images/lender.png">
         </div>
         <div class="smsol-cardmain">
           <h4 class="smsol-cardtitle">
@@ -161,7 +162,7 @@ export default {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    padding: 10rem 0;
+    padding: 5rem 0;
     flex-direction: column;
     z-index: 3;
   }
@@ -259,4 +260,22 @@ export default {
   .smsol-card:nth-child(5) .smsol-cardbtn{
     color:var(--othergreen);
   }
+  @media only screen and (max-width: 800px) {
+        .smsol-wrapper {
+          padding: 4rem 0;
+        }
+        .smsol-maintitle {
+          font-size: 4rem;
+
+          width:60%;
+        }
+        .smsol-maindetails{
+          font-size: 1rem;
+          width:90%;
+        }
+        .smsol-cardmain {
+          width: 220px;
+        }
+       
+    }
 </style>

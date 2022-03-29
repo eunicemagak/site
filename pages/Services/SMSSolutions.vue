@@ -1,7 +1,7 @@
 <template>
   <div class="smssol">
     <div class="smssol-wrapper">
-    <Header/>
+      <Header/>
       <div id="overlay"></div>
       <div id="overlay2"></div>
       <div class="smssol-main">
@@ -172,7 +172,7 @@ export default {
     flex-direction: column;
     color: var(--white);
     z-index: 3;
-    padding: 8vh 0;
+    padding: 5rem 0;
   }
   .smssol-maintitle{
     font-size: 9rem;

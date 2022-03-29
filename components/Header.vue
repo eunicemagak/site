@@ -43,14 +43,13 @@
           <nuxt-link to="/ContactUs">
               CONTACT
           </nuxt-link>
-    <nuxt-link to="/#solutions" class="nav-btn">
+          <nuxt-link to="/#solutions" class="nav-btn">
       Lets Enjoy
     </nuxt-link>
       </div>
+      
       </div>
-    <nuxt-link to="/#solutions" class="nav-btn">
-      Lets Enjoy
-    </nuxt-link>
+    
   </nav>
 </template>
 
@@ -75,16 +74,11 @@ export default {
 </script>
 
 <style>
-   .bg-transparent{
+    .bg-transparent{
         display: flex;
-        align-items: center;
-        width: 90%;
-        max-width: 1400px;
-        margin: 0 auto;
-        position: absolute;
-        z-index: 99;
-        top: -5vh;
+        align-items:center;
         justify-content: space-between;
+        z-index: 999;
     }
     .logo{
         width: 20%;
@@ -104,9 +98,13 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 50px;
-        margin-left: -400px;
+        margin-left: -600px;
         align-items: center;
         font-size: 1rem;
+        position: absolute;
+        right:0;
+        padding:20px;
+        visibility: hidden;
     }
     .nav-button{
         color: var(--navblue); 

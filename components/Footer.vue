@@ -80,8 +80,7 @@ export default {
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        align-items: center;
-        padding: 30px calc((100vw - 1400px) / 2);
+        padding: 40px 0;
         gap: 20px;
         align-items: center;
     }
@@ -138,10 +137,8 @@ export default {
     }
     .contact-info{
         background-color: var(--black);
-        padding: 80px calc((100vw - 1300px) / 2);
-        display: grid;
-        align-items: flex-start;
-        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 20px;
         color: var(--white);
         grid-gap: 20px;
     }
@@ -159,7 +156,8 @@ export default {
     .copyright{
         background-color: var(--footerblue);
         color: var(--white);
-        padding: 20px calc((100vw - 1250px) / 2);
+        width: 100%;
+        padding: 20px;
         font-weight: lighter;
     }
     .submit-btn{

@@ -1,6 +1,7 @@
 <template>
   <div class="gateway">
     <div class="gateway-wrapper">
+        <Header/>
       <div id="overlay"></div>
       <div id="overlay2"></div>
       <div class="gateway-main">
@@ -169,7 +170,7 @@ export default {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    padding: 10rem 0;
+    padding: 5rem 0;
     flex-direction: column;
     color: var(--white);
     z-index: 3;
@@ -256,4 +257,22 @@ export default {
   .gateway-card:nth-child(5) .gateway-cardbtn{
     color:var(--greenish);
   }
+  @media only screen and (max-width: 800px) {
+        .gateway-wrapper {
+          padding: 4rem 0;
+        }
+        .gateway-maintitle {
+          font-size: 4rem;
+
+          width:60%;
+        }
+        .gateway-maindetails{
+          font-size: 1rem;
+          width:90%;
+        }
+        .gateway-cardmain {
+          width: 220px;
+        }
+       
+    }
 </style>

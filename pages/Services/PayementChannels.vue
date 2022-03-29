@@ -1,6 +1,7 @@
 <template>
   <div class="payment">
     <div class="payment-wrapper">
+      <Header/>
       <div id="overlay"></div>
       <div id="overlay2"></div>
       <div class="payment-main">
@@ -202,7 +203,7 @@ export default {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    padding: 10rem 0;
+    padding: 5rem 0;
     flex-direction: column;
     color: var(--white);
     z-index: 3;
@@ -310,4 +311,21 @@ export default {
   .payment-card:nth-child(5) .payment-cardbtn{
     color:var(--othergreen);
   }
+  @media only screen and (max-width: 800px) {
+        .payment-wrapper {
+          padding: 4rem 0;
+        }
+        .payment-maintitle {
+          font-size: 4rem;
+          width:60%;
+        }
+        .payment-maindetails{
+          font-size: 1rem;
+          width:90%;
+        }
+        .payment-cardmain {
+          width: 220px;
+        }
+       
+    }
 </style>
