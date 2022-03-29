@@ -80,7 +80,8 @@ export default {
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        padding: 40px 0;
+        align-items: center;
+        padding: 30px calc((100vw - 1400px) / 2);
         gap: 20px;
         align-items: center;
     }
@@ -132,12 +133,15 @@ export default {
     }
     .footer-info{
         display: flex;
+        
         gap: 50px;
     }
     .contact-info{
         background-color: var(--black);
-        width: 100%;
-        padding: 20px;
+        padding: 80px calc((100vw - 1300px) / 2);
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: repeat(2, 1fr);
         color: var(--white);
         grid-gap: 20px;
     }
@@ -155,8 +159,7 @@ export default {
     .copyright{
         background-color: var(--footerblue);
         color: var(--white);
-        width: 100%;
-        padding: 20px;
+        padding: 20px calc((100vw - 1250px) / 2);
         font-weight: lighter;
     }
     .submit-btn{

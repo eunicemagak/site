@@ -41,7 +41,7 @@ export default {
        align-items: center;
         width: 100px;
         position: fixed;
-        right: 5%;
+        right: 0;
         top: 85vh;
         z-index: 999;
         cursor: pointer;
@@ -56,7 +56,7 @@ export default {
        visibility: hidden;
        position: absolute;
        z-index: 999;
-       top: -250px;
+       top: -270px;
        padding: 20px;
     }
     .cta .is-active + .cta-active{

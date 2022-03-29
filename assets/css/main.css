@@ -18,6 +18,7 @@
     --black: #2F2D2D;
     --blackish:#9B9B9B;
     --cardblack: #484546;
+    
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     padding: 0;
@@ -36,6 +37,11 @@
     --greenish:#4BCE65;
     --realorange:#FC8523;
     --othergreen:#65C19C;
+    --skyblue:#79D9E0;
+    --purple:#A20EC6;
+    --yellow:#F8BA2D;
+    --greengreen:#17ABB4;
+    --btnblue:#17ABB4;
 }
 h1{
     font-size: 1.5rem;
