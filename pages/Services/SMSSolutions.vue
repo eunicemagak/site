@@ -175,10 +175,10 @@ export default {
     padding: 5rem 0;
   }
   .smssol-maintitle{
-    font-size: 9rem;
-    font-weight: bolder;
+    font-size: 5rem;
+    font-weight: 900;
     line-height: 1;
-    width: 50%;
+    width: 30%;
   }
   .smssol-maindetails{
     font-size: 1.5rem;

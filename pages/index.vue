@@ -1,6 +1,7 @@
 <template>
 <div>
   <div class="hero">
+    <Header/>
       <div id="overlay"></div>
       <div id="overlay2"></div>
     <div class="hero-wrapper">
