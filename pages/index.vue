@@ -1,6 +1,7 @@
 <template>
 <div>
   <div class="hero">
+  <Header/>
       <div id="overlay"></div>
       <div id="overlay2"></div>
     <div class="hero-wrapper">
@@ -285,7 +286,7 @@ export default {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 12rem 0;
+  padding: 8rem 0;
   display: flex;
   flex-direction: column;
   color: var(--white);
@@ -317,7 +318,7 @@ export default {
 .main-txt{
   font-weight: bolder;
     font-family: 'Avenir Next LT Pro';
-  font-size: 7rem;
+  font-size: 6rem;
   line-height: 1;
   width: 30%;
 }
@@ -413,13 +414,13 @@ export default {
 }
 .solution-details{
   color: var(--textgray);
-  width: 300px !important;
+  width: 300px;
   font-weight: 100;
   line-height: 1.1;
   }
 .card-details{
   color: var(--textgray);
-  width: 300px !important;
+  width: 300px;
   font-weight: 100;
   line-height: 1.1;
 }
@@ -600,9 +601,24 @@ export default {
   .review-info h1{
     font-size: 2rem;
   }
+  .card-wrapper{
+    gap:5px;
+  }
+  .card,
+  .solution{
+    width:80%;
+  }
+  .card-img{
+    width: 100px;
+    height: 100px;
+  }
+  .card-bg{
+    width: 80px;
+    height: 80px;
+  }
   .solution-details,
   .card-details{
-    width: 200px;
+    width: 250px !important;
   }
 }
 </style>

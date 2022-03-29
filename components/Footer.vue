@@ -47,7 +47,7 @@
         </div>
         </div>
         <div class="copyright">
-            <div class="footer-email-wrapper">
+            <div class="footer-copyright-wrapper">
             <p>2021 Roamtech - Your digital solution partner</p>
         </div>
         </div>
@@ -69,11 +69,18 @@ export default {
         background-color: var(--orange);
         width: 100%;
     }
+    .footer-copyright-wrapper{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding:5px 0;
+    }
     .footer-email-wrapper{
         width: 90%;
+        max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        padding: 20px;
+        padding: 40px 0;
         gap: 20px;
         align-items: center;
     }
@@ -81,16 +88,17 @@ export default {
         width: 90%;
         margin: 0 auto;
         display: grid;
-        align-items: flex-start;
+        align-items: center;
         grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0;
     }
     .footer-email-text h1{
-        font-size: 2.5trm;
+        font-size: 2.3rem;
     }
     form{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
     .form-section-one{
         display: flex;
@@ -109,7 +117,7 @@ export default {
         grid-column-end: 4;
     }
     form input{
-        padding: 5px 10px;
+        padding: 10px;
         border-radius: 5px;
     }
     .footer-email .bold{

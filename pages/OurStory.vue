@@ -1,6 +1,7 @@
 <template>
 <div>
   <div class="about">
+  <Header/>
     <div class="about-wrapper">
       <div>
         <h1>ABOUT US</h1>
@@ -47,8 +48,7 @@ export default {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 25vh;
-  height: 75vh;
+  height: 80vh;
 }
 .about:after{
   content: "";
@@ -62,8 +62,9 @@ export default {
   z-index: 1;
 }
 .about-wrapper{
+  padding: 50px 0;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   color: var(--white);
   z-index: 2;
@@ -78,13 +79,14 @@ export default {
 }
   .story-cards{
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     gap: 2rem;
     z-index: 2;
+    margin-top: -100px;
   }
   .story-card{
     text-align: center;
@@ -93,9 +95,9 @@ export default {
     width: 450px;
     padding: 20px 50px;
     margin-top: 100px;
-    height: 190px;
+    height: 150px;
     border-radius: 10px;
-  box-shadow: -3px 3px 10px #ccc;
+  box-shadow: 1px 3px 3px rgba(48, 48, 48, .5);
   }
   .story-card h1{
     color: var(--navblue);
@@ -107,8 +109,7 @@ export default {
     font-size: 1rem;
   }
   .journey{
-    text-align: center;
-    margin: 150px 0 0 0; 
+    margin: 70px 0 0 0; 
   }
   .journey h1{
    font-size: 2.5rem;
@@ -135,19 +136,23 @@ export default {
     font-size: .9rem;
   }
   .story-cards{
+    justify-content: flex-start;
+    align-items: center;
     width: 98%;
-    margin: 0 auto; 
     overflow-x: scroll;
     gap: 5px;
   }
   .story-card p,
   .story-card{
-    width: 300px;
+    width: 250px;
     padding: 5px;
   }
   .journey{
     text-align: center;
-    margin: 250px 0 0 0; 
+    margin: 100px 0 0 0; 
   }
+  .journey-img{
+    margin-top: 0;
+  } 
 }
 </style>
