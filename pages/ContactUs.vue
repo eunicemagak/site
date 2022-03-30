@@ -4,15 +4,15 @@
       <Header/>
     </div>
       <div class="contactuscontent">
-        <div class="contactleft">
-          <img class='contactlogo' src="../assets/images/logoblue.png" alt="">
-          <div class="contactrectangle"></div>
-          <img class="reviews1" src="../assets/images/rmt.png" alt="" >
-      </div>
-        <div class="contactright">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.80213323222!2d36.808981!3d-1.262175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbd2f57b3808719a!2sRoamtech%20Solutions%20Limited!5e0!3m2!1sen!2ske!4v1647866535229!5m2!1sen!2ske" allowfullscreen="" width="1000" height="600" loading="lazy"></iframe>
-        </div>
-    </div>  
+          <div class="contactleft">
+            <img class='contactlogo' src="../assets/images/logoblue.png" alt="">
+            <div class="contactrectangle"></div>
+            <img class="reviews1" src="../assets/images/rmt.png" alt="" >
+          </div>
+          <div class="contactright">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.80213323222!2d36.808981!3d-1.262175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbd2f57b3808719a!2sRoamtech%20Solutions%20Limited!5e0!3m2!1sen!2ske!4v1647866535229!5m2!1sen!2ske" allowfullscreen="" width="1000" height="600" loading="lazy"></iframe>
+          </div>
+      </div>  
   </div>
 </template>
 
@@ -31,19 +31,26 @@ export default {
 
 
 <style>
+
 .contactlogo {
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  max-height: 450px;
+  max-width: 500px;
   }
 .contactuscontent {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .reviews1 {
-  max-height: 800px;
-  max-width: 280px;
   position: relative;
+}
+.contactleft{
+  flex: 33%;
+}
+.contactright{
+  flex: 67%;
 }
 .contactnav {
   height: 15vh;
