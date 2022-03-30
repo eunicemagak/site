@@ -300,7 +300,7 @@ export default {
 #overlay,
 #overlay2{
   width: 200px;
-  height: 700px;
+  height: 900px;
   border-radius: 200px;
   background: var(--white);
   position: absolute;
@@ -308,7 +308,7 @@ export default {
   overflow: visible;
 }
 #overlay{
-  top: -200px;
+  top: -100px;
   right: 350px;
   transform: rotate(9deg);
   mix-blend-mode: overlay;
@@ -316,7 +316,7 @@ export default {
 }
 #overlay2{
   top: 200px;
-  right: 630px;
+  right: 600px;
   transform: rotate(9deg);
   mix-blend-mode: overlay;
   opacity: 40%;

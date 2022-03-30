@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-transparent">
       <div class="logo">
-          <img src="../assets/images/logowhite.png" alt="">
+          <img src="../assets/images/logoblue.png" alt="">
       </div>
       <div class="navigation">
         <img class="mobile-menu" src="../assets/images/menu.png" @click="toggleNav($event)"/>
