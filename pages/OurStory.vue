@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="about">
-    <Header/>
+    <Nav/>
     <div class="about-wrapper">
       <div>
         <h1>ABOUT US</h1>
@@ -131,7 +131,7 @@ export default {
   }
   .about-wrapper{
     text-align: center;
-    padding: 20px;
+    padding: 100px 10px 50px 10px;
   }
   .about-wrapper p{
     font-size: .9rem;
@@ -145,15 +145,21 @@ export default {
   }
   .story-card p,
   .story-card{
-    width: 250px;
+    width: 200px;
     padding: 5px;
   }
   .journey{
     text-align: center;
-    margin: 150px 0 0 0; 
+    margin: 100px 0 0 0; 
   }
   .journey-img{
     margin-top: 0;
   } 
+}
+@media only screen and (max-width: 600px){
+  .journey-img{
+    width: 800px;
+    overflow: scroll;
+  }
 }
 </style>

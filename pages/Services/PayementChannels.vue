@@ -1,7 +1,7 @@
 <template>
   <div class="payment">
     <div class="payment-wrapper">
-      <Header/>
+      <Nav/>
       <div id="overlay"></div>
       <div id="overlay2"></div>
       <div class="payment-main">
