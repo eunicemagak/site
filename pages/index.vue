@@ -305,16 +305,14 @@ export default {
   opacity: 40%;
 }
 .main-txt{
-  font-weight: bolder;
-    font-family: 'Avenir Next LT Pro';
   font-size: 6rem;
   line-height: 1;
   width: 30%;
+  font-weight: 900;
 }
 .main-info{
   margin: 20px 0;
   font-size: 1.2rem;
-  font-weight: 500;
   width: 30%;
 }
 .engage{
@@ -428,7 +426,7 @@ export default {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 2rem;
+  gap: 5px;
 }
 .solution-footer{
   padding: 10px;

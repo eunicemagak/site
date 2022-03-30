@@ -155,7 +155,7 @@ export default {
   }
   .games-maintitle{
     font-size: 5rem;
-    font-weight: bolder;
+    font-weight: 900;
     line-height: 1;
     width: 50%;
     color: var(--yellow);
@@ -166,8 +166,8 @@ export default {
     color: var(--white);
   }
   .games-maindetails{
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-size: 1.2rem;
+    line-height: 1.1;
     font-weight: 300;
     margin: 20px 0;
     width: 50%;
@@ -242,7 +242,7 @@ export default {
     font-size: .9rem;
     line-height: 1.3;
     margin-bottom: 30px;
-    color: var(--white);
+    color: var(--gray);
   }
   .games-cardicon{
     margin-left: 90%;

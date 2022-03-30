@@ -140,14 +140,14 @@ export default {
   }
   .content-maintitle{
     font-size: 5rem;
-    font-weight: bolder;
+    font-weight: 900;
     line-height: 1;
     width: 50%;
     color: var(--yellow);
   }
   .content-maintitle span{
     font-size: 5rem;
-    font-weight: bolder;
+    font-weight: 900;
     color: var(--white);
   }
   .content-maindetails{

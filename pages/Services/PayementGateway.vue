@@ -177,13 +177,13 @@ export default {
   }
   .gateway-maintitle{
     font-size: 5rem;
-    font-weight: bolder;
+    font-weight: 900;
     line-height: 1;
     width: 30%;
   }
   .gateway-maindetails{
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-size: 1.2rem;
+    line-height: 1.1;
     font-weight: 300;
     margin: 20px 0;
     width: 40%;
@@ -232,6 +232,7 @@ export default {
     font-size: .9rem;
     line-height: 1.3;
     margin-bottom: 30px;
+    color: var(--blackish);
   }
   .gateway-cardbtn{
     margin-left: 50%;

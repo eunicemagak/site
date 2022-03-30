@@ -168,18 +168,19 @@ export default {
   }
   .smsol-maintitle{
     font-size: 5rem;
-    font-weight: bolder;
+    font-weight: 900;
     line-height: 1;
     width: 30%;
     color: var(--navblue);
   }
   .smsol-maindetails{
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-size: 1.2rem;
+    line-height: 1.1;
     font-weight: 300;
     margin: 20px 0;
     width: 40%;
     color: var(--black);
+    font-weight: 300;
   }
   .smsol-cardswrapper{
     width: 90%;
