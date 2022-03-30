@@ -1,7 +1,7 @@
 <template>
   <div class="gateway">
     <div class="gateway-wrapper">
-        <Header/>
+      <Nav/>
       <div id="overlay"></div>
       <div id="overlay2"></div>
       <div class="gateway-main">

@@ -1,22 +1,22 @@
 <template>
-  <nav class="bg-transparent">
-      <div class="logo">
-          <img src="../assets/images/logoblue.png" alt="">
+  <nav class="bg-transparent1">
+      <div class="logo1">
+          <img src="../assets/images/logowhite.png" alt="">
       </div>
-      <div class="navigation">
-        <img class="mobile-menu" src="../assets/images/menu.png" @click="toggleNav($event)"/>
-        <div class="nav-links">
+      <div class="navigation1">
+        <img class="mobile-menu1" src="../assets/images/menuwhite.png" @click="toggleNav($event)"/>
+        <div class="nav-links1">
             <nuxt-link to="/">
                 HOME
             </nuxt-link>
             <nuxt-link to="/OurStory">
                 OUR STORY
             </nuxt-link>
-            <div class="dropdown">
-                    <div class="nav-button" @click="toggleDropdown($event)" :class="menuOpen ? 'is-active' : ''"> 
+            <div class="dropdown1">
+                    <div class="nav-button1" @click="toggleDropdown($event)" :class="menuOpen ? 'is-active' : ''"> 
                         SERVICES
                     </div>
-                    <div class="dropdown-links">
+                    <div class="dropdown-links1">
                         <nuxt-link to="/Services/Content" @click="toggleDropdown($event)">
                             Content
                         </nuxt-link>
@@ -43,7 +43,7 @@
             <nuxt-link to="/ContactUs">
                 CONTACT
             </nuxt-link>
-                <nuxt-link to="/#solutions" class="nav-btn">
+                <nuxt-link to="/#solutions" class="nav-btn1">
                 Lets Enjoy
                 </nuxt-link>
         </div>
@@ -52,26 +52,7 @@
 </template>
 
 <script>
-
-// import { Splide, SplideSlide } from '@splidejs/vue-splide';
-// import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-
-// const splide = new Splide( '.splide', {
-//   type   : 'loop',
-//   drag   : 'free',
-//   focus  : 'center',
-//   perPage: 3,
-//   autoScroll: {
-//     speed: 2,
-//   },
-// } );
-
-// splide.mount();
 export default {
-//       components: {
-//     Splide,
-//     SplideSlide,
-//   }, 
     data(){
 
         return{
@@ -87,28 +68,27 @@ export default {
                 }
             }
 }
-
 </script>
 
 <style>
-    .bg-transparent{
+    .bg-transparent1{
         display: flex;
         align-items:center;
         justify-content: space-between;
         z-index: 999;
         padding-right: 20px;
     }
-    .logo{
+    .logo1{
         width: 20%;
-        max-width: 150px;
+        max-width: 100px;
     }
-    .mobile-menu{
+    .mobile-menu1{
         width: 20px;
     }
-    .navigation{
+    .navigation1{
         position: relative;
     }
-    .nav-links{
+    .nav-links1{
         color: var(--navblue); 
         background: var(--white);
         font-weight: 600;
@@ -123,7 +103,7 @@ export default {
         padding:20px;
         visibility: hidden;
     }
-    .nav-button{
+    .nav-button1{
         color: var(--navblue); 
         font-weight: 600;
         display: flex;
@@ -131,7 +111,7 @@ export default {
         font-size: 1rem;
         cursor: pointer;
     }
-    .nav-btn{
+    .nav-btn1{
         padding: 5px 20px;
         color: var(--white);
         background-color: var(--red);
@@ -139,10 +119,10 @@ export default {
         align-items: center;
         z-index: 999;
     }
-    .dropdown{
+    .dropdown1{
         position: relative;
     }
-    .dropdown-links{
+    .dropdown-links1{
        display: flex;
        flex-direction: column; 
        align-items: center;
@@ -150,38 +130,42 @@ export default {
        color: var(--white);
        visibility: hidden;
        position: absolute;
-       z-index: 99999;
+       z-index: 999;
        left: -50px;
        top: 20px;
     }
-    .dropdown-links a{
+    .dropdown-links1 a{
         padding:10px;
        width: 180px;
     }
-    .dropdown-links a:hover{
+    .dropdown-links1 a:hover{
         background: var(--footerblue);
     }
-    .is-active + .dropdown-links{
+    .is-active + .dropdown-links1{
         visibility: visible !important; 
     }
-    .navigation .is-active + .nav-links{
+    .navigation1 .is-active + .nav-links1{
         visibility: visible;
     }
     @media only screen and (max-width: 800px) {
-        .nav-links{
+        .nav-links1{
             width: 100vw;
         }
     }
     @media only screen and (min-width: 800px) {
-        .nav-links{
+        .nav-links1{
             visibility: visible;
             flex-direction: row;
             background: transparent;
             position: relative;
             gap:20px;
             margin-left:0;
+            color:var(--white);
         }
-        .bg-transparent{
+        .nav-button1{
+        color: var(--white); 
+    }
+        .bg-transparent1{
             gap: 50px;
             align-items: center;
             position: relative;
@@ -191,7 +175,7 @@ export default {
             margin:0 auto;
             z-index: 999;
         }
-        .mobile-menu{
+        .mobile-menu1{
             display: none;
         }
     }

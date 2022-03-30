@@ -1,7 +1,7 @@
 <template>
   <div class="contact-us">
     <div class="contactnav">
-      <Header/>
+      <Nav/>
     </div>
       <div class="contactuscontent">
         <div class="contactleft">

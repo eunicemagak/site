@@ -11,9 +11,6 @@
       <p class="main-info">
         Our solutions are focused on the insight that the consumer comes first
       </p>
-      <button class="engage">
-        LETS ENGAGE
-      </button>
     </div>
   </div>
   <div class="chooseus">
@@ -292,7 +289,6 @@ export default {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   color: var(--white);
@@ -367,7 +363,7 @@ export default {
 .solutions-wrapper{
   margin-top: 50px;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   height: 100%;
   overflow-y: hidden;
@@ -377,7 +373,7 @@ export default {
   }
 .card-wrapper{
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 50px auto;
   height: 100%;
   overflow-y: hidden;
