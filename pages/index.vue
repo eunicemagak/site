@@ -2,8 +2,8 @@
 <div>
   <div class="hero">
     <Header/>
-      <div id="overlay"></div>
-      <div id="overlay2"></div>
+      <div class="overlay"></div>
+      <div class="overlay2"></div>
     <div class="hero-wrapper">
       <h1 class="main-txt">
         Customer Oriented Solutions
@@ -24,20 +24,7 @@
           </div>
         </div>
         <h4 class="card-title">
-          WE DELIVER QUALITY
-        </h4>
-        <p class="card-details">
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <div  class="card-bg">
-            <img src="../assets/images/time.png" class="service-icons"/>
-          </div>
-        </div>
-        <h4 class="card-title">
-          ALWAYS ON TIME
+          WE DELIVER QUALITY & ON TIME
         </h4>
         <p class="card-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et
@@ -293,26 +280,26 @@ export default {
   flex-direction: column;
   color: var(--white);
 }
-#overlay,
-#overlay2{
+.overlay,
+.overlay2{
   width: 200px;
-  height: 900px;
+  height: 700px;
   border-radius: 200px;
   background: var(--white);
   position: absolute;
   z-index: 2;
   overflow: visible;
 }
-#overlay{
-  top: -100px;
-  right: 350px;
+.overlay{
+  top: -200px;
+  right: 250px;
   transform: rotate(9deg);
   mix-blend-mode: overlay;
   opacity: 40%;
 }
-#overlay2{
+.overlay2{
   top: 200px;
-  right: 600px;
+  right: 520px;
   transform: rotate(9deg);
   mix-blend-mode: overlay;
   opacity: 40%;
@@ -366,14 +353,12 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
-  overflow-y: hidden;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 2px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   }
 .card-wrapper{
   width: 90%;
-  max-width: 1200px;
   margin: 50px auto;
   height: 100%;
   overflow-y: hidden;
@@ -416,15 +401,16 @@ export default {
 }
 .solution-details{
   color: var(--textgray);
-  width: 300px;
   font-weight: 100;
   line-height: 1.1;
+  padding: 10px;
   }
+
 .card-details{
   color: var(--textgray);
-  width: 300px;
   font-weight: 100;
   line-height: 1.1;
+  width: 250px;
 }
 .solutions{
   background: var(--white);
@@ -437,7 +423,6 @@ export default {
   align-items: center;
 }
 .solution{
-  padding: 10px 10px 50px 10px;
   background: var(--cardgray);
   border-radius: 10px;
   display: flex;
@@ -446,6 +431,7 @@ export default {
   gap: 2rem;
 }
 .solution-footer{
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -461,24 +447,31 @@ export default {
 .share{
   width: 40px;
 }
-.partner-wrapper,
+.partner-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .partners{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .partner-logo{
-  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
   height: 80px;
   padding: 10px;
   background: var(--white);
   box-shadow: -3px 3px 10px #ccc;
 }
 .partner-logo img{
-  width: 100%;
-  height: 100%;
+  width: 90%;
 } 
 .clients{
   background: url('./assets/images/clients.png'), var(--navblue);
@@ -571,6 +564,9 @@ export default {
   font-weight: 700;
 } 
 @media only screen and (max-width: 800px) {
+  .hero-wrapper{
+    padding: 10rem 0;
+}
     #overlay,
   #overlay2{
     display: none;
@@ -603,12 +599,8 @@ export default {
   .review-info h1{
     font-size: 2rem;
   }
-  .card-wrapper{
-    gap:5px;
-  }
-  .card,
   .solution{
-    width:80%;
+    width:100%;
   }
   .card-img{
     width: 100px;
@@ -618,9 +610,17 @@ export default {
     width: 80px;
     height: 80px;
   }
-  .solution-details,
-  .card-details{
-    width: 250px !important;
+  .solutions-wrapper{
+  display: flex;
+  overflow-x: scroll ;
+  gap: 10px;
   }
+  .solution-details{
+    width:250px;
+  }
+  .partner-logo{
+  width: 100px;
+  height: 50px;
+}
 }
 </style>

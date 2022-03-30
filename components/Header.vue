@@ -96,13 +96,13 @@ export default {
         align-items:center;
         justify-content: space-between;
         z-index: 999;
-        padding-right: 20px;
     }
     .logo{
         width: 20%;
         max-width: 150px;
     }
     .mobile-menu{
+        margin-right: 20px;
         width: 20px;
     }
     .navigation{
