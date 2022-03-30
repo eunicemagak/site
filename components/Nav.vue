@@ -1,8 +1,8 @@
 <template>
   <nav class="bg-transparent1">
-      <div class="logo1">
+      <nuxt-link to='/' class="logo1">
           <img src="../assets/images/logowhite.png" alt="">
-      </div>
+      </nuxt-link>
       <div class="navigation1">
         <img class="mobile-menu1" src="../assets/images/menuwhite.png" @click="toggleNav($event)"/>
         <div class="nav-links1">
