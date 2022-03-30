@@ -53,25 +53,7 @@
 
 <script>
 
-// import { Splide, SplideSlide } from '@splidejs/vue-splide';
-// import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-
-// const splide = new Splide( '.splide', {
-//   type   : 'loop',
-//   drag   : 'free',
-//   focus  : 'center',
-//   perPage: 3,
-//   autoScroll: {
-//     speed: 2,
-//   },
-// } );
-
-// splide.mount();
 export default {
-//       components: {
-//     Splide,
-//     SplideSlide,
-//   }, 
     data(){
 
         return{
@@ -98,7 +80,7 @@ export default {
         z-index: 999;
     }
     .logo{
-        width: 20%;
+        width: 15%;
         max-width: 150px;
     }
     .mobile-menu{

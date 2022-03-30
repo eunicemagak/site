@@ -76,13 +76,13 @@ export default {
         align-items:center;
         justify-content: space-between;
         z-index: 999;
-        padding-right: 20px;
     }
     .logo1{
-        width: 20%;
+        width: 15%;
         max-width: 100px;
     }
     .mobile-menu1{
+        margin-right: 20px;
         width: 20px;
     }
     .navigation1{
@@ -130,7 +130,7 @@ export default {
        color: var(--white);
        visibility: hidden;
        position: absolute;
-       z-index: 999;
+       z-index: 99999;
        left: -50px;
        top: 20px;
     }

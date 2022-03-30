@@ -448,13 +448,16 @@ export default {
   width: 40px;
 }
 .partner-wrapper{
+  width: 90%;
+  max-width: 1400px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 20px;
 }
 .partners{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -564,6 +567,9 @@ export default {
   font-weight: 700;
 } 
 @media only screen and (max-width: 800px) {
+  .hero{
+    background-position: center right;
+  }
   .hero-wrapper{
     padding: 10rem 0;
 }
