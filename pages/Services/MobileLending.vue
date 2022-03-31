@@ -162,7 +162,7 @@ export default {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    padding: 5rem 0;
+    padding: 15rem 0 5rem 0;
     flex-direction: column;
     z-index: 3;
   }

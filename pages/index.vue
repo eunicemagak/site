@@ -1,6 +1,7 @@
 <template>
 <div>
   <div class="hero">
+    <div class="gradient"></div>
     <Header/>
       <div class="overlay"></div>
       <div class="overlay2"></div>
@@ -84,12 +85,9 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/PayementGateway"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
       <div class="solution">
         <div solution-img>
@@ -101,12 +99,9 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/PayementChannels"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
       <div class="solution">
         <div solution-img>
@@ -118,12 +113,9 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/SMSSolutions"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
       <div class="solution">
         <div solution-img>
@@ -135,12 +127,9 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/MobileLending"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
       <div class="solution">
         <div solution-img>
@@ -152,12 +141,9 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/Content"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
       <div class="solution">
         <div solution-img>
@@ -169,31 +155,28 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/Games&Lotteries"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
     </div>
   </div>
-      <div class="partners">
+  <div class="partners">
         <h1 class="title">
           OUR PARTNERS
         </h1>
         <div class="partner-wrapper">
-          <div class="partner-logo">
-            <img src="../assets/images/airtel.png"/>
-          </div>
           <div class="partner-logo">
             <img src="../assets/images/safaricom.png"/>
           </div>
           <div class="partner-logo">
             <img src="../assets/images/telkom.png"/>
           </div>
+          <div class="partner-logo">
+            <img src="../assets/images/airtel.png"/>
+          </div>
         </div>
-      </div>
+  </div>
   <div class="clients">
     <h1 class="title">
       OUR MAJOR CLIENTS
@@ -272,6 +255,15 @@ export default {
   position: relative;
   height: 88vh;
 }
+.gradient{ 
+  background: rgb(0,0,0);
+  background: linear-gradient(to top right, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 100%); 
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .hero-wrapper{
   width: 90%;
   max-width: 1400px;
@@ -279,11 +271,12 @@ export default {
   display: flex;
   flex-direction: column;
   color: var(--white);
+    padding: 15rem 0 5rem 0;
 }
 .overlay,
 .overlay2{
   width: 200px;
-  height: 700px;
+  height: 600px;
   border-radius: 200px;
   background: var(--white);
   position: absolute;
@@ -291,14 +284,14 @@ export default {
   overflow: visible;
 }
 .overlay{
-  top: -200px;
+  top: -100px;
   right: 250px;
   transform: rotate(9deg);
   mix-blend-mode: overlay;
   opacity: 40%;
 }
 .overlay2{
-  top: 200px;
+  top: 160px;
   right: 520px;
   transform: rotate(9deg);
   mix-blend-mode: overlay;
@@ -353,15 +346,14 @@ export default {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 50px;
   }
 .card-wrapper{
   width: 90%;
   margin: 50px auto;
   height: 100%;
-  overflow-y: hidden;
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 .card{
@@ -402,6 +394,7 @@ export default {
   font-weight: 100;
   line-height: 1.1;
   padding: 10px;
+  text-align: center;
   }
 
 .card-details{
@@ -425,25 +418,23 @@ export default {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
 }
-.solution-footer{
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .get-solution{
+  text-align: center;
   background: var(--navblue);
   color: var(--white);
   padding: 5px 10px;
-  border-radius: 50px;
+  border-radius: 4px;
   font-weight: bold;
   font-size: .8rem;
+  margin-bottom: 10px;
 }
-.share{
-  width: 40px;
+.get-solution:hover,
+.get-solution:focus{
+  background: var(--active);
 }
 .partner-wrapper{
   width: 90%;
@@ -465,11 +456,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  height: 80px;
-  padding: 10px;
-  background: var(--white);
-  box-shadow: -3px 3px 10px #ccc;
+  width: 300px;
 }
 .partner-logo img{
   width: 90%;
@@ -586,9 +573,6 @@ export default {
   .title{
     font-size: 1.5rem;
   }
-  .partners{
-    flex-direction: column;
-  }
   .partner-wrapper{
     flex-direction: column;
   }
@@ -607,7 +591,7 @@ export default {
     width:100%;
   }
   .card-img{
-    width: 100px;
+    width: 100px;   
     height: 100px;
   }
   .card-bg{
@@ -621,10 +605,14 @@ export default {
   }
   .solution-details{
     width:250px;
+    text-align: left;
   }
   .partner-logo{
-  width: 100px;
-  height: 50px;
+  width: 250px;
+}
+.card-wrapper{
+  display: flex;
+  overflow: scroll;
 }
 }
 </style>

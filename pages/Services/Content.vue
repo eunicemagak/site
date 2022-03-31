@@ -92,7 +92,6 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding-bottom: 10rem ;
   }
   .content-wrapper:after{
     content: "";
@@ -132,11 +131,12 @@ export default {
   .content-main{
     width: 90%;
     max-width: 1400px;
-    margin: 100px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     color: var(--white);
     z-index: 50;
+    padding: 15rem 0 5rem 0;
   }
   .content-maintitle{
     font-size: 5rem;

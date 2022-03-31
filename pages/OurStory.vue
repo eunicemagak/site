@@ -68,6 +68,7 @@ export default {
   margin: 0 auto;
   color: var(--white);
   z-index: 2;
+  padding: 10rem 0 5rem 0;
 }
 .about-wrapper h1{
   font-size: 2rem;

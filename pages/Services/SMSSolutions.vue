@@ -172,7 +172,7 @@ export default {
     flex-direction: column;
     color: var(--white);
     z-index: 3;
-    padding: 5rem 0;
+    padding: 15rem 0 5rem 0;
   }
   .smssol-maintitle{
     font-size: 5rem;

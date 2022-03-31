@@ -1,46 +1,47 @@
 <template>
-  <nav class="bg-transparent1">
-      <nuxt-link to='/' class="logo1">
+  <nav class="bg-transparent1" id="fixed">
+      <div class="nav-wrapper1">
+          <nuxt-link to='/' class="logo1">
           <img src="../assets/images/logowhite.png" alt="">
       </nuxt-link>
       <div class="navigation1">
         <img class="mobile-menu1" src="../assets/images/menuwhite.png" @click="toggleNav($event)"/>
         <div class="nav-links1">
-            <nuxt-link to="/">
+            <nuxt-link to="/" class="nav-link1">
                 HOME
             </nuxt-link>
-            <nuxt-link to="/OurStory">
+            <nuxt-link to="/OurStory" class="nav-link1">
                 OUR STORY
             </nuxt-link>
             <div class="dropdown1">
-                    <div class="nav-button1" @click="toggleDropdown($event)" :class="menuOpen ? 'is-active' : ''"> 
+                    <div class="nav-button1 nav-link1" @click="toggleDropdown($event)" :class="menuOpen ? 'is-active' : ''"> 
                         SERVICES
                     </div>
                     <div class="dropdown-links1">
-                        <nuxt-link to="/Services/Content" @click="toggleDropdown($event)">
+                        <nuxt-link to="/Services/Content" class="nav-link1" @click="toggleDropdown($event)">
                             Content
                         </nuxt-link>
-                        <nuxt-link to="/Services/SMSSolutions" @click="toggleDropdown($event)">
+                        <nuxt-link to="/Services/SMSSolutions" class="nav-link1" @click="toggleDropdown($event)">
                             SMS Solutions
                         </nuxt-link>
-                        <nuxt-link to="/Services/PayementGateway" @click="toggleDropdown($event)">
+                        <nuxt-link to="/Services/PayementGateway" class="nav-link1" @click="toggleDropdown($event)">
                             Payement Gateway
                         </nuxt-link>
-                        <nuxt-link to="/Services/MobileLending" @click="toggleDropdown($event)">
+                        <nuxt-link to="/Services/MobileLending" class="nav-link1" @click="toggleDropdown($event)">
                             Mobile Lending
                         </nuxt-link>
-                        <nuxt-link to="/Services/PayementChannels" @click="toggleDropdown($event)">
+                        <nuxt-link to="/Services/PayementChannels" class="nav-link1" @click="toggleDropdown($event)">
                             Payement Channels
                         </nuxt-link>
-                        <nuxt-link to="/Services/Games&Lotteries" @click="toggleDropdown($event)">
+                        <nuxt-link to="/Services/Games&Lotteries" class="nav-link1" @click="toggleDropdown($event)">
                             Games & Lotteries
                         </nuxt-link>
-                        <nuxt-link to="/Services/More" @click="toggleDropdown($event)">
+                        <nuxt-link to="/Services/More" class="nav-link1" @click="toggleDropdown($event)">
                             More
                         </nuxt-link>
                     </div>
                 </div>
-            <nuxt-link to="/ContactUs">
+            <nuxt-link to="/ContactUs" class="nav-link1">
                 CONTACT
             </nuxt-link>
                 <nuxt-link to="/#solutions" class="nav-btn1">
@@ -48,10 +49,12 @@
                 </nuxt-link>
         </div>
       </div>
+      </div>
   </nav>
 </template>
 
 <script>
+import vIntersect from 'vue-intersection'
 export default {
     data(){
 
@@ -71,11 +74,15 @@ export default {
 </script>
 
 <style>
-    .bg-transparent1{
+    .nav-wrapper1{
         display: flex;
         align-items:center;
         justify-content: space-between;
         z-index: 999;
+    }
+    .scrolled{
+        background: var(--navblue);
+        box-shadow: 0 3px 20px rgba((0,0,0,.2  ));
     }
     .logo1{
         width: 15%;
@@ -118,6 +125,10 @@ export default {
         border-radius: 24px;
         align-items: center;
         z-index: 999;
+    }
+    .nav-btn1:hover,
+    .nav-btn1:focus{
+        background: var(--activered);
     }
     .dropdown1{
         position: relative;
@@ -165,15 +176,46 @@ export default {
         .nav-button1{
         color: var(--white); 
     }
-        .bg-transparent1{
+        .nav-links1 .nuxt-link-exact-active:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--white);
+        }
+    .nav-link1:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--white);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        .nav-link1{
+            display: inline-block;
+            position: relative;
+            color: var(--white);
+        }
+        .dropdown-links1 .nav-link1{
+            color: var(--white);
+        }
+        .nav-link1:hover:after,
+        .nav-link1:focus:after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .nav-wrapper1{
             gap: 50px;
             align-items: center;
             position: relative;
             justify-content: flex-start;
-            width: 90%;
-            max-width: 1400px;
-            margin:0 auto;
-            z-index: 999;
+            padding: 0 calc((100vw - 1200px)/2);
         }
         .mobile-menu1{
             display: none;
