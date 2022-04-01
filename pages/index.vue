@@ -376,6 +376,8 @@ export default {
           "autoplay": true,
           "autoplaySpeed": 2500,
           "slidesToShow": 3,
+          "centerMode" : true,
+          "centerPadding" : '50px'
         }
       }
     }
@@ -630,14 +632,13 @@ export default {
   margin:0 auto;
 }
 .reviews-details{
-  width: 70%;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1;
 }
 .review{
-  margin: 50px;
+  margin: 50px 0;
 }
 .review-info{
   background: var(--lightblue);
