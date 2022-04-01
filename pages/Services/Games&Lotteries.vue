@@ -270,9 +270,6 @@ export default {
     color:var(--othergreen);
   }
  @media only screen and (max-width: 800px) {
-        .games-wrapper {
-          padding: 4rem 0;
-        }
         .games-maintitle {
           font-size: 4rem;
         }

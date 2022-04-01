@@ -127,9 +127,6 @@ export default {
     margin-top: -100px;
   } 
 @media only screen and (max-width: 800px) {
-  .about{
-    padding-top: 20px;
-  }
   .about-wrapper{
     text-align: center;
     padding: 100px 10px 50px 10px;

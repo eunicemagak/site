@@ -259,9 +259,6 @@ export default {
     color:var(--greenish);
   }
   @media only screen and (max-width: 800px) {
-        .gateway-wrapper {
-          padding: 4rem 0;
-        }
         .gateway-maintitle {
           font-size: 4rem;
 

@@ -229,9 +229,6 @@ export default {
   z-index: 50;
 }
  @media only screen and (max-width: 800px) {
-   .content-wrapper {
-      padding: 4rem 0;
-    }
    .content-maintitle {
     font-size: 4rem;
     }

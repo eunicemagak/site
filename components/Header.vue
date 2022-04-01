@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-transparent" id="fixed">
+  <nav class="bg-transparent" id="fixed" :class="{ 'onScroll': !view.topOfPage}">
       <div class="nav-wrapper">
           <nuxt-link to='/' class="logo">
           <img src="../assets/images/logoblue.png" alt="">
@@ -36,9 +36,6 @@
                         <nuxt-link to="/Services/Games&Lotteries" class="nav-link" @click="toggleDropdown($event)">
                             Games & Lotteries
                         </nuxt-link>
-                        <nuxt-link to="/Services/More" @click="toggleDropdown($event)" class="nav-link">
-                            More
-                        </nuxt-link>
                     </div>
                 </div>
             <nuxt-link to="/ContactUs" class="nav-link">
@@ -57,19 +54,31 @@
 
 export default {
     data(){
-
         return{
-            menuOpen: false
+            menuOpen: false,
+            view: {
+                topOfPage: true
+            }
         }
     }, 
-  methods: {
-            toggleDropdown () {
-                this.menuOpen = !this.menuOpen
-            },
-                toggleNav (event) {
-                    event.currentTarget.classList.toggle('is-active')
-                }
-            }
+    beforeMount() {
+        window.addEventListener('scroll', this.handleScroll)
+    },
+    methods: {
+        toggleDropdown () {
+            this.menuOpen = !this.menuOpen
+        },
+        toggleNav (event) {
+            event.currentTarget.classList.toggle('is-active')
+        },
+        handleScroll(){
+        if(window.pageYOffset>0){
+            if(this.view.topOfPage) this.view.topOfPage = false
+        } else {
+            if(!this.view.topOfPage) this.view.topOfPage = true
+        }
+        }
+    }
 }
 
 </script>
@@ -80,6 +89,10 @@ export default {
         align-items:center;
         justify-content: space-between;
         z-index: 999;
+    }
+    .onScroll{
+        background: var(--white);
+        box-shadow: -3px 3px 20px rgba((0,0,0,.2  ));
     }
     .logo{
         width: 15%;
@@ -198,6 +211,9 @@ export default {
             position: relative;
             color: var(--navblue);
         }
+        .nav-link:hover{
+            color: var(--active);
+        }
         .dropdown-links .nav-link{
             color: var(--white);
         }
@@ -211,7 +227,7 @@ export default {
             align-items: center;
             position: relative;
             justify-content: flex-start;
-            padding: 0 calc((100vw - 1200px)/2);
+            padding: 0 calc((100vw - 1250px)/2);
         }
         .mobile-menu{
             display: none;
