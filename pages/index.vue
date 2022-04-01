@@ -186,7 +186,7 @@
         <img src="../assets/images/LOGOS 2.png" alt="" class="client">
     </div>
   </div>
-  <div class="reviews">
+  <!-- <div class="reviews">
     <h1 class="title">
       CUSTOMER REVIEWS
     </h1>
@@ -231,20 +231,157 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+   <div class="reviews">
+    <h1 class="title">
+      CUSTOMER REVIEWS
+    </h1>
+    <p class="reviews-details">
+      Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+    </p>
+   <VueSlickCarousel  v-bind="settings" class="reviews-wrapper">
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+    </VueSlickCarousel>
+   </div>
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header.vue';
-
+  import VueSlickCarousel from 'vue-slick-carousel'
+  import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+  // optional style for arrows & dots
+  import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   name: 'IndexPage',
   components: {
-    Header, 
+    Header,
+    VueSlickCarousel ,
+  },
+  data() {
+    return{
+      settings: {
+          "infinite": true,
+          "initialSlide": 1 ,
+          "slidesToScroll": 1,
+          "swipeToSlide": true,
+          "autoplay": true,
+          "autoplaySpeed": 2500,
+          "slidesToShow": 3,
+        }
+      }
+    }
   }
-}
+
+
 </script>
 <style>
 .hero{
@@ -490,6 +627,7 @@ export default {
   align-items: center;
   justify-content: center;
   padding: 50px 0;
+  margin:0 auto;
 }
 .reviews-details{
   width: 70%;
@@ -498,25 +636,15 @@ export default {
   font-weight: 300;
   line-height: 1;
 }
-.reviews-wrapper{
-  display: flex;
-  gap: 3rem;
-}
 .review{
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 50px;
 }
 .review-info{
   background: var(--lightblue);
   padding: 20px 20px 20px 60px;
-  margin: 50px 0;
   border-radius: 31px;
   color: var(--white);
-  position: relative;
-  width: 350px;
+  margin:50px;
 }
 .review-info h1{
   position: absolute;
@@ -551,6 +679,22 @@ export default {
 .reviewer-name{
   font-weight: 700;
 } 
+.reviews-wrapper{
+  width: 90%;
+  max-width: 1200px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review-info{
+  padding: 20px 20px 20px 40px;
+}
+.review-info h1{
+  font-size: 2rem;
+}
+
+
 @media only screen and (max-width: 800px) {
   .hero{
     background-position: center right;
@@ -575,17 +719,6 @@ export default {
   }
   .partner-wrapper{
     flex-direction: column;
-  }
-  .reviews-wrapper{
-    width: 90%;
-    overflow-x: scroll;
-  }
-  .review-info{
-    padding: 10px 20px 20px 40px;
-    width: 300px;
-  }
-  .review-info h1{
-    font-size: 2rem;
   }
   .solution{
     width:100%;

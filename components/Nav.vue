@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-transparent1" id="fixed">
+  <nav class="bg-transparent1" id="fixed" :class="{ 'onScrol': !view.topOfPage}">
       <div class="nav-wrapper1">
           <nuxt-link to='/' class="logo1">
           <img src="../assets/images/logowhite.png" alt="">
@@ -54,23 +54,36 @@
 </template>
 
 <script>
-import vIntersect from 'vue-intersection'
+
 export default {
     data(){
-
         return{
-            menuOpen: false
+            menuOpen: false,
+            view: {
+                topOfPage: true
+            }
         }
     }, 
-  methods: {
-            toggleDropdown () {
-                this.menuOpen = !this.menuOpen
-            },
-                toggleNav (event) {
-                    event.currentTarget.classList.toggle('is-active')
-                }
-            }
+    beforeMount() {
+        window.addEventListener('scroll', this.handleScroll)
+    },
+    methods: {
+        toggleDropdown () {
+            this.menuOpen = !this.menuOpen
+        },
+        toggleNav (event) {
+            event.currentTarget.classList.toggle('is-active')
+        },
+        handleScroll(){
+        if(window.pageYOffset>0){
+            if(this.view.topOfPage) this.view.topOfPage = false
+        } else {
+            if(!this.view.topOfPage) this.view.topOfPage = true
+        }
+        }
+    }
 }
+
 </script>
 
 <style>
@@ -80,9 +93,9 @@ export default {
         justify-content: space-between;
         z-index: 999;
     }
-    .scrolled{
+    .onScrol{
         background: var(--navblue);
-        box-shadow: 0 3px 20px rgba((0,0,0,.2  ));
+        box-shadow: -3px 3px 20px rgba((0,0,0,.2  ));
     }
     .logo1{
         width: 15%;
@@ -215,7 +228,7 @@ export default {
             align-items: center;
             position: relative;
             justify-content: flex-start;
-            padding: 0 calc((100vw - 1200px)/2);
+            padding: 0 calc((100vw - 1250px)/2);
         }
         .mobile-menu1{
             display: none;

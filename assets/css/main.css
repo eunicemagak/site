@@ -51,6 +51,19 @@
     --yellow:#F8BA2D;
     --greengreen:#17ABB4;
     --btnblue:#17ABB4;
+    
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 100px var(--active); 
 }
 #fixed{
     position: fixed;
