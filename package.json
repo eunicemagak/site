@@ -24,6 +24,7 @@
     "nuxt-material-design-icons": "^1.0.4",
     "swiper": "^6.8.4",
     "vue": "^2.6.14",
+    "vue-intersection": "^2.0.1",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "vue2-google-maps": "^0.10.7",
