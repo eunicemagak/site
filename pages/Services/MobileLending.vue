@@ -262,9 +262,6 @@ export default {
     color:var(--othergreen);
   }
   @media only screen and (max-width: 800px) {
-        .smsol-wrapper {
-          padding: 4rem 0;
-        }
         .smsol-maintitle {
           font-size: 4rem;
 

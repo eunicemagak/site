@@ -312,9 +312,6 @@ export default {
     color:var(--othergreen);
   }
   @media only screen and (max-width: 800px) {
-        .payment-wrapper {
-          padding: 4rem 0;
-        }
         .payment-maintitle {
           font-size: 4rem;
           width:60%;

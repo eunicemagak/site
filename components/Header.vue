@@ -36,9 +36,6 @@
                         <nuxt-link to="/Services/Games&Lotteries" class="nav-link" @click="toggleDropdown($event)">
                             Games & Lotteries
                         </nuxt-link>
-                        <nuxt-link to="/Services/More" @click="toggleDropdown($event)" class="nav-link">
-                            More
-                        </nuxt-link>
                     </div>
                 </div>
             <nuxt-link to="/ContactUs" class="nav-link">
