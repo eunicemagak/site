@@ -806,7 +806,7 @@ export default {
     background-position: center right;
   }
   .hero-wrapper{
-    padding: 10rem 0;
+    padding: 50vh 0 0 0;
 }
     #overlay,
   #overlay2{
