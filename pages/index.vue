@@ -439,7 +439,7 @@ export default {
   display: flex;
   flex-direction: column;
   color: var(--white);
-    padding: 15rem 0 5rem 0;
+  padding: 12rem 0 5rem 0;
 }
 .overlay,
 .overlay2{
@@ -714,8 +714,6 @@ export default {
   border-right: 15px solid transparent;
   z-index: 99;
 }
-.slick-active{
-}
 #reviewer-img{
   width: 50px;
   height: 50px;
@@ -746,59 +744,7 @@ export default {
   left: 20px;
   top: 0;
 }
-/*
-.review-info{
-  background: var(--lightblue);
-  padding: 20px 20px 20px 40px;
-  border-radius: 31px;
-  color: var(--white);
-  margin: 50px 0px 50px 40px;
-  width: 80%;
-}
-.review-info h1{
-  position: absolute;
-  font-size: 3rem;
-  font-weight: bold;
-  left: 20px;
-  top: 0;
-}
-.review-info::after{
-  content: "";
-  position: absolute;
-  bottom: -40px;
-  left: calc(50% - 20px);
-  border-top: 20px solid #7BC7F7;
-  border-bottom: 20px solid transparent;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  z-index: 99;
-}
-#reviewer-img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-.reviewer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.reviewer-name{
-  font-weight: 700;
-} 
-.reviews-wrapper{
-  width: 90%;
-  max-width: 1200px;
-  margin:0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.review-info h1{
-  font-size: 2rem;
-} */
+
 
 
 @media only screen and (max-width: 800px) {
