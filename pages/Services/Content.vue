@@ -7,7 +7,6 @@
         <h1 class="content-maintitle">
           Enjoy <span>Content You Love</span>
         </h1>
-        <button class="content-gamesbtn">LETS ENJOY</button>
       </div>
       <div class="content-cardswrapper">
         <div class="content-card shadow-lg">

@@ -562,7 +562,7 @@ export default {
   font-weight: 100;
   line-height: 1.1;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   }
 
 .card-details{

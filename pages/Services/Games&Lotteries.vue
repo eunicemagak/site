@@ -8,7 +8,6 @@
         <h1 class="games-maintitle">
           BEST GAMES <span>SOLUTION</span>
         </h1>
-        <button class="games-gamesbtn">LETS PLAY</button>
       </div>
       <div class="games-cardswrapper">
         <div class="games-card">

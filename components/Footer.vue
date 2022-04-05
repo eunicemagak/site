@@ -41,7 +41,10 @@
                     <p>Westland, Nairobi Kenya</p>
                 </div>
                 <div class="social-media">
-                    <img src="../assets/images/icons.png" alt="">
+                    <i class="fa-brands fa-linkedin-in social-icon" />
+                    <i class="fa-brands fa-instagram social-icon" />
+                    <i class="fa-brands fa-twitter social-icon" />
+                    <i class="fa-brands fa-facebook-f social-icon" />
                 </div>
             </div>
         </div>
@@ -173,7 +176,10 @@ export default {
         display: flex;
         gap: 10px;
         margin: 10px 0;
-        width: 20%;
+    }
+    .social-icon{
+        color: var(--white);
+        font-size: 30px;
     }
     @media only screen and (max-width: 800px) {
         .footer-email-wrapper,

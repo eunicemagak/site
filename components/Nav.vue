@@ -42,7 +42,7 @@
                 CONTACT
             </nuxt-link>
                 <nuxt-link to="/#solutions" class="nav-btn1">
-                Lets Enjoy
+                Lets Engage
                 </nuxt-link>
         </div>
       </div>
