@@ -12,7 +12,8 @@
         <div class="content-card shadow-lg">
              <div class="content-img"><img src="~/assets/images/content1.png" alt=""> </div>
           <div class="content-cardmain">
-            <a href=" ">
+
+            <a href="https://bonyeza-2018.appspot.com/">
               <img class="content-cardicon"  src="~/assets/images/purpleright-arrow.png" alt="">
             </a>
             <h4 class="content-cardtitle">
@@ -27,7 +28,7 @@
           
             <div class="content-img"><img src="~/assets/images/content2.png" alt=""> </div>
           <div class="content-cardmain">
-            <a href=" ">
+            <a href="https://bonyeza-2018.appspot.com/">
               <img class="content-cardicon"  src="~/assets/images/redright-arrow(2).png" alt="">
             </a>
             <h4 class="content-cardtitle">
@@ -41,7 +42,7 @@
         <div class="content-card shadow-lg">
           <div class="content-img"><img src="~/assets/images/content3.png" alt=""> </div>
           <div class="content-cardmain">
-            <a href=" ">
+            <a href="https://bonyeza-2018.appspot.com/">
               <img class="content-cardicon"  src="~/assets/images/blueright-arrow(3).png" alt="">
             </a>
             <h4 class="content-cardtitle">
@@ -55,7 +56,7 @@
         <div class="content-card shadow-lg">
            <div class="content-img"><img src="~/assets/images/content4.png" alt=""> </div>
           <div class="content-cardmain">
-            <a href=" ">
+            <a href="https://bonyeza-2018.appspot.com/">
               <img class="content-cardicon"  src="~/assets/images/greenright-arrow.png" alt="">
             </a>
             <h4 class="content-cardtitle">

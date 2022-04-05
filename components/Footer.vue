@@ -10,14 +10,14 @@
                         LETS IMPROVE YOUR BUSINESS
                     </h1>
                 </div>
-                <form action="">
+                <form  ref="form" @submit.prevent="sendEmail">
                     <div class="form-section-one">
-                        <input type="text"  placeholder="Name">
-                        <input type="email" placeholder="Email">
+                        <input type="text"  placeholder="Name" name="from_name">
+                        <input type="email" placeholder="Email" name="from_email">
                     </div>
                     <div class="form-section-two">
-                        <input type="text" placeholder="Message" class="message">
-                        <input type="button" value="SUBMIT" class="submit-btn">
+                        <input type="text" placeholder="Message" class="message" name="message">
+                        <input type="submit" value="SUBMIT" class="submit-btn">
                     </div>
                 </form>
             </div>
@@ -41,26 +41,58 @@
                     <p>Westland, Nairobi Kenya</p>
                 </div>
                 <div class="social-media">
-                    <i class="fa-brands fa-linkedin-in social-icon" />
-                    <i class="fa-brands fa-instagram social-icon" />
-                    <i class="fa-brands fa-twitter social-icon" />
-                    <i class="fa-brands fa-facebook-f social-icon" />
+                    <a href="https://www.linkedin.com/company/roamtech-solutions/">
+                    <font-awesome-icon :icon="['fab', 'linkedin-in']" class="social-icon"/>
+                    </a>
+                    <font-awesome-icon :icon="['fab', 'instagram']" class="social-icon"/>
+                    <a href="https://twitter.com/roamtech?lang=en">
+                    <font-awesome-icon :icon="['fab', 'twitter']" class="social-icon"/>
+                    </a>
+                    <a href="https://m.facebook.com/profile.php?id=346148706193152">
+                    <font-awesome-icon :icon="['fab', 'facebook-f']" class="social-icon"/>
+                    </a>
                 </div>
             </div>
         </div>
         </div>
         <div class="copyright">
             <div class="footer-copyright-wrapper">
-            <p>2021 Roamtech - Your digital solution partner</p>
+            <p>© 2021 Roamtech - Your digital solution partner</p>
         </div>
         </div>
     </footer>
 </template>
 
 <script>
-export default {
 
-}
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faLinkedinIn, faTwitter, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
+library.add(faLinkedinIn);
+library.add(faFacebookF);
+library.add(faInstagram);
+library.add(faTwitter);
+// Vue.component("font-awesome-icon", FontAwesomeIcon);
+
+// Vue.config.productionTip = false;
+import emailjs from '@emailjs/browser';
+export default {
+      methods: {
+            sendEmail() {
+            emailjs.sendForm('service_2tpucd2', 'template_afcqtjj', this.$refs.form, 'BTCiFyuUyldeYFn-E')
+                .then((result) => {
+                    alert('Thank You For Contacting Us, We Will Get Back To You Soonest Possible'),
+                    console.log('SUCCESS!', result.text);
+                    form.reset();
+                }, (error) => {
+                    alert('We Experienced Some Difficulty While Submiting, Please Try Again'),
+                    console.log('FAILED...', error.text);
+                });
+            }
+        }
+        }
+
 </script>
 <style>
     footer{
@@ -179,7 +211,11 @@ export default {
     }
     .social-icon{
         color: var(--white);
-        font-size: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .social-icon:hover{
+        color: var(--footerblue);
     }
     @media only screen and (max-width: 800px) {
         .footer-email-wrapper,

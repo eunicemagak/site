@@ -79,7 +79,9 @@ export default {
   .contactright iframe{
    width: 100%;
   }
-  
+  .contactnav{
+  height: 8vh;
+  }
 }
   
 
