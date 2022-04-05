@@ -8,7 +8,6 @@
         <h1 class="games-maintitle">
           BEST GAMES <span>SOLUTION</span>
         </h1>
-        <button class="games-gamesbtn">LETS PLAY</button>
       </div>
       <div class="games-cardswrapper">
         <div class="games-card">
@@ -22,7 +21,7 @@
             <p class="games-carddetails">
               Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
             </p>
-            <a href=" ">
+            <a href="https://chezachinibids.com/">
               <img class="games-cardicon"  src="~/assets/images/lightblueright-arrow.png" alt="">
             </a>
           </div>
@@ -70,7 +69,7 @@
             <p class="games-carddetails">
               Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
             </p>
-            <a href=" ">
+            <a href="https://pesawheel.co.ke/">
               <img class="games-cardicon"  src="~/assets/images/aquaright-arrow.png" alt="">
             </a>
           </div>

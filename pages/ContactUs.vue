@@ -5,8 +5,6 @@
     </div>
       <div class="contactuscontent">
           <div class="contactleft">
-            <img class='contactlogo' src="../assets/images/logoblue.png" alt="">
-            <div class="contactrectangle"></div>
             <img class="reviews1" src="../assets/images/rmt.png" alt="" >
           </div>
           <div class="contactright">
@@ -81,7 +79,9 @@ export default {
   .contactright iframe{
    width: 100%;
   }
-  
+  .contactnav{
+  height: 8vh;
+  }
 }
   
 

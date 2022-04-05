@@ -389,18 +389,17 @@ export default {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 800,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
               }
             },
             {
-              breakpoint: 400,
+              breakpoint: 500,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -562,7 +561,7 @@ export default {
   font-weight: 100;
   line-height: 1.1;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   }
 
 .card-details{
@@ -797,7 +796,7 @@ export default {
 }
 .card-wrapper{
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 }
 </style>
