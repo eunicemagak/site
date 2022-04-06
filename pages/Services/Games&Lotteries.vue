@@ -6,7 +6,7 @@
       <div id="overlay2"></div>
       <div class="games-main">
         <h1 class="games-maintitle">
-          BEST GAMES <span>SOLUTION</span>
+          BEST GAMES <span>IN TOWN</span>
         </h1>
       </div>
       <div class="games-cardswrapper">
@@ -19,7 +19,7 @@
               Cheza Chini
             </h4>
             <p class="games-carddetails">
-              Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+              Cheza Chini is an exciting bidding game where user get to buy high value items at very low prices
             </p>
             <a href="https://chezachinibids.com/">
               <img class="games-cardicon"  src="~/assets/images/lightblueright-arrow.png" alt="">
@@ -35,7 +35,7 @@
               BINGWA GAMES
             </h4>
             <p class="games-carddetails">
-              Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+              Bingwa games is an excting collection of mobile games and lotteries that you and your friends can play on your phone
             </p>
             <a href="https://bingwa.co.ke/">
               <img class="games-cardicon"  src="~/assets/images/lightpinkright-arrow.png" alt="">
@@ -51,41 +51,9 @@
               ANZA GAMES
             </h4>
             <p class="games-carddetails">
-              Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+              Play hundreds of games for only 20bob a day, from street racing, puzzle and adventure games to quizzes and trivia games Anza games has a game for all ages.
             </p>
             <a href="https://anzagames.co.ke/">
-              <img class="games-cardicon"  src="~/assets/images/lightblueright-arrow.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="games-card">
-          <div class="games-cardheader">
-            
-          </div>
-          <div class="games-cardmain">
-            <h4 class="games-cardtitle">
-              PESAWHEEL
-            </h4>
-            <p class="games-carddetails">
-              Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-            </p>
-            <a href="https://pesawheel.co.ke/">
-              <img class="games-cardicon"  src="~/assets/images/aquaright-arrow.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="games-card">
-          <div class="games-cardheader">
-            
-          </div>
-          <div class="games-cardmain">
-            <h4 class="games-cardtitle">
-              GAMES GAMES
-            </h4>
-            <p class="games-carddetails">
-              Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-            </p>
-            <a href=" ">
               <img class="games-cardicon"  src="~/assets/images/lightblueright-arrow.png" alt="">
             </a>
           </div>
@@ -108,6 +76,7 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-bottom: 50px;
   }
   .games-wrapper:after{
     content: "";
