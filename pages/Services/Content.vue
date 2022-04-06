@@ -170,13 +170,13 @@ export default {
     
   }
   .content-cardswrapper{
-    overflow-y: hidden;
     width: 86%;
     max-width: 1400px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     z-index: 99;
-    overflow-x: scroll;
   } 
   .content-card{
     display: flex;
@@ -225,7 +225,6 @@ export default {
     color:var(--othergreen);
   }
 .content-img{
-  width: 310px;
   z-index: 50;
 }
  @media only screen and (max-width: 800px) {
@@ -235,8 +234,20 @@ export default {
     .content-maintitle span{
     font-size: 4rem;
     }
-    .games-cardmain {
-    width: 220px;
-    }
  }
+ @media only screen and (max-width: 1300px){
+    .content-cardswrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    .content-cardswrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    .content-cardswrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 </style>

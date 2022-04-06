@@ -225,10 +225,10 @@ export default {
     width: 90%;
     max-width: 1400px;
     margin: -100px auto 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
     z-index: 99;
-    overflow-x: scroll;
-    box-shadow: 3px 3px 10px #ccc;
   } 
   .payment-card{
     display: flex;
@@ -274,9 +274,6 @@ export default {
   .payment-cardheader img{
     width: 80%;
   }
-  .payment-cardmain{
-    width: 270px;
-  }
   .payment-cardtitle{
     font-weight: bold;
     font-size: 1.2rem;
@@ -288,7 +285,6 @@ export default {
     margin-bottom: 30px;
   }
   .payment-cardbtn{
-    margin-left: 50%;
     background: var(--white);
     border-radius: 50px;
     padding: 5px;
@@ -320,9 +316,21 @@ export default {
           font-size: 1rem;
           width:90%;
         }
-        .payment-cardmain {
-          width: 220px;
-        }
        
     }
+ @media only screen and (max-width: 1300px){
+    .payment-cardswrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    .payment-cardswrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    .payment-cardswrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 </style>

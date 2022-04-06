@@ -191,16 +191,17 @@ export default {
     width: 90%;
     max-width: 1400px;
     margin: -100px auto 200px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     z-index: 99;
-    overflow-x: scroll;
-    box-shadow: 3px 3px 10px #ccc;
   } 
   .smssol-card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 30px 40px 30px;
+    padding: 0 10px 40px 10px;
+    box-shadow: 3px 3px 10px #ccc;
   }
   .smssol-card:nth-child(odd){
     background: var(--white);
@@ -234,9 +235,6 @@ export default {
   }
   .smssol-cardheader img{
     width: 70%;
-  }
-  .smssol-cardmain{
-    width: 270px;
   }
   .smssol-cardtitle{
     font-weight: bold;
@@ -287,4 +285,19 @@ export default {
     height: 120px;
   }
 }
+ @media only screen and (max-width: 1300px){
+    .smssol-cardswrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    .smssol-cardswrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    .smssol-cardswrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 </style>

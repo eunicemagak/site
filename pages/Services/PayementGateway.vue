@@ -192,10 +192,11 @@ export default {
     width: 90%;
     max-width: 1400px;
     margin: -100px auto 0px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 20px;
     z-index: 99;
-    overflow-x: scroll;
-    box-shadow: 3px 3px 10px #ccc;
   } 
   .gateway-card{
     display: flex;
@@ -219,9 +220,6 @@ export default {
 
   .gateway-cardheader img{
     width: 70%;
-  }
-  .gateway-cardmain{
-    width: 270px;
   }
   .gateway-cardtitle{
     font-weight: bold;
@@ -268,9 +266,23 @@ export default {
           font-size: 1rem;
           width:90%;
         }
-        .gateway-cardmain {
-          width: 220px;
-        }
-       
+         .gateway-cardswrapper{
+           grid-template-columns: repeat(2, 1fr);
+         }
     }
+  @media only screen and (max-width: 1300px){
+    .gateway-cardswrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    .gateway-cardswrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    .gateway-cardswrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 </style>

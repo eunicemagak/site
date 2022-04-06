@@ -189,9 +189,10 @@ export default {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 10px;
     z-index: 99;
-    overflow-x: scroll;
   } 
   .games-card{
     display: flex;
@@ -229,9 +230,6 @@ export default {
   }
   .games-cardheader img{
     width: 70%;
-  }
-  .games-cardmain{
-    width: 270px;
   }
   .games-cardtitle{
     font-weight: bold;
@@ -275,10 +273,20 @@ export default {
         .games-maintitle span{
           font-size: 4rem;
         }
-        .games-cardmain {
-          width: 220px;
-        }
-       
     }
-
+@media only screen and (max-width: 1300px){
+    .games-cardswrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    .games-cardswrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    .games-cardswrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+   }
 </style>

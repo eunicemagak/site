@@ -163,7 +163,7 @@
   </div>
   <div class="partners">
         <h1 class="title">
-          OUR PARTNERS
+          OUR KEY PARTNERS
         </h1>
         <div class="partner-wrapper">
           <div class="partner-logo">
@@ -186,52 +186,6 @@
         <img src="../assets/images/LOGOS 2.png" alt="" class="client">
     </div>
   </div>
-  <!-- <div class="reviews">
-    <h1 class="title">
-      CUSTOMER REVIEWS
-    </h1>
-    <p class="reviews-details">
-      Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-    </p>
-    <div class="reviews-wrapper">
-      <div class="review">
-        <div class="review-info">
-          <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-        </div>
-        <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
-          <h4 class="reviewer-name">
-            Xyzane Ltd
-          </h4>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-info">
-          <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-        </div>
-        <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
-          <h4 class="reviewer-name">
-            Xyzane Ltd
-          </h4>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-info">
-          <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-        </div>
-        <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
-          <h4 class="reviewer-name">
-            Xyzane Ltd
-          </h4>
-        </div>
-      </div>
-    </div>
-  </div> -->
    <div class="reviews">
     <h1 class="title">
       CUSTOMER REVIEWS
@@ -467,7 +421,7 @@ export default {
 .main-txt{
   font-size: 6rem;
   line-height: 1;
-  width: 30%;
+  width: 50%;
   font-weight: 900;
 }
 .main-info{
@@ -512,7 +466,7 @@ export default {
   margin: 0 auto;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   }
 .card-wrapper{
@@ -626,7 +580,7 @@ export default {
   width: 300px;
 }
 .partner-logo img{
-  width: 90%;
+  width: 50%;
 } 
 .clients{
   background: url('./assets/images/clients.png'), var(--navblue);
@@ -758,7 +712,7 @@ export default {
     display: none;
   }
   .main-txt{
-    font-size: 3rem;
+    width: 90%;
   }
   .reviews-details,
   .choose-details,
@@ -782,10 +736,9 @@ export default {
     width: 80px;
     height: 80px;
   }
+  .card-wrapper,
   .solutions-wrapper{
-  display: flex;
-  overflow-x: scroll ;
-  gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
   }
   .solution-details{
     width:250px;
@@ -794,9 +747,30 @@ export default {
   .partner-logo{
   width: 250px;
 }
-.card-wrapper{
-  display: flex;
-  overflow-x: scroll;
 }
-}
+  @media only screen and (max-width: 1300px){
+    
+  .card-wrapper,
+  .solutions-wrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    
+  .card-wrapper,
+  .solutions-wrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    
+  .card-wrapper,
+  .solutions-wrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  .main-txt{
+    font-size: 5rem;
+  }
+  }
 </style>
