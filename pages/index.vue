@@ -7,16 +7,16 @@
       <div class="overlay2"></div>
     <div class="hero-wrapper">
       <h1 class="main-txt">
-        Customer Oriented Solutions
+        Grow Your Business
       </h1>
       <p class="main-info">
-        Our solutions are focused on the insight that the consumer comes first
+        We build mobile technology solutions that help connect your businesses to your customers anywhere in the world.
       </p>
     </div>
   </div>
   <div class="chooseus">
-    <h1 class="title">WHY CHOOSE US</h1>
-    <p class="choose-details">Roamtech specializes in the development of mobile solutions and services that help businesses communicate and connect with their audiences.</p>
+    <h1 class="title">WW HAVE THE EXPERTISE</h1>
+    <p class="choose-details">With over 10 years of experience, we know how to simplify technology to deliver innovative solutions that create great value for our customers.</p>
     <div class="card-wrapper">
       <div class="card">
         <div class="card-img">
@@ -25,10 +25,10 @@
           </div>
         </div>
         <h4 class="card-title">
-          WE DELIVER QUALITY & ON TIME
+          QUALITY DELIVERED ON TIME
         </h4>
         <p class="card-details">
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et
+           We believe in keeping our word and delivering solutions on time, within budget and meeting your specifications
         </p>
       </div>
       <div class="card">
@@ -38,10 +38,10 @@
           </div>
         </div>
         <h4 class="card-title">
-          WE ARE INNOVATORS
+          INNOVATIVE SOLUTIONS
         </h4>
         <p class="card-details">
-          We develop and maintain our own proprietary platforms and systems for high-volume sending and receiving of messages across mobile platforms.        
+          Our diverse team of experts is always looking for innovative new ways to solve our customers challenges.       
         </p>
       </div>
       <div class="card">
@@ -51,10 +51,10 @@
           </div>
         </div>
         <h4 class="card-title">
-          WE OWN OUR IP
+          VALUABLE KNOWLEDGE
         </h4>
         <p class="card-details">
-          Our solutions are developed in-house with a dependency on external partners
+          We have built an industry leading bank of IP that enables us to stay ahead of the competition
         </p>
       </div>
       <div class="card">
@@ -64,10 +64,10 @@
           </div>
         </div>
         <h4 class="card-title">
-          SCALABLE & MODULAR SOLUTIONS
+          SOLUTIONS THAT SCALE
         </h4>
         <p class="card-details">
-          We develop solutions that can be upscaled without changing the core platform. The solutions come in modules that can bearded or removed depending on the needs of a particular client.
+          Our solutions match with any size of business
         </p>
       </div>
     </div>
@@ -83,7 +83,7 @@
           PAYEMENT GATEWAY
         </h4>
         <p class="solution-details">
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          With our payment integration you can make mobile payments to various utilities across the region, from Electicity tokens, Water bills to Airtime and Data
         </p>
           <nuxt-link to="/Services/PayementGateway"  class="get-solution">
             LEARN MORE
@@ -97,7 +97,7 @@
           PAYMENT CHANNELS
         </h4>
         <p class="solution-details">
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          With our financial services you can make payments across various channels, mobile to mobile, Bank to bank
         </p>
           <nuxt-link to="/Services/PayementChannels"  class="get-solution">
             LEARN MORE
@@ -111,7 +111,7 @@
           SMS SOLUTIONS
         </h4>
         <p class="solution-details">
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          With our robust access to telco infrastructure across Africa we can gurantee delivery and value on SMS, USSD, Voice and VAS solutions
         </p>
           <nuxt-link to="/Services/SMSSolutions"  class="get-solution">
             LEARN MORE
@@ -125,7 +125,7 @@
           MOBILE LENDING
         </h4>
         <p class="solution-details">
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          We deliver mobile lending solutions to thousands of happy customers in several countries, giving more people acccess to finance to power their lives
         </p>
           <nuxt-link to="/Services/MobileLending"  class="get-solution">
             LEARN MORE
@@ -139,7 +139,7 @@
           CONTENT
         </h4>
         <p class="solution-details">
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          We are experts at delivering entertainment via mobile, from Ringtones, Popular music, Video on demand, Inspiration and Religious content
         </p>
           <nuxt-link to="/Services/Content"  class="get-solution">
             LEARN MORE
@@ -153,7 +153,7 @@
           GAMES & LOTTERIES
         </h4>
         <p class="solution-details">
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          We are innovators on Mobile games and Lotteries
         </p>
           <nuxt-link to="/Services/Games&Lotteries"  class="get-solution">
             LEARN MORE
@@ -188,10 +188,10 @@
   </div>
    <div class="reviews">
     <h1 class="title">
-      CUSTOMER REVIEWS
+      WHAT OUR CUSTOMERS ARE SAYING
     </h1>
     <p class="reviews-details">
-      Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+      We have clients of all sizes in different sectors of the economy
     </p>
    <VueSlickCarousel  v-bind="settings" class="reviews-wrapper">
       <div class="review">
@@ -202,7 +202,7 @@
         <div class="reviewer">
           <img src="../assets/images/user.jpg" id="reviewer-img"/>
           <h4 class="reviewer-name">
-            Xyzane Ltd
+            Tower Sacco
           </h4>
         </div>
       </div>
@@ -214,7 +214,7 @@
         <div class="reviewer">
           <img src="../assets/images/user.jpg" id="reviewer-img"/>
           <h4 class="reviewer-name">
-            Xyzane Ltd
+            Centrino
           </h4>
         </div>
       </div>
@@ -226,7 +226,7 @@
         <div class="reviewer">
           <img src="../assets/images/user.jpg" id="reviewer-img"/>
           <h4 class="reviewer-name">
-            Xyzane Ltd
+            Betika
           </h4>
         </div>
       </div>
@@ -238,7 +238,7 @@
         <div class="reviewer">
           <img src="../assets/images/user.jpg" id="reviewer-img"/>
           <h4 class="reviewer-name">
-            Xyzane Ltd
+            Tower Sacco
           </h4>
         </div>
       </div>
@@ -250,7 +250,7 @@
         <div class="reviewer">
           <img src="../assets/images/user.jpg" id="reviewer-img"/>
           <h4 class="reviewer-name">
-            Xyzane Ltd
+            Centrino
           </h4>
         </div>
       </div>
@@ -262,43 +262,7 @@
         <div class="reviewer">
           <img src="../assets/images/user.jpg" id="reviewer-img"/>
           <h4 class="reviewer-name">
-            Xyzane Ltd
-          </h4>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-info">
-          <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-        </div>
-        <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
-          <h4 class="reviewer-name">
-            Xyzane Ltd
-          </h4>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-info">
-          <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-        </div>
-        <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
-          <h4 class="reviewer-name">
-            Xyzane Ltd
-          </h4>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-info">
-          <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-        </div>
-        <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
-          <h4 class="reviewer-name">
-            Xyzane Ltd
+            Betika
           </h4>
         </div>
       </div>

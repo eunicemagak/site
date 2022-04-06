@@ -6,11 +6,7 @@
       <div>
         <h1>ABOUT US</h1>
         <p>
-          Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam dolor sit amet, 
-          consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam dolor sit amet, consectetuer adipiscing elit, 
-          sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
-          dolore magna aliquam dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam dolor sit amet, 
-          consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+         We are driven by passion and hard work, we help our clients to build stronger more agile and innovative businesses that deliver great customer experiences online. Our strength lies in listening to client challenges and ambitions and creating solutions that serve their needs. We have invested in the capabilities and team to ensure that roamtech is well positioned to deliver.
         </p>
       </div>
     </div>

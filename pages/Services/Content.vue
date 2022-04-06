@@ -5,7 +5,7 @@
       <div id="overlay2"></div>
       <div class="content-main">
         <h1 class="content-maintitle">
-          Enjoy <span>Content You Love</span>
+          CONTENT <span>YOU WILL LOVE</span>
         </h1>
       </div>
       <div class="content-cardswrapper">
