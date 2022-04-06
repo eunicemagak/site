@@ -1,9 +1,7 @@
 <template>
 <div>
-
-<Message/>
   <Nuxt />
-  
+  <Footer/>
 </div>
 </template>
   
