@@ -1,15 +1,77 @@
 <template>
+    <div class="content-wrapper">
+      <Nav/>
+      <div id="overlay"></div>
+      <div id="overlay2"></div>
+      <div class="content-main">
+        <h1 class="content-maintitle">
+          Enjoy <span>Content You Love</span>
+        </h1>
+      </div>
+      <div class="content-cardswrapper">
+        <div class="content-card shadow-lg">
+             <div class="content-img"><img src="~/assets/images/content1.png" alt=""> </div>
+          <div class="content-cardmain">
 
-    <div class="bg-local">
-      <div class="rectangle1">
+            <a href="https://bonyeza-2018.appspot.com/">
+              <img class="content-cardicon"  src="~/assets/images/purpleright-arrow.png" alt="">
+            </a>
+            <h4 class="content-cardtitle">
+              INFORTAINMENT
+            </h4>
+            <p class="content-carddetails">
+              Subscription Services
+            </p>
+          </div>
+        </div>
+        <div class="content-card shadow-lg">
+          
+            <div class="content-img"><img src="~/assets/images/content2.png" alt=""> </div>
+          <div class="content-cardmain">
+            <a href="https://bonyeza-2018.appspot.com/">
+              <img class="content-cardicon"  src="~/assets/images/redright-arrow(2).png" alt="">
+            </a>
+            <h4 class="content-cardtitle">
+              QUOTES
+            </h4>
+            <p class="content-carddetails">
+              Love | Bible | Quran |Inspiration
+            </p>
+          </div>
+        </div>
+        <div class="content-card shadow-lg">
+          <div class="content-img"><img src="~/assets/images/content3.png" alt=""> </div>
+          <div class="content-cardmain">
+            <a href="https://bonyeza-2018.appspot.com/">
+              <img class="content-cardicon"  src="~/assets/images/blueright-arrow(3).png" alt="">
+            </a>
+            <h4 class="content-cardtitle">
+              BONYEZA
+            </h4>
+            <p class="content-carddetails">
+              Music | Bonyeza699 | Videos
+            </p>
+          </div>
+        </div>
+        <div class="content-card shadow-lg">
+           <div class="content-img"><img src="~/assets/images/content4.png" alt=""> </div>
+          <div class="content-cardmain">
+            <a href="https://bonyeza-2018.appspot.com/">
+              <img class="content-cardicon"  src="~/assets/images/greenright-arrow.png" alt="">
+            </a>
+            <h4 class="content-cardtitle">
+              MY SKIZA 
+            </h4>
+            <p class="content-carddetails">
+              Music | Bonyeza699 | Videos
+            </p>
+            <p class="content-carddetails">
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="rectangle">
-      </div>
-      <div class="content-wrapper">
-      <h1 class="contentt"><span class="enjoytext">Enjoy</span> Content You Love</h1>
-      <button class="enjoy">LETS ENJOY</button>
-      </div>
-   </div>
+    </div>
 </template>
 
 <script>
@@ -24,104 +86,168 @@ export default {
 </script>
 
 <style>
-.bg-local {
-  background: linear-gradient( rgba(0, 23, 32, 0.5) 100%, rgba(255, 32, 32, 0.5) 100%),
-url('./assets/images/content.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-  /* width: 1920px; */
+  .content-wrapper{
+    background:url('./assets/images/content5.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .content-wrapper:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 23, 32, 0.5) 100%, rgba(255, 32, 32, 0.5) 100%);
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+  }
+  #overlay,
+  #overlay2{
+    width: 180px;
+    height: 500px;
+    border-radius: 200px;
+    background: var(--white);
+    position: absolute;
+    z-index: 20;
+    overflow: visible;
+  }
+  .content-wrapper #overlay2{
+    top: -130px;
+    right: 300px;
+    transform: rotate(12deg);
+    mix-blend-mode: soft-light;
+    opacity: 40%;
+  }
+  .content-wrapper #overlay{
+    top: 100px;
+    right: 150px;
+    transform: rotate(12deg);
+    mix-blend-mode: soft-light;
+    opacity: 40%;
+  }
+  .content-main{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    z-index: 50;
+    padding: 15rem 0 5rem 0;
+  }
+  .content-maintitle{
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1;
+    width: 50%;
+    color: var(--yellow);
+  }
+  .content-maintitle span{
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--white);
+  }
+  .content-maindetails{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 20px 0;
+    width: 50%;
+  }
+  .content-gamesbtn{
+    padding: 5px 20px;
+    color: var(--white);
+    text-align: left;
+    font: bold 14px/23px Montserrat;
+    background: transparent linear-gradient(180deg, #F8BA2D 0%, #FF7805 100%) 0% 0% no-repeat padding-box;
+    border-radius: 43px;
+    align-items: center;
+    margin-top: 30px;
+    width: 130px;
+    
+  }
+  .content-cardswrapper{
+    width: 86%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    z-index: 99;
+  } 
+  .content-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .content-cardmain{
+    margin-top: -100px;
+    padding-top: 100px;
+    background: var(--white);
+    padding-left: 20px;
+  }
+  .content-cardtitle{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: var(--black);
+  }
+  .content-carddetails{
+    font-size: .9rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: var(--black);
+  }
+  .content-cardicon{
+    margin-right: 20px;
+    float: right;
+    height: 18px;
+    margin-top: 10px;
+    width: 18px;
+    border-radius: 50%;
+    box-shadow: -3px 3px 10px rgb(41, 41, 41);
+  }
+  .content-card:nth-child(1) .content-cardbtn{
+    color:var(--orange);
+  }
+  .content-card:nth-child(2) .content-cardbtn{
+    color:var(--pinkish);
+  }
+  .content-card:nth-child(3) .content-cardbtn{
+    color:var(--greenish);
+  }
+  .content-card:nth-child(4) .content-cardbtn{
+    color:var(--realorange);
+  }
+  .content-card:nth-child(5) .content-cardbtn{
+    color:var(--othergreen);
+  }
+.content-img{
+  z-index: 50;
 }
-.content-wrapper{
-  align-items: center;
-}
-.content-title {
-  text-align: left;
-  font: normal normal 900 70px/80px Montserrat;
-  letter-spacing: 0px;
-  text-transform: capitalize;
-  left: 182px;
-  width: 878px;
-  color: var(--orange);
-}
-/* .contentt {
-  flex: 1;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  padding-top: 190px;
-  padding-left: 162px;
-  padding-right: 860px;
-} */
-.contentt{
-  color: var(--white);
-  font: normal normal 900 70px/80px Montserrat;
-  width: 600px;
-  margin-left: 15px;
-}
-.enjoytext{
-  color: var(--orange);
-  font: normal normal 900 70px/80px Montserrat;
-}
-.content-text {
-  font: normal normal 900 70px/80px Montserrat;
-  letter-spacing: 0px;
-  text-transform: capitalize;
-  text-align: left;
-  color: var(--white);
-  margin-left: 10px;
-  padding-top: 10px;
-  /* text-align: left; */
-}
-.contentword {
-  text-align: left;
-  font: normal normal 700 60px/80px Montserrat;
-  letter-spacing: 0px;
-  text-transform: capitalize;
-  padding-left: 162px;
-  color: var(--white);
-
-}
-.enjoy {
-  padding: 5px 20px;
-  color: var(--white);
-  text-align: left;
-  font: bold 14px/23px Montserrat;
-  background: transparent linear-gradient(180deg, #F8BA2D 0%, #FF7805 100%) 0% 0% no-repeat padding-box;
-  border-radius: 43px;
-  align-items: center;
-  margin-left: 15px;
-  margin-top: 60px;
-  z-index: 3;
-}
-.rectangle1{
-  width: 200px;
-  height: 800px;
-  background: var(--white);
-  position: absolute;
-  border-radius: 100px;
-  top:  -300px;
-  right: 370px;
-  mix-blend-mode: overlay;
-  transform: rotate(10deg);
-  z-index: 2;
-}
-.rectangle {
-  width: 200px;
-  height: 800px;
-  background: var(--orange);
-  position: absolute;
-  border-radius: 100px;
-  top:  50px;
-  right: 200px;
-  mix-blend-mode: multiply;
-  transform: rotate(10deg);
-  z-index: 2;
-}
-
+ @media only screen and (max-width: 800px) {
+   .content-maintitle {
+    font-size: 4rem;
+    }
+    .content-maintitle span{
+    font-size: 4rem;
+    }
+ }
+ @media only screen and (max-width: 1300px){
+    .content-cardswrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    .content-cardswrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    .content-cardswrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 </style>

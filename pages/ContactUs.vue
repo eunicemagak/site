@@ -1,17 +1,16 @@
 <template>
-  <div class="contact us">
-
-    <div class="contactuscontent">
-      <div class="contactleft">
-        <img class='contactlogo' src="../assets/images/logoblue.png" alt="">
-        <img class="reviews" src="../assets/images/rmt.png" alt="" >
-      </div>
-    <div class="contactright">
-      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.80213323222!2d36.808981!3d-1.262175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbd2f57b3808719a!2sRoamtech%20Solutions%20Limited!5e0!3m2!1sen!2ske!4v1647750790522!5m2!1sen!2ske" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-       -->
-       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.80213323222!2d36.808981!3d-1.262175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbd2f57b3808719a!2sRoamtech%20Solutions%20Limited!5e0!3m2!1sen!2ske!4v1647866535229!5m2!1sen!2ske" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <div class="contact-us">
+    <div class="contactnav">
+      <Nav/>
     </div>
-    </div>  
+      <div class="contactuscontent">
+          <div class="contactleft">
+            <img class="reviews1" src="../assets/images/rmt.png" alt="" >
+          </div>
+          <div class="contactright">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.80213323222!2d36.808981!3d-1.262175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbd2f57b3808719a!2sRoamtech%20Solutions%20Limited!5e0!3m2!1sen!2ske!4v1647866535229!5m2!1sen!2ske" allowfullscreen="" width="1000" height="600" loading="lazy"></iframe>
+          </div>
+      </div>  
   </div>
 </template>
 
@@ -30,40 +29,60 @@ export default {
 
 
 <style>
+
 .contactlogo {
-  justify-content: center;
-  margin-left: 50px; 
+  display: flex;
   position: relative;
-  }
-  .contactlogo::after{
-    content: "";
-    height: 50px;
-    width: 100%;
-    top: 50px;
-    left: 0;
-    position: absolute;
-    background-color: blue;
+  max-height: 450px;
+  max-width: 500px;
   }
 .contactuscontent {
-  /* display: grid; */
   display: flex;
-  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
 }
-.contactleft {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-gap: 10px;
+.reviews1 {
+  position: relative;
+}
+.contactleft{
+  flex: 33%;
+}
+.contactright{
+  flex: 67%;
+}
+.contactnav {
+  height: 15vh;
+  background:-moz-linear-gradient(88deg, rgba(27, 117, 188, 1) 0%, rgba(21, 90, 145, 1) 50%, rgba(14, 59, 94, 1) 100%); 
+  background:-webkit-linear-gradient(88deg, rgba(27, 117, 188, 1) 0%, rgba(21, 90, 145, 1) 50%, rgba(14, 59, 94, 1) 100%);
+  background:-o-linear-gradient(88deg, rgba(27, 117, 188, 1) 0%, rgba(21, 90, 145, 1) 50%, rgba(14, 59, 94, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0E3B5E', endColorstr='#1B75BC', GradientType=0 );
+  background:-ms-linear-gradient(88deg, rgba(27, 117, 188, 1) 0%, rgba(21, 90, 145, 1) 50%, rgba(14, 59, 94, 1) 100%);
+  background:linear-gradient(88deg, rgba(27, 117, 188, 1) 0%, rgba(21, 90, 145, 1) 50%, rgba(14, 59, 94, 1) 100%);
+
+}
+.contactrectangle {
+  height: 1vh;
+  background: var(--navblue);
+}
+
+@media only screen and (max-width: 800px){
+  .contactuscontent{
+     display: flex;
+     flex-direction: column;
   }
-.reviews {
-  height: 400;
+  .contactleft {
+    width: 100%;
+  }
+  .contactright{
+    width: 100%;
+  }
+  .contactright iframe{
+   width: 100%;
+  }
+  .contactnav{
+  height: 8vh;
+  }
 }
-.contactright {
-  height: 300px;
-  width: 500;
-}
-.rectangle {
-  background: var(--blue);
-  height: 200px;
-}
+  
 
 </style>

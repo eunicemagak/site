@@ -1,8 +1,10 @@
 <template>
 <div>
   <div class="hero">
-      <div id="overlay"></div>
-      <div id="overlay2"></div>
+    <div class="gradient"></div>
+    <Header/>
+      <div class="overlay"></div>
+      <div class="overlay2"></div>
     <div class="hero-wrapper">
       <h1 class="main-txt">
         Customer Oriented Solutions
@@ -10,9 +12,6 @@
       <p class="main-info">
         Our solutions are focused on the insight that the consumer comes first
       </p>
-      <button class="engage">
-        LETS ENGAGE
-      </button>
     </div>
   </div>
   <div class="chooseus">
@@ -26,20 +25,7 @@
           </div>
         </div>
         <h4 class="card-title">
-          WE DELIVER QUALITY
-        </h4>
-        <p class="card-details">
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <div  class="card-bg">
-            <img src="../assets/images/time.png" class="service-icons"/>
-          </div>
-        </div>
-        <h4 class="card-title">
-          ALWAYS ON TIME
+          WE DELIVER QUALITY & ON TIME
         </h4>
         <p class="card-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et
@@ -99,12 +85,9 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/PayementGateway"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
       <div class="solution">
         <div solution-img>
@@ -116,12 +99,9 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/PayementChannels"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
       <div class="solution">
         <div solution-img>
@@ -133,12 +113,9 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/SMSSolutions"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
       <div class="solution">
         <div solution-img>
@@ -150,12 +127,9 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/MobileLending"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
       <div class="solution">
         <div solution-img>
@@ -167,12 +141,9 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/Content"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
       <div class="solution">
         <div solution-img>
@@ -184,31 +155,28 @@
         <p class="solution-details">
           Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
         </p>
-        <div class="solution-footer">
           <nuxt-link to="/Services/Games&Lotteries"  class="get-solution">
-            GET SOLUTION
+            LEARN MORE
           </nuxt-link>
-          <img src="../assets/images/share.svg" class="share"/>
-        </div>
       </div>
     </div>
   </div>
-      <div class="partners">
+  <div class="partners">
         <h1 class="title">
-          OUR PARTNERS
+          OUR KEY PARTNERS
         </h1>
         <div class="partner-wrapper">
-          <div class="partner-logo">
-            <img src="../assets/images/airtel.png"/>
-          </div>
           <div class="partner-logo">
             <img src="../assets/images/safaricom.png"/>
           </div>
           <div class="partner-logo">
             <img src="../assets/images/telkom.png"/>
           </div>
+          <div class="partner-logo">
+            <img src="../assets/images/airtel.png"/>
+          </div>
         </div>
-      </div>
+  </div>
   <div class="clients">
     <h1 class="title">
       OUR MAJOR CLIENTS
@@ -218,14 +186,14 @@
         <img src="../assets/images/LOGOS 2.png" alt="" class="client">
     </div>
   </div>
-  <div class="reviews">
+   <div class="reviews">
     <h1 class="title">
       CUSTOMER REVIEWS
     </h1>
     <p class="reviews-details">
       Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
     </p>
-    <div class="reviews-wrapper">
+   <VueSlickCarousel  v-bind="settings" class="reviews-wrapper">
       <div class="review">
         <div class="review-info">
           <h1>"</h1>
@@ -262,25 +230,142 @@
           </h4>
         </div>
       </div>
-    </div>
-  </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Xyzane Ltd
+          </h4>
+        </div>
+      </div>
+    </VueSlickCarousel>
+   </div>
   </div>
 </template>
 
 <script>
-
-import ContactUs from '~/pages/ContactUs.vue';
 import Header from '~/components/Header.vue';
-import Footer from '~/components/Footer.vue';
-import Services from '~/pages/Services/Content.vue';
-
+  import VueSlickCarousel from 'vue-slick-carousel'
+  import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+  // optional style for arrows & dots
+  import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   name: 'IndexPage',
   components: {
-    Header, 
+    Header,
+    VueSlickCarousel ,
+  },
+  data() {
+    return{
+      settings: {
+          "infinite": true,
+          "initialSlide": 1 ,
+          "slidesToScroll": 1,
+          "swipeToSlide": true,
+          "autoplay": true,
+          "autoplaySpeed": 2500,
+          "centerMode": true,
+          "centerPadding": "20px",
+          "focusOnSelect": true,
+          "infinite": true,
+          "slidesToShow": 3,
+          "speed": 500,
+          "pauseOnHover": false,
+          "responsive":[
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+          ]
+        }
+      }
+    }
   }
-}
+
+
 </script>
 <style>
 .hero{
@@ -291,50 +376,57 @@ export default {
   position: relative;
   height: 88vh;
 }
+.gradient{ 
+  background: rgb(0,0,0);
+  background: linear-gradient(to top right, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 100%); 
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .hero-wrapper{
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   color: var(--white);
+  padding: 12rem 0 5rem 0;
 }
-#overlay,
-#overlay2{
+.overlay,
+.overlay2{
   width: 200px;
-  height: 700px;
+  height: 600px;
   border-radius: 200px;
   background: var(--white);
   position: absolute;
   z-index: 2;
   overflow: visible;
 }
-#overlay{
-  top: -200px;
-  right: 350px;
+.overlay{
+  top: -100px;
+  right: 250px;
   transform: rotate(9deg);
   mix-blend-mode: overlay;
   opacity: 40%;
 }
-#overlay2{
-  top: 200px;
-  right: 630px;
+.overlay2{
+  top: 160px;
+  right: 520px;
   transform: rotate(9deg);
   mix-blend-mode: overlay;
   opacity: 40%;
 }
 .main-txt{
-  font-weight: bolder;
-    font-family: 'Avenir Next LT Pro';
   font-size: 6rem;
   line-height: 1;
-  width: 30%;
+  width: 50%;
+  font-weight: 900;
 }
 .main-info{
   margin: 20px 0;
   font-size: 1.2rem;
-  font-weight: 500;
   width: 30%;
 }
 .engage{
@@ -370,22 +462,19 @@ export default {
 .solutions-wrapper{
   margin-top: 50px;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   height: 100%;
-  overflow-y: hidden;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 2px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
   }
 .card-wrapper{
   width: 90%;
-  max-width: 1000px;
   margin: 50px auto;
   height: 100%;
-  overflow-y: hidden;
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 .card{
@@ -423,15 +512,17 @@ export default {
 }
 .solution-details{
   color: var(--textgray);
-  width: 300px;
   font-weight: 100;
   line-height: 1.1;
+  padding: 10px;
+  text-align: left;
   }
+
 .card-details{
   color: var(--textgray);
-  width: 300px;
   font-weight: 100;
   line-height: 1.1;
+  width: 250px;
 }
 .solutions{
   background: var(--white);
@@ -444,48 +535,52 @@ export default {
   align-items: center;
 }
 .solution{
-  padding: 10px 10px 50px 10px;
   background: var(--cardgray);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  gap: 2rem;
-}
-.solution-footer{
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 .get-solution{
+  text-align: center;
   background: var(--navblue);
   color: var(--white);
   padding: 5px 10px;
-  border-radius: 50px;
+  border-radius: 4px;
   font-weight: bold;
   font-size: .8rem;
+  margin-bottom: 10px;
 }
-.share{
-  width: 40px;
+.get-solution:hover,
+.get-solution:focus{
+  background: var(--active);
 }
-.partner-wrapper,
+.partner-wrapper{
+  width: 90%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
 .partners{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .partner-logo{
-  width: 200px;
-  height: 80px;
-  padding: 10px;
-  background: var(--white);
-  box-shadow: -3px 3px 10px #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
 }
 .partner-logo img{
-  width: 100%;
-  height: 100%;
+  width: 50%;
 } 
 .clients{
   background: url('./assets/images/clients.png'), var(--navblue);
@@ -510,48 +605,58 @@ export default {
   gap: 50px;
   margin: 0 auto;
 }
-.reviews{
+ .reviews{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 50px 0;
+  margin:0 auto;
+}
+.reviews-wrapper{
+  width: 90%;
+  max-width: 1800px;
+  gap:50px;
+}
+.review{
+  margin: 20px;
+  transform: scale(.8);
+}
+.review-info{
+  background: var(--gray);
+  padding: 20px 20px 40px 40px;
+  border-radius: 10px;
+  color: var(--blackish);
+}
+.slick-current .review-info{
+  background: var(--lightblue);
+  padding: 20px 20px 40px 40px;
+  border-radius: 10px;
+  color: var(--white);
+  transform: scale(1.3);
+  z-index: 999;
+  margin: 10px;
 }
 .reviews-details{
-  width: 70%;
+  width: 90%;
+  max-width: 800px;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1;
 }
-.reviews-wrapper{
-  display: flex;
-  gap: 3rem;
-}
-.review{
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.review-info{
-  background: var(--lightblue);
-  padding: 20px 20px 20px 60px;
-  margin: 50px 0;
-  border-radius: 31px;
-  color: var(--white);
-  position: relative;
-  width: 350px;
-}
-.review-info h1{
-  position: absolute;
-  font-size: 3rem;
-  font-weight: bold;
-  left: 20px;
-  top: 0;
-}
 .review-info::after{
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: calc(50% - 20px);
+  border-top: 20px solid var(--gray);
+  border-bottom: 20px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  z-index: 99;
+}
+.slick-current .review-info::after{
   content: "";
   position: absolute;
   bottom: -40px;
@@ -563,9 +668,14 @@ export default {
   z-index: 99;
 }
 #reviewer-img{
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  margin-top: 50px;
+}
+.slick-current .reviewer{
+  margin: 50px 0;
+  transform: scale(1.3);
 }
 .reviewer{
   display: flex;
@@ -577,13 +687,32 @@ export default {
 .reviewer-name{
   font-weight: 700;
 } 
+.review-info h1{
+  font-size: 2rem;
+}
+.review-info h1{
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  left: 20px;
+  top: 0;
+}
+
+
+
 @media only screen and (max-width: 800px) {
+  .hero{
+    background-position: center right;
+  }
+  .hero-wrapper{
+    padding: 50vh 0 0 0;
+}
     #overlay,
   #overlay2{
     display: none;
   }
   .main-txt{
-    font-size: 3rem;
+    width: 90%;
   }
   .reviews-details,
   .choose-details,
@@ -593,41 +722,55 @@ export default {
   .title{
     font-size: 1.5rem;
   }
-  .partners{
-    flex-direction: column;
-  }
   .partner-wrapper{
     flex-direction: column;
   }
-  .reviews-wrapper{
-    width: 90%;
-    overflow-x: scroll;
-  }
-  .review-info{
-    padding: 10px 20px 20px 40px;
-    width: 300px;
-  }
-  .review-info h1{
-    font-size: 2rem;
-  }
-  .card-wrapper{
-    gap:5px;
-  }
-  .card,
   .solution{
-    width:80%;
+    width:100%;
   }
   .card-img{
-    width: 100px;
+    width: 100px;   
     height: 100px;
   }
   .card-bg{
     width: 80px;
     height: 80px;
   }
-  .solution-details,
-  .card-details{
-    width: 250px !important;
+  .card-wrapper,
+  .solutions-wrapper{
+    grid-template-columns: repeat(1, 1fr);
   }
+  .solution-details{
+    width:250px;
+    text-align: left;
+  }
+  .partner-logo{
+  width: 250px;
 }
+}
+  @media only screen and (max-width: 1300px){
+    
+  .card-wrapper,
+  .solutions-wrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    
+  .card-wrapper,
+  .solutions-wrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    
+  .card-wrapper,
+  .solutions-wrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  .main-txt{
+    font-size: 5rem;
+  }
+  }
 </style>

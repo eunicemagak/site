@@ -162,33 +162,34 @@ export default {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    padding: 5rem 0;
+    padding: 15rem 0 5rem 0;
     flex-direction: column;
     z-index: 3;
   }
   .smsol-maintitle{
     font-size: 5rem;
-    font-weight: bolder;
+    font-weight: 900;
     line-height: 1;
     width: 30%;
     color: var(--navblue);
   }
   .smsol-maindetails{
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-size: 1.2rem;
+    line-height: 1.1;
     font-weight: 300;
     margin: 20px 0;
     width: 40%;
     color: var(--black);
+    font-weight: 300;
   }
   .smsol-cardswrapper{
     width: 90%;
     max-width: 1400px;
     margin: -100px auto 200px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     z-index: 99;
-    overflow-x: scroll;
-    box-shadow: 3px 3px 10px #ccc;
+    grid-gap: 10px;
   } 
   .smsol-card{
     display: flex;
@@ -220,9 +221,6 @@ export default {
 
   .smsol-cardheader img{
     width: 70%;
-  }
-  .smsol-cardmain{
-    width: 270px;
   }
   .smsol-cardtitle{
     font-weight: bold;
@@ -261,9 +259,6 @@ export default {
     color:var(--othergreen);
   }
   @media only screen and (max-width: 800px) {
-        .smsol-wrapper {
-          padding: 4rem 0;
-        }
         .smsol-maintitle {
           font-size: 4rem;
 
@@ -273,9 +268,21 @@ export default {
           font-size: 1rem;
           width:90%;
         }
-        .smsol-cardmain {
-          width: 220px;
-        }
        
     }
+@media only screen and (max-width: 1300px){
+    .smsol-cardswrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    .smsol-cardswrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    .smsol-cardswrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 </style>

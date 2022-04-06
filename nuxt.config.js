@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'website',
+    title: 'ROAMTECH SOLUTIONS',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -28,12 +28,15 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
+    '@nuxtjs/fontawesome',
+    
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'nuxt-material-design-icons',
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -45,22 +48,13 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    // postcss: {
-    //   // Add plugin names as key and arguments as value
-    //   // Install them before as dependencies with npm or yarn
-    //   plugins: {
-    //     // Disable a plugin by passing false as value 
-    //     'postcss-url': false,
-    //     // 'postcss-nested': {},
-    //     // 'postcss-responsive-type': {},
-    //     // 'postcss-hexrgba': {}
-    //   },
-    //   preset: {
-    //     // Change the postcss-preset-env settings
-    //     autoprefixer: {
-    //       grid: true
-    //     }
-    //   }
-    // }
-  }
-}
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+        
+      },
+    }, 
+  },
+ 
+};

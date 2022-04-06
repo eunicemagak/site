@@ -1,7 +1,7 @@
 <template>
   <div class="gateway">
     <div class="gateway-wrapper">
-        <Header/>
+      <Nav/>
       <div id="overlay"></div>
       <div id="overlay2"></div>
       <div class="gateway-main">
@@ -170,20 +170,20 @@ export default {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    padding: 5rem 0;
+    padding: 15rem 0 5rem 0;
     flex-direction: column;
     color: var(--white);
     z-index: 3;
   }
   .gateway-maintitle{
     font-size: 5rem;
-    font-weight: bolder;
+    font-weight: 900;
     line-height: 1;
     width: 30%;
   }
   .gateway-maindetails{
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-size: 1.2rem;
+    line-height: 1.1;
     font-weight: 300;
     margin: 20px 0;
     width: 40%;
@@ -192,10 +192,11 @@ export default {
     width: 90%;
     max-width: 1400px;
     margin: -100px auto 0px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 20px;
     z-index: 99;
-    overflow-x: scroll;
-    box-shadow: 3px 3px 10px #ccc;
   } 
   .gateway-card{
     display: flex;
@@ -220,9 +221,6 @@ export default {
   .gateway-cardheader img{
     width: 70%;
   }
-  .gateway-cardmain{
-    width: 270px;
-  }
   .gateway-cardtitle{
     font-weight: bold;
     font-size: 1.2rem;
@@ -232,6 +230,7 @@ export default {
     font-size: .9rem;
     line-height: 1.3;
     margin-bottom: 30px;
+    color: var(--blackish);
   }
   .gateway-cardbtn{
     margin-left: 50%;
@@ -258,9 +257,6 @@ export default {
     color:var(--greenish);
   }
   @media only screen and (max-width: 800px) {
-        .gateway-wrapper {
-          padding: 4rem 0;
-        }
         .gateway-maintitle {
           font-size: 4rem;
 
@@ -270,9 +266,23 @@ export default {
           font-size: 1rem;
           width:90%;
         }
-        .gateway-cardmain {
-          width: 220px;
-        }
-       
+         .gateway-cardswrapper{
+           grid-template-columns: repeat(2, 1fr);
+         }
     }
+  @media only screen and (max-width: 1300px){
+    .gateway-cardswrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    .gateway-cardswrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    .gateway-cardswrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 </style>
