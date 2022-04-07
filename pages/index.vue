@@ -15,7 +15,7 @@
     </div>
   </div>
   <div class="chooseus">
-    <h1 class="title">WW HAVE THE EXPERTISE</h1>
+    <h1 class="title">WE HAVE THE EXPERTISE</h1>
     <p class="choose-details">With over 10 years of experience, we know how to simplify technology to deliver innovative solutions that create great value for our customers.</p>
     <div class="card-wrapper">
       <div class="card">

@@ -92,6 +92,7 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-bottom: 50px;
   }
   .content-wrapper:after{
     content: "";

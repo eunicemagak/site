@@ -44,7 +44,7 @@ export default {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 70vh;
 }
 .about:after{
   content: "";
@@ -64,7 +64,7 @@ export default {
   margin: 0 auto;
   color: var(--white);
   z-index: 2;
-  padding: 10rem 0 5rem 0;
+  padding: 15rem 0 5rem 0;
 }
 .about-wrapper h1{
   font-size: 2rem;
@@ -107,7 +107,7 @@ export default {
   }
   .journey{
     text-align: center;
-    margin: 70px 0 0 0; 
+    margin: 150px 0 0 0; 
   }
   .journey h1{
    font-size: 2.5rem;
@@ -125,7 +125,7 @@ export default {
 @media only screen and (max-width: 800px) {
   .about-wrapper{
     text-align: center;
-    padding: 100px 10px 50px 10px;
+  padding: 15rem 10px 5rem 10px;
   }
   .about-wrapper p{
     font-size: .9rem;

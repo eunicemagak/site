@@ -201,6 +201,7 @@ export default {
     }
     .social-media{
         display: flex;
+        align-items: center;
         gap: 10px;
         margin: 10px 0;
     }
@@ -245,6 +246,7 @@ export default {
             width: 90%;
         }
         .social-media{
+        justify-content: center;
         width: 150px;
         }
         .footer-logo{
