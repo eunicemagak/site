@@ -174,6 +174,9 @@ export default {
     .dropdown-links a:hover{
         background: var(--footerblue);
     }
+    .nav-button:hover + .dropdown-links{
+        visibility: visible;
+    }
     .is-active + .dropdown-links{
         visibility: visible !important; 
     }

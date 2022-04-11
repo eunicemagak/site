@@ -6,10 +6,10 @@
       <div id="overlay2"></div>
       <div class="smssol-main">
         <h1 class="smssol-maintitle">
-          SMS Solutions
+          Talk To Your Customers
         </h1>
         <p class="smssol-maindetails">
-          Roamtech specializes in the development of mobile solutions and services that help businesses communicate and connect with their audiences.
+          Deliver real time personalized communication through a secure and reliable messaging system supporting SMS, USSD, Shortcodes, IVR and Social channels
         </p>
       </div>
     </div>
@@ -23,11 +23,11 @@
             Bulk SMS
           </h4>
           <p class="smssol-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Reach thousands of your customers with the click of a button from your computer or mobile phone to your customers and staff phones in seconds. We ensure a secure, reliable and quick channel that gets your communication to your customer on time.
           </p>
           <a href="https://emalify.com/">
             <button class="smssol-cardbtn">
-              Get Bulk SMS
+              Learn More
             </button>
           </a>
         </div>
@@ -38,14 +38,14 @@
         </div>
         <div class="smssol-cardmain">
           <h4 class="smssol-cardtitle">
-            SMS Surveys
+            USSD
           </h4>
           <p class="smssol-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            USSD messaging provides longer interaction sessions than Short Code messaging and by far more responsive. Roamtech provides you with a platform to provide communication that is session based which can be triggered by you as the corporate company or by the user who is your customer.
           </p>
           <a href="https://emalify.com/">
             <button class="smssol-cardbtn">
-              Get 
+              Learn More 
             </button>
           </a>
         </div>
@@ -56,14 +56,14 @@
         </div>
         <div class="smssol-cardmain">
           <h4 class="smssol-cardtitle">
-            A2P Messaging
+            Short Codes
           </h4>
           <p class="smssol-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Two-way messaging allows your customers to reply to your SMS messages. These are 6-digit numbers that can be tied to your company for easy identification by you customers. Excellent for feedback, queries and surveys
           </p>
           <a href="https://emalify.com/">
             <button class="smssol-cardbtn">
-              Get
+              Learn More
             </button>
           </a>
         </div>
@@ -74,14 +74,14 @@
         </div>
         <div class="smssol-cardmain">
           <h4 class="smssol-cardtitle">
-            Lorem Ipsum
+            Premium SMS
           </h4>
           <p class="smssol-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Build and deliver content to your customers either on demand or via subscription with our premium sms service
           </p>
           <a href="https://emalify.com/">
             <button class="smssol-cardbtn">
-              Get
+              Learn More
             </button>
           </a>
         </div>
@@ -92,14 +92,14 @@
         </div>
         <div class="smssol-cardmain">
           <h4 class="smssol-cardtitle">
-            Lorem Ipsum
+            Surveys
           </h4>
           <p class="smssol-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Get reviews about your products or services and make data-driven decisions. Run surveys and get to know how your services affect your bottomline.
           </p>
           <a href="https://emalify.com/">
             <button class="smssol-cardbtn">
-              Get IVR
+              Learn More
             </button>
           </a>
         </div>
@@ -191,16 +191,17 @@ export default {
     width: 90%;
     max-width: 1400px;
     margin: -100px auto 200px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     z-index: 99;
-    overflow-x: scroll;
-    box-shadow: 3px 3px 10px #ccc;
   } 
   .smssol-card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 30px 40px 30px;
+    padding: 0 10px 40px 10px;
+    box-shadow: 3px 3px 10px #ccc;
   }
   .smssol-card:nth-child(odd){
     background: var(--white);
@@ -235,9 +236,6 @@ export default {
   .smssol-cardheader img{
     width: 70%;
   }
-  .smssol-cardmain{
-    width: 270px;
-  }
   .smssol-cardtitle{
     font-weight: bold;
     font-size: 1.2rem;
@@ -249,7 +247,6 @@ export default {
     margin-bottom: 30px;
   }
   .smssol-cardbtn{
-    margin-left: 50%;
     background: var(--white);
     border-radius: 50px;
     padding: 5px;
@@ -287,4 +284,19 @@ export default {
     height: 120px;
   }
 }
+ @media only screen and (max-width: 1300px){
+    .smssol-cardswrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    .smssol-cardswrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    .smssol-cardswrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 </style>

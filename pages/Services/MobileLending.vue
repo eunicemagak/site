@@ -6,10 +6,10 @@
       <div id="overlay2"></div>
       <div class="smsol-main">
         <h1 class="smsol-maintitle">
-            Fintech Solutions
+            Fintech Services
         </h1>
         <p class="smsol-maindetails">
-          Roamtech specializes in the development of mobile solutions and services that help businesses communicate and connect with their audiences.
+          We are a leading provider of mobile financial service solutions, from mobile lending, loan scoring and identity verfification we have the capability to deliver
         </p>
       </div>
     </div>
@@ -23,7 +23,7 @@
             Senti
           </h4>
           <p class="smsol-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Build a brighter financial future, Get quick loans straight to your mobile phone, Senti empowers customers with hassle free financial solutions in an easy to use interface
           </p>
           <a href="https://senti.co.ke">
             <button class="smsol-cardbtn">
@@ -40,12 +40,12 @@
         </div>
         <div class="smsol-cardmain">
           <h4 class="smsol-cardtitle">
-            Business Loan
+            Afrisend
           </h4>
           <p class="smsol-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Send money across the world securely straight into your recipients bank account or Mobile money wallet. Cash out at any Afrisend cash out partner worldwide
           </p>
-          <a href="https://senti.co.ke">
+          <a href="https://afrisend.com/">
             <button class="smsol-cardbtn">
              <i class='fa fa-chevron-right'></i>
             </button>
@@ -58,12 +58,12 @@
         </div>
         <div class="smsol-cardmain">
           <h4 class="smsol-cardtitle">
-            Lending App
+            Paykit
           </h4>
           <p class="smsol-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Our Mobile Wallet allows you to make payments across 100s of merchants and receive and send money across Mobile money and Bank accounts
           </p>
-          <a href="https://emalify.com/">
+          <a href="https://play.google.com/store/apps/details?id=com.roamtech.emalipayapp&hl=sw">
             <button class="smsol-cardbtn">
              <i class='fa fa-chevron-right'></i>
             </button>
@@ -76,28 +76,10 @@
         </div>
         <div class="smsol-cardmain">
           <h4 class="smsol-cardtitle">
-            Fintech
+            Let's Partner
           </h4>
           <p class="smsol-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-          </p>
-          <a href="https://emalify.com/">
-            <button class="smsol-cardbtn">
-              <i class='fa fa-chevron-right'></i>
-            </button>
-          </a>
-        </div>
-      </div>
-      <div class="smsol-card">
-        <div class="smsol-cardheader">
-          <img src="~/assets/images/fintech.png">
-        </div>
-        <div class="smsol-cardmain">
-          <h4 class="smsol-cardtitle">
-            Fintech
-          </h4>
-          <p class="smsol-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Do you have a great idea or solution that you would like to explore, Do you have a pressing problem that needs Fintech expertise? Let's talk, get in touch and let us build value together
           </p>
           <a href="https://emalify.com/">
             <button class="smsol-cardbtn">
@@ -186,10 +168,10 @@ export default {
     width: 90%;
     max-width: 1400px;
     margin: -100px auto 200px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     z-index: 99;
-    overflow-x: scroll;
-    box-shadow: 3px 3px 10px #ccc;
+    grid-gap: 10px;
   } 
   .smsol-card{
     display: flex;
@@ -221,9 +203,6 @@ export default {
 
   .smsol-cardheader img{
     width: 70%;
-  }
-  .smsol-cardmain{
-    width: 270px;
   }
   .smsol-cardtitle{
     font-weight: bold;
@@ -271,9 +250,21 @@ export default {
           font-size: 1rem;
           width:90%;
         }
-        .smsol-cardmain {
-          width: 220px;
-        }
        
     }
+@media only screen and (max-width: 1300px){
+    .smsol-cardswrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   @media only screen and (max-width: 900px){
+    .smsol-cardswrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   @media only screen and (max-width: 650px){
+    .smsol-cardswrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 </style>
