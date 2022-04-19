@@ -70,6 +70,23 @@
             </p>
           </div>
         </div>
+        <div class="content-card shadow-lg">
+           <div class="content-img"><img src="~/assets/images/content4.png" alt=""> </div>
+          <div class="content-cardmain">
+            <a href="https://bonyeza-2018.appspot.com/">
+              <img class="content-cardicon"  src="~/assets/images/greenright-arrow.png" alt="">
+            </a>
+            <h4 class="content-cardtitle">
+              SKIZA BIASHARA
+            </h4>
+            <p class="content-carddetails">
+              Music | Bonyeza699 | Videos
+            </p>
+            <p class="content-carddetails">
+              
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 </template>
