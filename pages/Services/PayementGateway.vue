@@ -6,10 +6,10 @@
       <div id="overlay2"></div>
       <div class="gateway-main">
         <h1 class="gateway-maintitle">
-            Payment Gateway
+            Pay Everywhere
         </h1>
         <p class="gateway-maindetails">
-          Roamtech specializes in the development of mobile solutions and services that help businesses communicate and connect with their audiences.
+          With our robust and secure Paykit Payment Gateway APIs, you can integrate payments into your platform or application with a few lines of code
         </p>
       </div>
     </div>
@@ -20,14 +20,14 @@
         </div>
         <div class="gateway-cardmain">
           <h4 class="gateway-cardtitle">
-            Payement Gateway
+            Payement APIs
           </h4>
           <p class="gateway-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            We have a set of easy to understand APIs that will make sure your payment solution is up and runnning in no time
           </p>
           <a href="https://emalify.com/">
             <button class="gateway-cardbtn">
-             Get
+              See The Docs
             </button>
           </a>
         </div>
@@ -41,11 +41,11 @@
             Paykit
           </h4>
           <p class="gateway-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Our Mobile Wallet allows you to make payments across 100s of merchants and receive and send money across Mobile money and Bank accounts
           </p>
           <a href="https://play.google.com/store/apps/details?id=com.roamtech.emalipayapp&hl=sw">
             <button class="gateway-cardbtn">
-              Download
+              Download Paykit
             </button>
           </a>
         </div>
@@ -59,11 +59,11 @@
             Utility Payment
           </h4>
           <p class="gateway-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Make utility payments from a single interface, pay for Water, Electricity tokens, Home internet and many more services from a single API
           </p>
           <a href="https://emalify.com/">
             <button class="gateway-cardbtn">
-              Get
+              Learn More
             </button>
           </a>
         </div>
@@ -74,14 +74,14 @@
         </div>
         <div class="gateway-cardmain">
           <h4 class="gateway-cardtitle">
-            Bulk Airtime
+            Bulk Airtime & Data
           </h4>
           <p class="gateway-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            Our payment makes buying Bulk Airtime and Data easy and seamless, with a few lines of code you can top up Airtime and Data from your platform
           </p>
           <a href="https://emalify.com/">
             <button class="gateway-cardbtn">
-              Get
+              Learn More
             </button>
           </a>
         </div>
@@ -95,11 +95,11 @@
             API Intergration
           </h4>
           <p class="gateway-carddetails">
-            Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+            We have an easy to use API that allows you to integrate our payment solutions into your workflow no matter what language you already use
           </p>
           <a href="https://emalify.com/">
             <button class="gateway-cardbtn">
-              Get 
+              See The Docs
             </button>
           </a>
         </div>
@@ -233,11 +233,10 @@ export default {
     color: var(--blackish);
   }
   .gateway-cardbtn{
-    margin-left: 50%;
     background: var(--white);
     border-radius: 50px;
     padding: 5px;
-    width: 120px;
+    width: 150px;
     box-shadow: -3px 3px 10px #ccc;
     font-weight: bold;
   }

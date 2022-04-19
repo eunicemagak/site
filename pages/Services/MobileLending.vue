@@ -7,10 +7,11 @@
       <div id="overlay2"></div>
       <div class="smsol-main">
         <h1 class="smsol-maintitle">
-          Financial Services
+            Fintech Services
         </h1>
         <p class="smsol-maindetails">
-         We are a leading provider of mobile financial service solutions, from mobile lending, loan scoring and identity verfification we have the capability to deliver</p>
+          We are a leading provider of mobile financial service solutions, from mobile lending, loan scoring and identity verfification we have the capability to deliver
+        </p>
       </div>
     </div>
     <div class="smsol-cardswrapper">
@@ -23,7 +24,7 @@
             Senti
           </h4>
           <p class="smsol-carddetails">
-          Build a brighter financial future, Get quick loans straight to your mobile phone, Senti empowers customers with hassle free financial solutions in an easy to use interface  
+            Build a brighter financial future, Get quick loans straight to your mobile phone, Senti empowers customers with hassle free financial solutions in an easy to use interface
           </p>
           <a href="https://senti.co.ke">
             <button class="smsol-cardbtn">
@@ -43,8 +44,9 @@
             Afrisend
           </h4>
           <p class="smsol-carddetails">
-         Send money across the world securely straight into your recipients bank account or Mobile money wallet. Cash out at any Afrisend cash out partner worldwide</p>
-          <a href="https://senti.co.ke">
+            Send money across the world securely straight into your recipients bank account or Mobile money wallet. Cash out at any Afrisend cash out partner worldwide
+          </p>
+          <a href="https://afrisend.com/">
             <button class="smsol-cardbtn">
              <i class='fa fa-chevron-right'></i>
             </button>
@@ -61,8 +63,8 @@
           </h4>
           <p class="smsol-carddetails">
             Our Mobile Wallet allows you to make payments across 100s of merchants and receive and send money across Mobile money and Bank accounts
-            </p>
-          <a href="https://emalify.com/">
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.roamtech.emalipayapp&hl=sw">
             <button class="smsol-cardbtn">
              <i class='fa fa-chevron-right'></i>
             </button>
@@ -78,7 +80,8 @@
             Let's Partner
           </h4>
           <p class="smsol-carddetails">
-            Do you have a great idea or solution that you would like to explore, Do you have a pressing problem that needs Fintech expertise? Let's talk, get in touch and let us build value together</p>
+            Do you have a great idea or solution that you would like to explore, Do you have a pressing problem that needs Fintech expertise? Let's talk, get in touch and let us build value together
+          </p>
           <a href="https://emalify.com/">
             <button class="smsol-cardbtn">
               <i class='fa fa-chevron-right'></i>

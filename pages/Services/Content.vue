@@ -5,7 +5,7 @@
       <div id="overlay2"></div>
       <div class="content-main">
         <h1 class="content-maintitle">
-         CONTENT YOU WILL LOVE
+          CONTENT <span>YOU WILL LOVE</span>
         </h1>
       </div>
       <div class="content-cardswrapper">
@@ -92,6 +92,7 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-bottom: 50px;
   }
   .content-wrapper:after{
     content: "";

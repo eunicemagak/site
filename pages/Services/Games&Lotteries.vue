@@ -19,7 +19,8 @@
               Cheza Chini
             </h4>
             <p class="games-carddetails">
-             Cheza Chini is an exciting bidding game where user get to buy high value items at very low prices</p>
+              Cheza Chini is an exciting bidding game where user get to buy high value items at very low prices
+            </p>
             <a href="https://chezachinibids.com/">
               <img class="games-cardicon"  src="~/assets/images/lightblueright-arrow.png" alt="">
             </a>
@@ -34,7 +35,8 @@
               BINGWA GAMES
             </h4>
             <p class="games-carddetails">
-              Bingwa games is an excting collection of mobile games and lotteries that you and your friends can play on your phone</p>
+              Bingwa games is an excting collection of mobile games and lotteries that you and your friends can play on your phone
+            </p>
             <a href="https://bingwa.co.ke/">
               <img class="games-cardicon"  src="~/assets/images/lightpinkright-arrow.png" alt="">
             </a>
@@ -49,14 +51,13 @@
               ANZA GAMES
             </h4>
             <p class="games-carddetails">
-              Play hundreds of games for only 20bob a day, from street racing, puzzle and adventure games to quizzes and trivia games Anza games has a game for all ages.</p>
+              Play hundreds of games for only 20bob a day, from street racing, puzzle and adventure games to quizzes and trivia games Anza games has a game for all ages.
+            </p>
             <a href="https://anzagames.co.ke/">
               <img class="games-cardicon"  src="~/assets/images/lightblueright-arrow.png" alt="">
             </a>
           </div>
         </div>
-        
-        
       </div>
     </div>
     </div>
@@ -75,7 +76,7 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
+    padding-bottom: 50px;
   }
   .games-wrapper:after{
     content: "";

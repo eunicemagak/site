@@ -3,12 +3,12 @@
         <div class="footer-email">
             <div class="footer-email-wrapper">
                 <div class="footer-email-text">
-                    <h1 class="bold">
+                    <h1 class="regular">
                         DO YOU HAVE ANY QUESTION?
                     </h1>
-                    <h1 class="regular">
+                    <!-- <h1 class="regular">
                         LETS IMPROVE YOUR BUSINESS
-                    </h1>
+                    </h1> -->
                 </div>
                 <form  ref="form" @submit.prevent="sendEmail">
                     <div class="form-section-one">
@@ -23,37 +23,30 @@
             </div>
         </div>
         <div class="contact-info">
-            <div class="footer-wrapper">
             <div class="footer-info">
                 <div class="footer-logo">
                     <img src="../assets/images/logowhite.png" alt="">
                 </div>
-                <p class="description">
-                    Roamtech specializes in the development of mobile solutions and services that help businesses communicate and connect with their audiences.
-                </p>
-            </div>
-            <div class="contact">
-                <p id="main">CONTACT US</p>
-                <div class="contact-details">
-                    <p>Phone +254 (0)20 2 699 699</p>
-                    <p>Mail info@roamtech.com</p>
-                    <p>4th floor, Stellato, Muthithi Road</p>
-                    <p>Westland, Nairobi Kenya</p>
-                </div>
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/company/roamtech-solutions/">
-                    <font-awesome-icon :icon="['fab', 'linkedin-in']" class="social-icon"/>
-                    </a>
-                    <font-awesome-icon :icon="['fab', 'instagram']" class="social-icon"/>
-                    <a href="https://twitter.com/roamtech?lang=en">
-                    <font-awesome-icon :icon="['fab', 'twitter']" class="social-icon"/>
-                    </a>
-                    <a href="https://m.facebook.com/profile.php?id=346148706193152">
-                    <font-awesome-icon :icon="['fab', 'facebook-f']" class="social-icon"/>
-                    </a>
+                <div class="contact">
+                    <p id="main">CONTACT US</p>
+                    <div class="contact-details">
+                        <p>+254 (0)20 2 699 699 // info@roamtech.com // 4th floor, Stellato, Muthithi Road // Westland, </p> 
+                        <p>Nairobi, Kenya</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/company/roamtech-solutions/">
+                        <font-awesome-icon :icon="['fab', 'linkedin-in']" class="social-icon"/>
+                        </a>
+                        <font-awesome-icon :icon="['fab', 'instagram']" class="social-icon"/>
+                        <a href="https://twitter.com/roamtech?lang=en">
+                        <font-awesome-icon :icon="['fab', 'twitter']" class="social-icon"/>
+                        </a>
+                        <a href="https://m.facebook.com/profile.php?id=346148706193152">
+                        <font-awesome-icon :icon="['fab', 'facebook-f']" class="social-icon"/>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <div class="copyright">
             <div class="footer-copyright-wrapper">
@@ -166,15 +159,16 @@ export default {
     }
     .footer-info{
         display: flex;
-        
-        gap: 50px;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1600px;
+        margin: 0 auto;
     }
     .contact-info{
         background-color: var(--black);
         width: 100%;
         padding: 20px;
         color: var(--white);
-        grid-gap: 20px;
     }
     .description{
         width: 43%;
@@ -193,6 +187,7 @@ export default {
         width: 100%;
         padding: 20px;
         font-weight: lighter;
+        text-align: center;
     }
     .submit-btn{
         color: var(--white);
@@ -206,6 +201,7 @@ export default {
     }
     .social-media{
         display: flex;
+        align-items: center;
         gap: 10px;
         margin: 10px 0;
     }
@@ -250,6 +246,7 @@ export default {
             width: 90%;
         }
         .social-media{
+        justify-content: center;
         width: 150px;
         }
         .footer-logo{
