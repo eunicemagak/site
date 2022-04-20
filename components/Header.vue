@@ -24,14 +24,14 @@
                         <nuxt-link to="/Services/SMSSolutions" class="nav-link" @click="toggleDropdown($event)">
                             SMS Solutions
                         </nuxt-link>
-                        <nuxt-link to="/Services/PayementGateway" class="nav-link" @click="toggleDropdown($event)">
-                            Payement Gateway
+                        <nuxt-link to="/Services/PaymentGateway" class="nav-link" @click="toggleDropdown($event)">
+                            Payment Gateway
                         </nuxt-link>
                         <nuxt-link to="/Services/MobileLending" class="nav-link" @click="toggleDropdown($event)">
                             Mobile Lending
                         </nuxt-link>
-                        <nuxt-link to="/Services/PayementChannels" class="nav-link" @click="toggleDropdown($event)">
-                            Payement Channels
+                        <nuxt-link to="/Services/PaymentChannels" class="nav-link" @click="toggleDropdown($event)">
+                            Payment Channels
                         </nuxt-link>
                         <nuxt-link to="/Services/Games&Lotteries" class="nav-link" @click="toggleDropdown($event)">
                             Games & Lotteries

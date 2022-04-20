@@ -7,7 +7,7 @@
       <div id="overlay2"></div>
       <div class="smsol-main">
         <h1 class="smsol-maintitle">
-            Fintech Services
+            Financial Services
         </h1>
         <p class="smsol-maindetails">
           We are a leading provider of mobile financial service solutions, from mobile lending, loan scoring and identity verfification we have the capability to deliver
@@ -77,7 +77,7 @@
         </div>
         <div class="smsol-cardmain">
           <h4 class="smsol-cardtitle">
-            Let's Partner
+            Customized Solutions
           </h4>
           <p class="smsol-carddetails">
             Do you have a great idea or solution that you would like to explore, Do you have a pressing problem that needs Fintech expertise? Let's talk, get in touch and let us build value together
