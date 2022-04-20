@@ -80,7 +80,7 @@
           <img src="../assets/images/gateway.png" alt="">
         </div>
         <h4 class="solution-title">
-          payment GATEWAY
+          PAYMENT GATEWAY
         </h4>
         <p class="solution-details">
           With our payment integration you can make mobile payments to various utilities across the region, from Electicity tokens, Water bills to Airtime and Data

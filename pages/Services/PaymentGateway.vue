@@ -20,7 +20,7 @@
         </div>
         <div class="gateway-cardmain">
           <h4 class="gateway-cardtitle">
-            payment APIs
+            Payment APIs
           </h4>
           <p class="gateway-carddetails">
             We have a set of easy to understand APIs that will make sure your payment solution is up and runnning in no time

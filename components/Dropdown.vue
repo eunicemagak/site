@@ -6,14 +6,14 @@
           <nuxt-link to="/Services/SMSSolutions">
               SMS Solutions
           </nuxt-link>
-          <nuxt-link to="/Services/paymentGateway">
-              payment Gateway
+          <nuxt-link to="/Services/PaymentGateway">
+              Payment Gateway
           </nuxt-link>
           <nuxt-link to="/Services/MobileLending">
               Mobile Lending
           </nuxt-link>
-          <nuxt-link to="/Services/paymentChannels">
-              payment Channels
+          <nuxt-link to="/Services/PaymentChannels">
+              Payment Channels
           </nuxt-link>
           <nuxt-link to="/Services/Games&Lotteries">
               Games & Lotteries

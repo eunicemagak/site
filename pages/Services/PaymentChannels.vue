@@ -293,19 +293,25 @@ export default {
     font-weight: bold;
   }
   .payment-card:nth-child(1) .payment-cardbtn{
-    color:var(--orange);
+    color:var(--red);
   }
   .payment-card:nth-child(2) .payment-cardbtn{
-    color:var(--pinkish);
+    color:var(--orange);
   }
   .payment-card:nth-child(3) .payment-cardbtn{
-    color:var(--greenish);
+    color:var(--skyblue);
   }
   .payment-card:nth-child(4) .payment-cardbtn{
-    color:var(--realorange);
+    color:var(--red);
   }
   .payment-card:nth-child(5) .payment-cardbtn{
+    color:var(--orange);
+  }
+  .payment-card:nth-child(6) .payment-cardbtn{
     color:var(--othergreen);
+  }
+  .payment-card:nth-child(7) .payment-cardbtn{
+    color:var(--purple);
   }
   @media only screen and (max-width: 800px) {
         .payment-maintitle {

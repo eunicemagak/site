@@ -130,6 +130,7 @@ export default {
     grid-template-columns: repeat(4, 1fr) ;
     grid-gap: 10px;
     z-index: 99;
+  
   } 
   .games-card{
     display: flex;

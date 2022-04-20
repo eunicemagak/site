@@ -14,8 +14,10 @@
           <div class="content-cardmain">
 
             <a href="https://bonyeza-2018.appspot.com/">
-              <img class="content-cardicon"  src="~/assets/images/purpleright-arrow.png" alt="">
-            </a>
+              <button class="content-cardbtn">
+              <i class='fa fa-chevron-right'></i>
+            </button>
+          </a>
             <h4 class="content-cardtitle">
               INFORTAINMENT
             </h4>
@@ -29,8 +31,10 @@
             <div class="content-img"><img src="~/assets/images/content2.png" alt=""> </div>
           <div class="content-cardmain">
             <a href="https://bonyeza-2018.appspot.com/">
-              <img class="content-cardicon"  src="~/assets/images/redright-arrow(2).png" alt="">
-            </a>
+               <button class="content-cardbtn">
+              <i class='fa fa-chevron-right'></i>
+            </button>
+          </a>
             <h4 class="content-cardtitle">
               QUOTES
             </h4>
@@ -43,8 +47,10 @@
           <div class="content-img"><img src="~/assets/images/content3.png" alt=""> </div>
           <div class="content-cardmain">
             <a href="https://bonyeza-2018.appspot.com/">
-              <img class="content-cardicon"  src="~/assets/images/blueright-arrow(3).png" alt="">
-            </a>
+               <button class="content-cardbtn">
+              <i class='fa fa-chevron-right'></i>
+            </button>
+          </a>
             <h4 class="content-cardtitle">
               BONYEZA
             </h4>
@@ -57,13 +63,15 @@
            <div class="content-img"><img src="~/assets/images/content4.png" alt=""> </div>
           <div class="content-cardmain">
             <a href="https://bonyeza-2018.appspot.com/">
-              <img class="content-cardicon"  src="~/assets/images/greenright-arrow.png" alt="">
-            </a>
+               <button class="content-cardbtn">
+              <i class='fa fa-chevron-right'></i>
+            </button>
+          </a>
             <h4 class="content-cardtitle">
               MY SKIZA 
             </h4>
             <p class="content-carddetails">
-              Music | Bonyeza699 | Videos
+              Music | Bonyeza811 | Videos
             </p>
             <p class="content-carddetails">
               
@@ -71,16 +79,19 @@
           </div>
         </div>
         <div class="content-card shadow-lg">
-           <div class="content-img"><img src="~/assets/images/content4.png" alt=""> </div>
+           <div class="content-img"><img src="~/assets/images/Skizab.jpg" alt=""> </div>
           <div class="content-cardmain">
-            <a href="https://bonyeza-2018.appspot.com/">
-              <img class="content-cardicon"  src="~/assets/images/greenright-arrow.png" alt="">
-            </a>
+           
+            <a href="https://skizatone.com/">
+            <button class="content-cardbtn">
+              <i class='fa fa-chevron-right'></i>
+            </button>
+          </a>
             <h4 class="content-cardtitle">
               SKIZA BIASHARA
             </h4>
             <p class="content-carddetails">
-              Music | Bonyeza699 | Videos
+              Music | Dial811 | Boost Biashara Yako
             </p>
             <p class="content-carddetails">
               
@@ -218,29 +229,30 @@ export default {
     margin-bottom: 20px;
     color: var(--black);
   }
-  .content-cardicon{
+  .content-cardbtn{
     margin-right: 20px;
     float: right;
-    height: 18px;
+    height: 25px;
+    padding: 5px;
     margin-top: 10px;
-    width: 18px;
+    width: 25px;
     border-radius: 50%;
     box-shadow: -3px 3px 10px rgb(41, 41, 41);
   }
   .content-card:nth-child(1) .content-cardbtn{
-    color:var(--orange);
+    background:var(--orange);
   }
   .content-card:nth-child(2) .content-cardbtn{
-    color:var(--pinkish);
+    background:var(--pinkish);
   }
   .content-card:nth-child(3) .content-cardbtn{
-    color:var(--greenish);
+   background:var(--greenish);
   }
   .content-card:nth-child(4) .content-cardbtn{
-    color:var(--realorange);
+    background:var(--realorange);
   }
   .content-card:nth-child(5) .content-cardbtn{
-    color:var(--othergreen);
+    background:var(--othergreen);
   }
 .content-img{
   z-index: 50;
