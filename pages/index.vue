@@ -80,12 +80,12 @@
           <img src="../assets/images/gateway.png" alt="">
         </div>
         <h4 class="solution-title">
-          PAYEMENT GATEWAY
+          payment GATEWAY
         </h4>
         <p class="solution-details">
           With our payment integration you can make mobile payments to various utilities across the region, from Electicity tokens, Water bills to Airtime and Data
         </p>
-          <nuxt-link to="/Services/PayementGateway"  class="get-solution">
+          <nuxt-link to="/Services/paymentGateway"  class="get-solution">
             LEARN MORE
           </nuxt-link>
       </div>
@@ -99,7 +99,7 @@
         <p class="solution-details">
           With our financial services you can make payments across various channels, mobile to mobile, Bank to bank
         </p>
-          <nuxt-link to="/Services/PayementChannels"  class="get-solution">
+          <nuxt-link to="/Services/paymentChannels"  class="get-solution">
             LEARN MORE
           </nuxt-link>
       </div>
@@ -203,7 +203,7 @@
         Clients
       </h1>
       <div class="clients-wrapper">
-        <img src="../assets/images/smb.png" alt="" class="partner-logo">
+        <img src="../assets/images/sbm.png" alt="" class="partner-logo">
         <img src="../assets/images/betika.png" alt="" class="partner-logo">
         <img src="../assets/images/limuru.png" alt="" class="partner-logo">
         <img src="../assets/images/nairobiwomen.png" alt="" class="partner-logo">
@@ -793,7 +793,7 @@ export default {
    cursor: pointer;
   }
   .partner-logo:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: ease-in-out;
   }
   .white-logo{
