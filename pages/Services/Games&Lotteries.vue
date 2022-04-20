@@ -26,38 +26,6 @@
             </a>
           </div>
         </div>
-        <div class="games-card">
-          <div class="games-cardheader">
-            <img src="~/assets/images/bingwa.png">
-          </div>
-          <div class="games-cardmain">
-            <h4 class="games-cardtitle">
-              BINGWA GAMES
-            </h4>
-            <p class="games-carddetails">
-              Bingwa games is an excting collection of mobile games and lotteries that you and your friends can play on your phone
-            </p>
-            <a href="https://bingwa.co.ke/">
-              <img class="games-cardicon"  src="~/assets/images/lightpinkright-arrow.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="games-card">
-          <div class="games-cardheader">
-            <img src="~/assets/images/anza.png">
-          </div>
-          <div class="games-cardmain">
-            <h4 class="games-cardtitle">
-              ANZA GAMES
-            </h4>
-            <p class="games-carddetails">
-              Play hundreds of games for only 20bob a day, from street racing, puzzle and adventure games to quizzes and trivia games Anza games has a game for all ages.
-            </p>
-            <a href="https://anzagames.co.ke/">
-              <img class="games-cardicon"  src="~/assets/images/lightblueright-arrow.png" alt="">
-            </a>
-          </div>
-        </div>
       </div>
     </div>
     </div>

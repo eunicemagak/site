@@ -161,7 +161,7 @@
       </div>
     </div>
   </div>
-  <div class="partners">
+  <!-- <div class="partners">
         <h1 class="title">
           OUR KEY PARTNERS
         </h1>
@@ -185,6 +185,44 @@
         <img src="../assets/images/LOGOS.png" alt="" class="client">
         <img src="../assets/images/LOGOS 2.png" alt="" class="client">
     </div>
+  </div> -->
+  <div class="pandc">
+    <div class="partners">
+      <h1 class="title">
+        Partners
+      </h1>
+      <div class="partners-wrapper">
+        <img src="../assets/images/safaricom.png" class="partner-logo">
+        <img src="../assets/images/airtel.png" alt="" class="partner-logo">
+        <img src="../assets/images/visa.png" alt="" class="partner-logo">
+        <img src="../assets/images/telkom.png" alt="" class="partner-logo">
+      </div>
+    </div>
+    <div class="clients">
+      <h1 class="title">
+        Clients
+      </h1>
+      <div class="clients-wrapper">
+        <img src="../assets/images/smb.png" alt="" class="partner-logo">
+        <img src="../assets/images/betika.png" alt="" class="partner-logo">
+        <img src="../assets/images/limuru.png" alt="" class="partner-logo">
+        <img src="../assets/images/nairobiwomen.png" alt="" class="partner-logo">
+        <img src="../assets/images/startimes.png" alt="" class="partner-logo">
+        <img src="../assets/images/sabis.png" alt="" class="partner-logo">
+        <img src="../assets/images/ncib.png" alt="" class="partner-logo">
+        <img src="../assets/images/tavevo.png" alt="" class="partner-logo">
+        <img src="../assets/images/defense.png" alt="" class="partner-logo">
+        <img src="../assets/images/kentours.png" alt="" class="partner-logo">
+        <img src="../assets/images/hava.png" alt="" class="partner-logo">
+        <img src="../assets/images/avane.png" alt="" class="partner-logo">
+        <img src="../assets/images/alladin.png" alt="" class="partner-logo">
+        <img src="../assets/images/ira.png" alt="" class="partner-logo">
+        <img src="../assets/images/corporate.png" alt="" class="partner-logo">
+      </div>
+    </div>
+    <div class="white-logo">
+    <img src="../assets/images/logowhite.png" class="white-logo"/>
+    </div>
   </div>
    <div class="reviews">
     <h1 class="title">
@@ -197,12 +235,12 @@
       <div class="review">
         <div class="review-info">
           <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          Roamtech have in the past demonstrated capacity and ability to see projects through to successful completion and we are confident of their solution-oriented skills and experience. We currently use their Bulk SMS Solution Platform (Emalify) which we find reliable,functional, efficient and simple to use
         </div>
         <div class="reviewer">
           <img src="../assets/images/user.jpg" id="reviewer-img"/>
           <h4 class="reviewer-name">
-            Tower Sacco
+            Defence Forces Medical Insuarance Scheme Registered Trustees
           </h4>
         </div>
       </div>
@@ -292,7 +330,7 @@ export default {
           "slidesToScroll": 1,
           "swipeToSlide": true,
           "autoplay": true,
-          "autoplaySpeed": 2500,
+          "autoplaySpeed": 4000,
           "centerMode": true,
           "centerPadding": "20px",
           "focusOnSelect": true,
@@ -356,7 +394,7 @@ export default {
   display: flex;
   flex-direction: column;
   color: var(--white);
-  padding: 12rem 0 5rem 0;
+  padding: 15rem 0 5rem 0;
 }
 .overlay,
 .overlay2{
@@ -432,6 +470,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
+  justify-content: center;
   }
 .card-wrapper{
   width: 90%;
@@ -497,6 +536,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 99;
 }
 .solution{
   background: var(--cardgray);
@@ -521,15 +561,37 @@ export default {
 .get-solution:focus{
   background: var(--active);
 }
-.partner-wrapper{
+.clients,
+.partners{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.partners-wrapper,
+.clients-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 0 auto;
+}
+.partner-logo{
+  width: 50%;
+  max-width:230px;
+  margin: 0 auto;
+}
+.white-logo{
+  display: none;
+}
+/* .partner-wrapper{
   width: 90%;
   max-width: 1400px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
-}
-.partners{
+} */
+/* .partners{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -568,14 +630,17 @@ export default {
   overflow: auto;
   gap: 50px;
   margin: 0 auto;
-}
+} */
  .reviews{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 50px 0;
-  margin:0 auto;
+  margin:-50px auto 0 auto;
+  background: var(--white);
+  z-index: 99;
 }
 .reviews-wrapper{
   width: 90%;
@@ -686,9 +751,9 @@ export default {
   .title{
     font-size: 1.5rem;
   }
-  .partner-wrapper{
+  /* .partner-wrapper{
     flex-direction: column;
-  }
+  } */
   .solution{
     width:100%;
   }
@@ -708,10 +773,82 @@ export default {
     width:250px;
     text-align: left;
   }
+  .white-logo{
+    display: none;
+}
+}
+ @media only screen and (min-width: 800px){
+  .clients,
+  .partners{
+    flex-direction: row;
+    align-items: flex-start;
+    z-index: 2;
+  }
+  .partners-wrapper,
+  .clients-wrapper{
+    grid-template-columns: repeat(4, 1fr);
+    z-index: 2;
+  }
   .partner-logo{
-  width: 250px;
-}
-}
+   cursor: pointer;
+  }
+  .partner-logo:hover{
+    transform: scale(1.5);
+    transition: ease-in-out;
+  }
+  .white-logo{
+    display: block;
+    position: relative;
+    width: 120px;
+    z-index: 2;
+    padding: 20px 10px;
+  }
+  .white-logo::before{
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    background-color: var(--darkblue);
+    transform: rotate(10deg);
+  }
+  .pandc:after{
+    content: '';
+    position: absolute;
+    width: 25vw;
+    height: 100%;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: var(--footerblue);
+  }
+  .pandc:before{
+    content: '';
+    position: absolute;
+      width: 80vw;
+      height: 100%;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+      border-bottom: 1000px solid white;
+      border-left: 100px solid transparent;
+  }
+  .pandc{
+    padding: 20px calc((100vw - 1200px)/2);
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pandc .title{
+    color: var(--white);
+  }
+ }
   @media only screen and (max-width: 1300px){
     
   .card-wrapper,

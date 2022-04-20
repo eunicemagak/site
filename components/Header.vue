@@ -174,8 +174,11 @@ export default {
     .dropdown-links a:hover{
         background: var(--footerblue);
     }
-    .nav-button:hover + .dropdown-links{
+    .nav-button:onmouseover + .dropdown-links{
         visibility: visible;
+    }
+    .nav-button:onmouseout + .dropdown-links{
+        visibility: hidden;
     }
     .is-active + .dropdown-links{
         visibility: visible !important; 
