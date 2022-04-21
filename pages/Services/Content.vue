@@ -115,7 +115,7 @@ export default {
 
 <style>
   .content-wrapper{
-    background:url('./assets/images/content5.png');
+    background:url('./assets/images/content5.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;

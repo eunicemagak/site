@@ -40,7 +40,7 @@ export default {
 
 <style>
 .about{
-  background: url('./assets/images/aboutbg.png'), var(--black);
+  background: url('./assets/images/aboutbg.jpg'), var(--black);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;

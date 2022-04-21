@@ -39,7 +39,7 @@ export default {
 
 <style>
   .games-wrapper{
-    background:url('./assets/images/games1.png');
+    background:url('./assets/images/games1.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
