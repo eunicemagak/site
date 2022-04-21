@@ -4,11 +4,11 @@
       <Nav/>
     </div>
       <div class="contactuscontent">
-          <div class="contactleft">
+          <!-- <div class="contactleft">
             <img class="reviews1" src="../assets/images/rmt.png" alt="" >
-          </div>
+          </div> -->
           <div class="contactright">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.80213323222!2d36.808981!3d-1.262175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbd2f57b3808719a!2sRoamtech%20Solutions%20Limited!5e0!3m2!1sen!2ske!4v1647866535229!5m2!1sen!2ske" allowfullscreen="" width="1000" height="600" loading="lazy"></iframe>
+            <iframe src="https://my.atlistmaps.com/map/588fa6b8-a5b6-430d-9d18-a4a17bd4b5ae?share=true" allow="geolocation" width="100%" height="800px" frameborder="0" scrolling="no" allowfullscreen></iframe>
           </div>
       </div>  
   </div>
@@ -45,10 +45,10 @@ export default {
   position: relative;
 }
 .contactleft{
-  flex: 33%;
+  flex: 25%;
 }
 .contactright{
-  flex: 67%;
+  flex: 75%;
 }
 .contactnav {
   height: 15vh;
@@ -72,6 +72,7 @@ export default {
   }
   .contactleft {
     width: 100%;
+    display: none;
   }
   .contactright{
     width: 100%;
