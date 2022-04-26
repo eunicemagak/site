@@ -371,7 +371,7 @@ export default {
 </script>
 <style>
 .hero{
-  background: url('./assets/images/main.png');
+  background: url('./assets/images/main.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;

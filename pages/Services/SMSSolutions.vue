@@ -122,7 +122,7 @@ export default {
   background: var(--gray);
 }
   .smssol-wrapper{
-    background:url('./assets/images/smsbg.png');
+    background:url('./assets/images/smsbg.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;

@@ -123,7 +123,7 @@ export default {
    padding-bottom: 100px;
 }
   .gateway-wrapper{
-    background:url('./assets/images/paymentgt.png'), var(--black);
+    background:url('./assets/images/paymentgt.jpg'), var(--black);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;

@@ -156,7 +156,7 @@ export default {
   padding-bottom: 100px;
 }
   .payment-wrapper{
-    background:url('./assets/images/payment.png'), var(--black);
+    background:url('./assets/images/payment.jpg'), var(--black);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
