@@ -12,12 +12,9 @@
         <div class="content-card shadow-lg">
              <div class="content-img"><img src="~/assets/images/content1.png" alt=""> </div>
           <div class="content-cardmain">
-
-            <a href="https://bonyeza-2018.appspot.com/">
-              <button class="content-cardbtn">
+            <a href="https://bonyeza-2018.appspot.com/" class="content-cardbtn">
               <i class='fa fa-chevron-right'></i>
-            </button>
-          </a>
+            </a>
             <h4 class="content-cardtitle">
               INFORTAINMENT
             </h4>
@@ -30,11 +27,9 @@
           
             <div class="content-img"><img src="~/assets/images/content2.png" alt=""> </div>
           <div class="content-cardmain">
-            <a href="https://bonyeza-2018.appspot.com/">
-               <button class="content-cardbtn">
+            <a href="https://bonyeza-2018.appspot.com/" class="content-cardbtn">
               <i class='fa fa-chevron-right'></i>
-            </button>
-          </a>
+            </a>
             <h4 class="content-cardtitle">
               QUOTES
             </h4>
@@ -46,11 +41,9 @@
         <div class="content-card shadow-lg">
           <div class="content-img"><img src="~/assets/images/content3.png" alt=""> </div>
           <div class="content-cardmain">
-            <a href="https://bonyeza-2018.appspot.com/">
-               <button class="content-cardbtn">
+            <a href="https://bonyeza-2018.appspot.com/" class="content-cardbtn">
               <i class='fa fa-chevron-right'></i>
-            </button>
-          </a>
+            </a>
             <h4 class="content-cardtitle">
               BONYEZA
             </h4>
@@ -62,11 +55,9 @@
         <div class="content-card shadow-lg">
            <div class="content-img"><img src="~/assets/images/content4.png" alt=""> </div>
           <div class="content-cardmain">
-            <a href="https://bonyeza-2018.appspot.com/">
-               <button class="content-cardbtn">
+            <a href="https://bonyeza-2018.appspot.com/" class="content-cardbtn">
               <i class='fa fa-chevron-right'></i>
-            </button>
-          </a>
+            </a>
             <h4 class="content-cardtitle">
               MY SKIZA 
             </h4>
@@ -81,12 +72,9 @@
         <div class="content-card shadow-lg">
            <div class="content-img"><img src="~/assets/images/Skizab.jpg" alt=""> </div>
           <div class="content-cardmain">
-           
-            <a href="https://skizatone.com/">
-            <button class="content-cardbtn">
+            <a href="https://skizatone.com/" class="content-cardbtn">
               <i class='fa fa-chevron-right'></i>
-            </button>
-          </a>
+            </a>
             <h4 class="content-cardtitle">
               SKIZA BIASHARA
             </h4>
@@ -230,6 +218,9 @@ export default {
     color: var(--black);
   }
   .content-cardbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 20px;
     float: right;
     height: 25px;

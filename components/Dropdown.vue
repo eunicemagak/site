@@ -12,9 +12,9 @@
           <nuxt-link to="/Services/MobileLending">
               Mobile Lending
           </nuxt-link>
-          <nuxt-link to="/Services/PaymentChannels">
+          <!-- <nuxt-link to="/Services/PaymentChannels">
               Payment Channels
-          </nuxt-link>
+          </nuxt-link> -->
           <nuxt-link to="/Services/Games&Lotteries">
               Games & Lotteries
           </nuxt-link>

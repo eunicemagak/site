@@ -30,9 +30,9 @@
                         <nuxt-link to="/Services/MobileLending" class="nav-link" @click="toggleDropdown($event)">
                             Mobile Lending
                         </nuxt-link>
-                        <nuxt-link to="/Services/PaymentChannels" class="nav-link" @click="toggleDropdown($event)">
+                        <!-- <nuxt-link to="/Services/PaymentChannels" class="nav-link" @click="toggleDropdown($event)">
                             Payment Channels
-                        </nuxt-link>
+                        </nuxt-link> -->
                         <nuxt-link to="/Services/Games&Lotteries" class="nav-link" @click="toggleDropdown($event)">
                             Games & Lotteries
                         </nuxt-link>

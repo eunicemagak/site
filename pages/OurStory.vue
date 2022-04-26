@@ -27,7 +27,20 @@
   </div>
     <div class="journey">
       <h1>OUR JOURNEY <span>OVER THE YEARS</span></h1>
-      <img src="../assets/images/journey.png" alt="" class="journey-img">
+      <div class="journey-wrapper">
+        <img class="journey-img" src="../assets/images/2011j.png"/>
+        <img class="journey-img" src="../assets/images/2012j.png"/>
+        <img class="journey-img" src="../assets/images/2013j.png"/>
+        <img class="journey-img" src="../assets/images/2014j.png"/>
+        <img class="journey-img" src="../assets/images/2015j.png"/>
+        <img class="journey-img" src="../assets/images/2016j.png"/>
+        <img class="journey-img" src="../assets/images/2017j.png"/>
+        <img class="journey-img" src="../assets/images/2018j.png"/>
+        <img class="journey-img" src="../assets/images/2019j.png"/>
+        <img class="journey-img" src="../assets/images/2020j.png"/>
+        <img class="journey-img" src="../assets/images/2021j.png"/>
+        <img class="journey-img" src="../assets/images/2022j.png"/>
+      </div>
     </div>
     </div>
 </template>
@@ -65,6 +78,16 @@ export default {
   color: var(--white);
   z-index: 2;
   padding: 15rem 0 5rem 0;
+}
+.journey-wrapper{
+  display: flex;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: scroll;
+}
+.journey-img{
+  width: 200px;
 }
 .about-wrapper h1{
   font-size: 2rem;
@@ -118,10 +141,6 @@ export default {
     color: var(--blackish);
     font-weight: bold;
   }
-  .journey-img{
-    width: 100%;
-    margin-top: -100px;
-  } 
 @media only screen and (max-width: 800px) {
   .about-wrapper{
     text-align: center;
@@ -145,15 +164,6 @@ export default {
   .journey{
     text-align: center;
     margin: 100px 0 0 0; 
-  }
-  .journey-img{
-    margin-top: 0;
-  } 
-}
-@media only screen and (max-width: 600px){
-  .journey-img{
-    width: 800px;
-    overflow: scroll;
   }
 }
 </style>

@@ -1,43 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-    font-family: 'Avenir Next LT Pro';
-    src: url('../font/AvenirNextLTPro-Bold.woff2') format('woff2'),
-        url('../font/AvenirNextLTPro-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
 *{
     scroll-behavior: smooth;
-    --navblue: #1B75BC;
-    --white:#FFFFFF;
-    --skyblue1: #11CFDE; 
-    --red:#F04D64;
-    --orange: #F8BA2D;
-    --black: #2F2D2D;
-    --blackish:#9B9B9B;
-    --cardblack: #484546;
-    --active:#114B79;
-    --activered:#de132f;
     font-family: 'Montserrat';
     font-size: 14px;
     padding: 0;
     margin: 0;
-    --footerblue:#155D96;
-    --darkerblue:#155A91;
-    --darklue:#0E3B5E;
-    --purple:#351A5C;
-    --yellow: #FCBC0E;
-    --aquamarine:  #65C19C;
-    --gray:#F0F0F0;
-    --textgray:#5E5E5F;
-    --darkerblue:#1765A2;
-    --darkblue:#0E3B5E;
-    --cardgray:#F0F0F0;
     position: relative;
+    
+}
+:root{
     --lightblue:#7BC7F7;
     --reddish:#B41128;
     --pinkish:#E65C70;
@@ -51,7 +24,27 @@
     --yellow:#F8BA2D;
     --greengreen:#17ABB4;
     --btnblue:#17ABB4;
-    
+    --footerblue:#155D96;
+    --darkerblue:#155A91;
+    --darklue:#0E3B5E;
+    --purple:#351A5C;
+    --yellow: #FCBC0E;
+    --aquamarine:  #65C19C;
+    --gray:#F0F0F0;
+    --textgray:#5E5E5F;
+    --darkerblue:#1765A2;
+    --darkblue:#0E3B5E;
+    --cardgray:#F0F0F0;
+    --navblue: #1B75BC;
+    --white:#FFFFFF;
+    --skyblue1: #11CFDE; 
+    --red:#F04D64;
+    --orange: #F8BA2D;
+    --black: #2F2D2D;
+    --blackish:#9B9B9B;
+    --cardblack: #484546;
+    --active:#114B79;
+    --activered:#de132f;
 }
 ::-webkit-scrollbar {
     width: 6px;
