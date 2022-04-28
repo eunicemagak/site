@@ -8,7 +8,12 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, {rel:'stylesheet', href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"}, {rel:'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap'}]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, 
+      {rel:'stylesheet', href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"}, 
+      {rel:'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap'},
+      {rel:'stylesheet', href: './assets/css/main.scss'}
+    ]
 
   },
 
@@ -55,6 +60,14 @@ export default {
         
       },
     }, 
+    loaders: {
+      sass: {
+        implementation: require('sass'),
+      },
+      scss: {
+        implementation: require('sass'),
+      },
+    },
   },
  
 };

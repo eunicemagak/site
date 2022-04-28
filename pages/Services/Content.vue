@@ -16,7 +16,7 @@
               <i class='fa fa-chevron-right'></i>
             </a>
             <h4 class="content-cardtitle">
-              INFORTAINMENT
+              INFOTAINMENT
             </h4>
             <p class="content-carddetails">
               Subscription Services
@@ -39,7 +39,7 @@
           </div>
         </div>
         <div class="content-card shadow-lg">
-          <div class="content-img"><img src="~/assets/images/content3.png" alt=""> </div>
+          <div class="content-img"><img src="~/assets/images/content3.png" alt="" class="c-img"> </div>
           <div class="content-cardmain">
             <a href="https://bonyeza-2018.appspot.com/" class="content-cardbtn">
               <i class='fa fa-chevron-right'></i>
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="content-card shadow-lg">
-           <div class="content-img"><img src="~/assets/images/content4.png" alt=""> </div>
+           <div class="content-img"><img src="~/assets/images/content4.png" class="c-img" alt=""> </div>
           <div class="content-cardmain">
             <a href="https://bonyeza-2018.appspot.com/" class="content-cardbtn">
               <i class='fa fa-chevron-right'></i>
@@ -130,6 +130,9 @@ export default {
     position: absolute;
     z-index: 20;
     overflow: visible;
+  }
+  .c-img{
+    width: 100%;
   }
   .content-wrapper #overlay2{
     top: -130px;

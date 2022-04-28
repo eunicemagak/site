@@ -91,20 +91,6 @@
       </div>
       <div class="solution">
         <div solution-img>
-          <img src="../assets/images/channels.png" alt="">
-        </div>
-        <h4 class="solution-title">
-          PAYMENT CHANNELS
-        </h4>
-        <p class="solution-details">
-          With our financial services you can make payments across various channels, mobile to mobile, Bank to bank
-        </p>
-          <nuxt-link to="/Services/paymentChannels"  class="get-solution">
-            LEARN MORE
-          </nuxt-link>
-      </div>
-      <div class="solution">
-        <div solution-img>
           <img src="../assets/images/sms.png" alt="">
         </div>
         <h4 class="solution-title">
@@ -235,75 +221,28 @@
       <div class="review">
         <div class="review-info">
           <h1>"</h1>
-          Roamtech have in the past demonstrated capacity and ability to see projects through to successful completion and we are confident of their solution-oriented skills and experience. We currently use their Bulk SMS Solution Platform (Emalify) which we find reliable,functional, efficient and simple to use
+          I have used this platform for over 2 years. Emalify offers unparalleled and personal customer service, Best price in the market and best support ever. So far Geecko is very very comfortable with the services offered. Great work Greater team.
         </div>
         <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <img src="../assets/images/geecko.jpeg" id="reviewer-img"/>
           <h4 class="reviewer-name">
-            Defence Forces Medical Insuarance Scheme Registered Trustees
+            Geecko Group Holdings LTD
           </h4>
         </div>
       </div>
       <div class="review">
         <div class="review-info">
           <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
+          Roamtech have been a partner of ours for the past 8 years, through this period, they have been a reliable partner, assisting us to manage services that are really not a core part of our business. We are confident that they will continue to offer us top notch IT consulting services.
         </div>
         <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
+          <img src="../assets/images/ncib.png" id="reviewer-img"/>
           <h4 class="reviewer-name">
-            Centrino
+            Nile Capital
           </h4>
         </div>
       </div>
-      <div class="review">
-        <div class="review-info">
-          <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-        </div>
-        <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
-          <h4 class="reviewer-name">
-            Betika
-          </h4>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-info">
-          <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-        </div>
-        <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
-          <h4 class="reviewer-name">
-            Tower Sacco
-          </h4>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-info">
-          <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-        </div>
-        <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
-          <h4 class="reviewer-name">
-            Centrino
-          </h4>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-info">
-          <h1>"</h1>
-          Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony
-        </div>
-        <div class="reviewer">
-          <img src="../assets/images/user.jpg" id="reviewer-img"/>
-          <h4 class="reviewer-name">
-            Betika
-          </h4>
-        </div>
-      </div>
+      
     </VueSlickCarousel>
    </div>
   </div>
@@ -389,7 +328,7 @@ export default {
 }
 .hero-wrapper{
   width: 90%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -444,7 +383,7 @@ export default {
   background: var(--gray);
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 0 calc((100vw - 1200px)/2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -585,7 +524,7 @@ export default {
 }
 /* .partner-wrapper{
   width: 90%;
-  max-width: 1400px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -644,7 +583,7 @@ export default {
 }
 .reviews-wrapper{
   width: 90%;
-  max-width: 1800px;
+  max-width: 1200px;
   gap:50px;
 }
 .review{
@@ -819,7 +758,7 @@ export default {
   .pandc:after{
     content: '';
     position: absolute;
-    width: 25vw;
+    width: 100vw;
     height: 100%;
     z-index: 1;
     bottom: 0;
@@ -829,6 +768,7 @@ export default {
   .pandc:before{
     content: '';
     position: absolute;
+    max-width: 1400px;
       width: 80vw;
       height: 100%;
     z-index: 2;
@@ -844,6 +784,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
   }
   .pandc .title{
     color: var(--white);

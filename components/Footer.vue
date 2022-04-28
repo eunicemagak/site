@@ -30,7 +30,7 @@
                 <div class="contact">
                     <p id="main">CONTACT US</p>
                     <div class="contact-details">
-                        <p>+254 (0)20 2 699 699 // info@roamtech.com // 4th floor, Stellato, Muthithi Road // Westland, </p> 
+                        <p>+254 (0)20 2 699 699 // info@roamtech.com // 4th floor, Stellato, Muthithi Road // Westlands, </p> 
                         <p>Nairobi, Kenya</p>
                     </div>
                     <div class="social-media">
@@ -98,13 +98,13 @@ export default {
     }
     .footer-copyright-wrapper{
         width: 90%;
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         padding:5px 0;
     }
     .footer-email-wrapper{
         width: 90%;
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         display: flex;
         padding: 40px 0;
@@ -161,7 +161,7 @@ export default {
         display: flex;
         justify-content: space-between;
         width: 90%;
-        max-width: 1600px;
+        max-width: 1400px;
         margin: 0 auto;
     }
     .contact-info{

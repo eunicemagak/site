@@ -27,7 +27,7 @@
   </div>
     <div class="journey">
       <h1>OUR JOURNEY <span>OVER THE YEARS</span></h1>
-      <div class="journey-wrapper">
+      <div class="journey-wrapper mobile">
         <img class="journey-img" src="../assets/images/2011j.png"/>
         <img class="journey-img" src="../assets/images/2012j.png"/>
         <img class="journey-img" src="../assets/images/2013j.png"/>
@@ -41,6 +41,56 @@
         <img class="journey-img" src="../assets/images/2021j.png"/>
         <img class="journey-img" src="../assets/images/2022j.png"/>
       </div>
+      <ul class="honeycomb">
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2011YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2011j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2012YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2012j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2013YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2013j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2014YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2014j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2015YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2015j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2016YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2016j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2017YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2017j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2018YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2018j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2019YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2019j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2020YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2020j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2021YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2021j.png"/>
+    </li>
+    <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="../assets/images/2022YRS.png">
+        <img class="journey-img j-img" src="../assets/images/2022j.png"/>
+    </li>
+</ul>
     </div>
     </div>
 </template>
@@ -79,15 +129,134 @@ export default {
   z-index: 2;
   padding: 15rem 0 5rem 0;
 }
-.journey-wrapper{
+/* .journey-wrapper{
   display: flex;
   width: 90%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   overflow: scroll;
 }
 .journey-img{
   width: 200px;
+} */
+.honeycomb {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+    align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  transform: translateY(80px);
+}
+.honeycomb-cell {
+  -webkit-box-flex: 0;
+          flex: 0 1 250px;
+  max-width: 200px;
+  height: 110px;
+  margin: 45.4761904762px 2.5px 2px;
+  position: relative;
+  padding: 0.5em;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+ transition: ease-in-out 100ms;
+}
+.honeycomb-cell_img {
+     object-fit: cover;
+     object-position: center;
+     width: 100%;
+    
+}
+.honeycomb-cell::before,
+ .honeycomb-cell::after {
+  content: '';
+}
+.honeycomb-cell::before, 
+.honeycomb-cell::after, 
+.honeycomb-cell_img {
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  display: block;
+  position: absolute;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: -1;
+}
+.honeycomb-cell::before {
+  background: #fff;
+  -webkit-transform: scale(1.055);
+          transform: scale(1.055);
+}
+.honeycomb-cell::after {
+  opacity: 0.7;
+  -webkit-transition: opacity 350ms;
+  transition: opacity 350ms;
+}
+.j-img{
+  visibility: hidden ;
+}
+.honeycomb-cell:hover .honeycomb{
+  visibility: hidden;
+}
+.honeycomb-cell:hover .j-img{
+  visibility: visible;
+}
+@media (max-width: 550px) 
+{
+  .honeycomb-cell 
+  {
+    margin: 81.25px 25px;
+  }
+}
+@media (min-width: 550px) and (max-width: 825px) 
+{
+  .honeycomb-cell:nth-child(3n) 
+  {
+    margin-right: calc(50% - 125px);
+    margin-left: calc(50% - 125px);
+  }
+  .honeycomb_placeholder:nth-child(3n + 5) 
+  {
+    display: block;
+  }
+}
+@media (min-width: 825px) and (max-width: 1100px) {
+  .honeycomb-cell:nth-child(5n + 4) 
+  {
+    margin-left: calc(50% - 275px);
+  }
+  .honeycomb-cell:nth-child(5n + 5) 
+  {
+    margin-right: calc(50% - 275px);
+  }
+
+}
+@media (min-width: 1100px) 
+{
+  .honeycomb-cell:nth-child(7n + 5) {
+    margin-left: calc(50% - 400px);
+  }
+  .honeycomb-cell:nth-child(7n + 7), 
+  .honeycomb-cell:nth-child(7n + 5):nth-last-child(1) 
+  {
+    margin-right: calc(50% - 400px);
+  }
+}
+
+.journey-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  margin: 0 auto;
+  padding: 0;
 }
 .about-wrapper h1{
   font-size: 2rem;
@@ -130,7 +299,7 @@ export default {
   }
   .journey{
     text-align: center;
-    margin: 150px 0 0 0; 
+    margin: 150px 0; 
   }
   .journey h1{
    font-size: 2.5rem;
@@ -165,5 +334,13 @@ export default {
     text-align: center;
     margin: 100px 0 0 0; 
   }
+.honeycomb{
+  display: none;
+}
+}
+@media only screen and (min-width: 800px) {
+.journey-wrapper{
+  display: none;
+}
 }
 </style>

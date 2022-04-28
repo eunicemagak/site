@@ -233,7 +233,7 @@ export default {
             align-items: center;
             position: relative;
             justify-content: flex-start;
-            padding: 0 calc((100vw - 1250px)/2);
+            padding: 0 calc((100vw - 1300px)/2);
         }
         .mobile-menu{
             display: none;
