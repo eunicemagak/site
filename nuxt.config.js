@@ -1,4 +1,8 @@
 export default {
+  server: {
+    host: '0.0.0.0', // default: localhost
+    port: 3000
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'ROAMTECH SOLUTIONS',
