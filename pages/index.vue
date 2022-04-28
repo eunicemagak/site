@@ -518,6 +518,8 @@ export default {
   width: 50%;
   max-width:230px;
   margin: 0 auto;
+  transition-delay: 0.25s;
+  transition: all 500ms ease;
 }
 .white-logo{
   display: none;
@@ -722,14 +724,16 @@ export default {
     flex-direction: row;
     align-items: flex-start;
     z-index: 2;
+    justify-content: space-between;
   }
   .partners-wrapper,
   .clients-wrapper{
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     z-index: 2;
   }
   .partner-logo{
    cursor: pointer;
+   width: 30%;
   }
   .partner-logo:hover{
     transform: scale(1.2);
@@ -790,6 +794,25 @@ export default {
     color: var(--white);
   }
  }
+  @media only screen and (min-width: 970px){
+  .partners-wrapper,
+  .clients-wrapper{
+    grid-template-columns: repeat(3, 1fr);
+    z-index: 2;
+  }
+  .partner-logo{
+   cursor: pointer;
+   width: 50%;
+   max-width: 230px;
+  }
+  }
+  @media only screen and (min-width: 1350px){
+  .partners-wrapper,
+  .clients-wrapper{
+    grid-template-columns: repeat(4, 1fr);
+    z-index: 2;
+  }
+  }
   @media only screen and (max-width: 1300px){
     
   .card-wrapper,

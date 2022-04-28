@@ -95,8 +95,9 @@ export default {
         box-shadow: -3px 3px 20px rgba((0,0,0,.2  ));
     }
     .logo{
-        width: 15%;
-        max-width: 100px;
+        width: 20%;
+        max-width: 70px;
+        margin: 12px;
     }
     .mobile-menu{
         margin-right: 20px;
@@ -233,7 +234,7 @@ export default {
             align-items: center;
             position: relative;
             justify-content: flex-start;
-            padding: 0 calc((100vw - 1300px)/2);
+            padding: 0 calc((100vw - 1200px)/2);
         }
         .mobile-menu{
             display: none;

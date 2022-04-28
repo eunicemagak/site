@@ -158,14 +158,14 @@ export default {
           flex: 0 1 250px;
   max-width: 200px;
   height: 110px;
-  margin: 45.4761904762px 2.5px 2px;
+  margin: 55.4761904762px 2.5px 2px;
   position: relative;
   padding: 0.5em;
   text-align: center;
   z-index: 1;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
- transition: ease-in-out 100ms;
+ transition: ease-in-out 200ms;
 }
 .honeycomb-cell_img {
      object-fit: cover;
@@ -203,12 +203,15 @@ export default {
 .j-img{
   visibility: hidden ;
 }
-.honeycomb-cell:hover .honeycomb{
+.honeycomb-cell:hover{
+  transform: scale(1.1);
+}
+/* .honeycomb-cell:hover .honeycomb{
   visibility: hidden;
 }
 .honeycomb-cell:hover .j-img{
   visibility: visible;
-}
+} */
 @media (max-width: 550px) 
 {
   .honeycomb-cell 
