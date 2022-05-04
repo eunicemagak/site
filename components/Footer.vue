@@ -213,7 +213,7 @@ export default {
     .social-icon:hover{
         color: var(--footerblue);
     }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
         .footer-email-wrapper,
         .footer-wrapper,
         form,
@@ -236,8 +236,9 @@ export default {
         .footer-email-text h1{
             font-size: 1.2rem;
         }
-        input{
-            width: 300px;
+        .footer-email input{
+            width: 98%;
+            max-width: 300px;
         }
         .contact-info{
             gap: 10px;

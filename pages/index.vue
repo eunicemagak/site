@@ -333,7 +333,7 @@ export default {
   display: flex;
   flex-direction: column;
   color: var(--white);
-  padding: 15rem 0 5rem 0;
+  padding-top: 30vh;
 }
 .overlay,
 .overlay2{
@@ -674,9 +674,6 @@ export default {
   .hero{
     background-position: center right;
   }
-  .hero-wrapper{
-    padding: 50vh 0 0 0;
-}
     #overlay,
   #overlay2{
     display: none;

@@ -95,8 +95,8 @@ export default {
         box-shadow: -3px 3px 20px rgba((0,0,0,.2  ));
     }
     .logo{
-        width: 20%;
-        max-width: 70px;
+        width: 10%;
+        max-width: 50px;
         margin: 12px;
     }
     .mobile-menu{
@@ -113,11 +113,10 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 50px;
-        margin-left: -600px;
         align-items: center;
         font-size: 1rem;
         position: absolute;
-        right:0;
+        right: 0;
         padding:20px;
         visibility: hidden;
     }
@@ -189,7 +188,7 @@ export default {
     }
     @media only screen and (max-width: 800px) {
         .nav-links{
-            width: 100vw;
+            width: 110vw;
         }
     }
     @media only screen and (min-width: 800px) {

@@ -22,7 +22,7 @@
               Cheza Chini is an exciting bidding game where user get to buy high value items at very low prices
             </p>
             <a href="https://chezachinibids.com/">
-              <img class="games-cardicon"  src="~/assets/images/lightblueright-arrow.png" alt="">
+             <i class='fa fa-chevron-right text-cyan-900 w-5 h-5 flex justify-center items-center bg-white rounded-full'></i>
             </a>
           </div>
         </div>

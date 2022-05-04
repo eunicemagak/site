@@ -95,8 +95,8 @@ export default {
         box-shadow: -3px 3px 20px rgba((0,0,0,.2  ));
     }
     .logo1{
-        width: 15%;
-        max-width: 100px;
+        width: 10%;
+        max-width: 80px;
     }
     .mobile-menu1{
         margin-right: 20px;
