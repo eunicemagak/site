@@ -147,31 +147,6 @@
       </div>
     </div>
   </div>
-  <!-- <div class="partners">
-        <h1 class="title">
-          OUR KEY PARTNERS
-        </h1>
-        <div class="partner-wrapper">
-          <div class="partner-logo">
-            <img src="../assets/images/safaricom.png"/>
-          </div>
-          <div class="partner-logo">
-            <img src="../assets/images/telkom.png"/>
-          </div>
-          <div class="partner-logo">
-            <img src="../assets/images/airtel.png"/>
-          </div>
-        </div>
-  </div>
-  <div class="clients">
-    <h1 class="title">
-      OUR MAJOR CLIENTS
-    </h1>
-    <div class="clients-wrapper">
-        <img src="../assets/images/LOGOS.png" alt="" class="client">
-        <img src="../assets/images/LOGOS 2.png" alt="" class="client">
-    </div>
-  </div> -->
   <div class="pandc">
     <div class="partners">
       <h1 class="title">
@@ -204,6 +179,7 @@
         <img src="../assets/images/alladin.png" alt="" class="partner-logo">
         <img src="../assets/images/ira.png" alt="" class="partner-logo">
         <img src="../assets/images/corporate.png" alt="" class="partner-logo">
+        <img src="../assets/images/geecko.jpeg" alt="" class="partner-logo">
       </div>
     </div>
     <div class="white-logo">
@@ -242,7 +218,6 @@
           </h4>
         </div>
       </div>
-      
     </VueSlickCarousel>
    </div>
   </div>
@@ -524,54 +499,6 @@ export default {
 .white-logo{
   display: none;
 }
-/* .partner-wrapper{
-  width: 90%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px;
-} */
-/* .partners{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin: 20px 0;
-}
-.partner-logo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-}
-.partner-logo img{
-  width: 50%;
-} 
-.clients{
-  background: url('./assets/images/clients.png'), var(--navblue);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-}
-.clients .title{
-  color: var(--white);
-}
-.clients-wrapper{
-  display: flex;
-  width: 90%;
-  max-width: 1000px;
-  overflow: auto;
-  gap: 50px;
-  margin: 0 auto;
-} */
  .reviews{
   display: flex;
   flex-direction: column;
@@ -689,9 +616,6 @@ export default {
   .title{
     font-size: 1.5rem;
   }
-  /* .partner-wrapper{
-    flex-direction: column;
-  } */
   .solution{
     width:100%;
   }
@@ -708,7 +632,7 @@ export default {
     grid-template-columns: repeat(1, 1fr);
   }
   .solution-details{
-    width:250px;
+    width:90%;
     text-align: left;
   }
   .white-logo{

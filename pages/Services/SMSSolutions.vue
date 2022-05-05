@@ -270,6 +270,21 @@ export default {
     color:var(--othergreen);
   }
 @media only screen and (max-width: 800px) {
+
+  .smssol-maintitle{
+    width: 90%;
+  }
+  .smssol-wrapper:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to right, var(--black), var(--black));
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+  }
   .smssol-maintitle{
     font-size:4rem;
   }

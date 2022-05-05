@@ -59,7 +59,6 @@
 <script>
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faLinkedinIn, faTwitter, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 library.add(faLinkedinIn);
@@ -73,7 +72,7 @@ import emailjs from '@emailjs/browser';
 export default {
       methods: {
             sendEmail() {
-            emailjs.sendForm('service_2tpucd2', 'template_afcqtjj', this.$refs.form, 'BTCiFyuUyldeYFn-E')
+            emailjs.sendForm('service_as7dy6i', 'template_kmgin4a', this.$refs.form, 'HMiVWnwfe2x0rf2rv')
                 .then((result) => {
                     alert('Thank You For Contacting Us, We Will Get Back To You Soonest Possible'),
                     console.log('SUCCESS!', result.text);

@@ -256,10 +256,21 @@ export default {
     color:var(--greenish);
   }
   @media only screen and (max-width: 800px) {
+   .gateway-wrapper:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to right, var(--black), var(--black));
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+  }
         .gateway-maintitle {
           font-size: 4rem;
 
-          width:60%;
+          width:90%;
         }
         .gateway-maindetails{
           font-size: 1rem;

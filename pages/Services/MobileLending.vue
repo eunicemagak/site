@@ -148,7 +148,7 @@ export default {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    padding: 15rem 0 5rem 0;
+    padding-top: 50vh;
     flex-direction: column;
     z-index: 3;
   }
@@ -246,14 +246,25 @@ export default {
     color:var(--othergreen);
   }
   @media only screen and (max-width: 800px) {
+    .smsol-wrapper:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to right, var(--black), var(--black));
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+  }
         .smsol-maintitle {
           font-size: 4rem;
 
           width:60%;
         }
         .smsol-maindetails{
-          font-size: 1rem;
           width:90%;
+          color: var(--white);
         }
        
     }

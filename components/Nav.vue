@@ -170,7 +170,7 @@ export default {
     }
     @media only screen and (max-width: 800px) {
         .nav-links1{
-            width: 100vw;
+            width: 110vw;
         }
     }
     @media only screen and (min-width: 800px) {
