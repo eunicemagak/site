@@ -218,6 +218,18 @@
           </h4>
         </div>
       </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Considering the demand in constant communication with our Punters, Roamtech have given us an easy way to reach millions of our customers with the click of a button in seconds. They have grown with our brand every step of the way and helped drive our business towards customer success through a great customer journey providing us with fast and efficient services through their Emalify Platform. 
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/betika.png" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            Betika
+          </h4>
+        </div>
+      </div>
     </VueSlickCarousel>
    </div>
   </div>
@@ -566,8 +578,6 @@ export default {
 }
 #reviewer-img{
   width: 50px;
-  height: 50px;
-  border-radius: 50%;
   margin-top: 50px;
 }
 .slick-current .reviewer{
