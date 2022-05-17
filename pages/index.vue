@@ -230,6 +230,18 @@
           </h4>
         </div>
       </div>
+      <div class="review">
+        <div class="review-info">
+          <h1>"</h1>
+          Roamtech Solution Limited has been a long-standing partner for SBM Bank Kenya which consume their Bill payment, Airtime, and USSD services. They have excellent customer service through a dedicated relationship manager, timely dispute resolution by their support team, and 99% uptime for the services they provide. We are happy with their services and will continue to have them as an integral partner.
+        </div>
+        <div class="reviewer">
+          <img src="../assets/images/sbm.png" id="reviewer-img"/>
+          <h4 class="reviewer-name">
+            SBM BANK
+          </h4>
+        </div>
+      </div>
     </VueSlickCarousel>
    </div>
   </div>
