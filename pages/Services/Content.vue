@@ -232,6 +232,8 @@ export default {
     width: 25px;
     border-radius: 50%;
     box-shadow: -3px 3px 10px rgb(41, 41, 41);
+    cursor: pointer;
+    z-index: 999;
   }
   .content-card:nth-child(1) .content-cardbtn{
     background:var(--orange);

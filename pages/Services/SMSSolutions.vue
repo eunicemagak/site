@@ -134,7 +134,7 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient( to right, var(--black), var(--white));
+    background: linear-gradient( to right, var(--black), var(--black));
     top: 0;
     left: 0;
     opacity: .5;
@@ -200,8 +200,9 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10px 40px 10px;
+    padding: 0 30px 40px 30px;
     box-shadow: 3px 3px 10px #ccc;
+    position: relative;
   }
   .smssol-card:nth-child(odd){
     background: var(--white);
@@ -245,12 +246,13 @@ export default {
     font-size: .9rem;
     line-height: 1.3;
     margin-bottom: 30px;
+    color: var(--blackish);
   }
   .smssol-cardbtn{
     background: var(--white);
     border-radius: 50px;
     padding: 5px;
-    width: 120px;
+    width: 150px;
     box-shadow: -3px 3px 10px #ccc;
     font-weight: bold;
   }
@@ -270,10 +272,6 @@ export default {
     color:var(--othergreen);
   }
 @media only screen and (max-width: 800px) {
-
-  .smssol-maintitle{
-    width: 90%;
-  }
   .smssol-wrapper:after{
     content: "";
     position: absolute;
@@ -287,12 +285,10 @@ export default {
   }
   .smssol-maintitle{
     font-size:4rem;
+    width: 90%;
   }
   .smssol-maindetails{
-    width: 98%;
-  }
-  .smssol-cardmain{
-    width: 220px;
+    width: 90%;
   }
   .smssol-cardheader{
     width: 80px;

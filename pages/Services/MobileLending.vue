@@ -119,6 +119,17 @@ export default {
     position: relative;
     height: 95vh;
   }  
+  .smsol-wrapper:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to right, var(--black), var(--black));
+    top: 0;
+    left: 0;
+    opacity: .4;
+    z-index: 1;
+  }
   #overlay,
   #overlay2{
     width: 200px;
