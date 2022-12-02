@@ -50,7 +50,7 @@
         </div>
         <div class="copyright">
             <div class="footer-copyright-wrapper">
-            <p>© 2021 Roamtech - Your digital solution partner</p>
+            <p>© {{year}} Roamtech - Your digital solution partner</p>
         </div>
         </div>
     </footer>
@@ -70,6 +70,15 @@ library.add(faTwitter);
 // Vue.config.productionTip = false;
 import emailjs from '@emailjs/browser';
 export default {
+  data() {
+      return {
+        year: ''
+      };
+  },
+    mounted(){
+        const d = new Date();
+        this.year = d.getFullYear();
+    },
       methods: {
             sendEmail() {
             emailjs.sendForm('service_as7dy6i', 'template_kmgin4a', this.$refs.form, 'HMiVWnwfe2x0rf2rv')
