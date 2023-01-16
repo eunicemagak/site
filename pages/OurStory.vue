@@ -1,3 +1,11 @@
+
+  <!-- 
+    Our story, 
+      company history and achievents over the years. 
+      Company Vision and Mission statement
+      Core values and priciples
+   -->
+
 <template>
 <div>
   <div class="about">
@@ -11,21 +19,25 @@
       </div>
     </div>
     <div class="story-cards">
+      <!-- Company vision statement  -->
       <div class="story-card">
         <h1>Our Vision</h1>
-        <p>To be your preferred lifelong digital partner.</p>
+        <p>To be a welcome guest in every African Home</p>
       </div>
+      <!-- Company mission statement  -->
       <div  class="story-card">
         <h1>Our Mission</h1>
-        <p>To deliver solutions where customers interact to get best value</p>
+        <p>To deliver innovative, simple to use digital & mobile solutions that help our customers enjoy life!</p>
       </div>
+      <!-- Company values statement  -->
       <div  class="story-card">
         <h1>Our Values</h1>
-        <p>Trust | Integrity | Listen</p>
+        <p>Dependable | Transparent | Listening</p>
       </div>
     </div>
   </div>
     <div class="journey">
+      <!-- company history and achievents over the years.   -->
       <h1>OUR JOURNEY <span>OVER THE YEARS</span></h1>
       <div class="journey-wrapper mobile">
         <img class="journey-img" src="../assets/images/2011j.png"/>
