@@ -1,3 +1,8 @@
+  <!-- 
+    Contact Us 
+      Company Contact Informaation
+      Google map location pin
+   -->
 <template>
   <div class="contact-us">
     <div class="contactnav">
