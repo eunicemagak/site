@@ -8,7 +8,6 @@
     padding: 0;
     margin: 0;
     position: relative;
-    
 }
 :root{
     --lightblue:#7BC7F7;
@@ -37,6 +36,7 @@
     --cardgray:#F0F0F0;
     --navblue: #1B75BC;
     --white:#FFFFFF;
+    --mainwhite: #FFFFFF;
     --skyblue1: #11CFDE; 
     --red:#F04D64;
     --orange: #F8BA2D;

@@ -18,6 +18,9 @@
                         SERVICES
                     </div>
                     <div class="dropdown-links">
+                        <nuxt-link to="/Services/EmaliChat" class="nav-link1" @click="toggleDropdown($event)">
+                            Emalichat
+                        </nuxt-link>
                         <nuxt-link to="/Services/Content" class="nav-link" @click="toggleDropdown($event)">
                             Content
                         </nuxt-link>

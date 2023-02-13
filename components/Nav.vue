@@ -18,6 +18,9 @@
                         SERVICES
                     </div>
                     <div class="dropdown-links1">
+                        <nuxt-link to="/Services/EmaliChat" class="nav-link1" @click="toggleDropdown($event)">
+                            Emalichat
+                        </nuxt-link>
                         <nuxt-link to="/Services/Content" class="nav-link1" @click="toggleDropdown($event)">
                             Content
                         </nuxt-link>
@@ -30,9 +33,6 @@
                         <nuxt-link to="/Services/MobileLending" class="nav-link1" @click="toggleDropdown($event)">
                             Mobile Lending
                         </nuxt-link>
-                        <!-- <nuxt-link to="/Services/PaymentChannels" class="nav-link1" @click="toggleDropdown($event)">
-                            Payment Channels
-                        </nuxt-link> -->
                         <nuxt-link to="/Services/Games&Lotteries" class="nav-link1" @click="toggleDropdown($event)">
                             Games & Lotteries
                         </nuxt-link>

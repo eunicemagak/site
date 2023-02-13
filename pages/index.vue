@@ -145,6 +145,20 @@
             LEARN MORE
           </nuxt-link>
       </div>
+      <div class="solution">
+        <div solution-img>
+          <img src="../assets/images/emalichat.png" alt="">
+        </div>
+        <h4 class="solution-title">
+          Emalichat
+        </h4>
+        <p class="solution-details">
+          Engage customers on all social media plaforms from one point.
+        </p>
+          <nuxt-link to="/Services/EmaliChat"  class="get-solution">
+            LEARN MORE
+          </nuxt-link>
+      </div>
     </div>
   </div>
   <div class="pandc">

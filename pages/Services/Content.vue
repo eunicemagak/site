@@ -90,16 +90,6 @@
     </div>
 </template>
 
-<script>
-import contentImg from "assets/images/content.png";
-export default {
-  data() {
-    return {
-      image: {backgroundImage:`url(${contentImg})`},
-    };
-  }
-};
-</script>
 
 <style>
   .content-wrapper{
