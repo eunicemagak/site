@@ -15,9 +15,11 @@
           Emalichat also helps business market, sell and provide great customer experience to their customers through
           Instant Messaging platforms.
         </p>
-        <p class="chat-maindetails">
-          For more info, contact us on <br /><span>+254 709 322 222</span>
-        </p>
+          <a href="https://chatdemo.emalify.com/">
+            <button class="chat-btn">
+              Learn More 
+            </button>
+          </a>
       </div>
       <div class="chat-img">
         <img src="../../assets/images/emali.png" class="" />
@@ -73,12 +75,12 @@
   color: var(--black);
 }
 
-.chat-gamesbtn {
-  padding: 5px 20px;
+.chat-btn {
+  padding: 10px 20px;
   color: var(--white);
   text-align: left;
   font: bold 14px/23px Montserrat;
-  background: transparent linear-gradient(180deg, #F8BA2D 0%, #FF7805 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #1B75BC 0%, #1765A2 100%) 0% 0% no-repeat padding-box;
   border-radius: 43px;
   align-items: center;
   margin-top: 30px;
