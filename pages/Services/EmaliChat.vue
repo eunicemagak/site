@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <Header />
-    <div class="bg-white flex flex-col lg:flex-row  max-w-screen-xl w-full m-auto items-center relative">
+    <div class="bg-white flex flex-col lg:flex-row  max-w-screen-xl w-full m-auto items-center relative px-5">
       <div class="chat-main">
         <h1 class="chat-maintitle">
           Social Media <span>Interactive Channel</span>
@@ -21,8 +21,8 @@
             </button>
           </a>
       </div>
-      <div class="chat-img">
-        <img src="../../assets/images/emali.png" class="" />
+      <div class="chat-img w-11/12 lg:w-6/12">
+        <img src="../../assets/images/emali.png" class="w-full" />
       </div>
 
     </div>
