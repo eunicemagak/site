@@ -38,6 +38,9 @@
                         </nuxt-link>
                     </div>
                 </div>
+                <nuxt-link to="/Blogs" class="nav-link1">
+                    BLOGS
+                </nuxt-link>
             <nuxt-link to="/ContactUs" class="nav-link1">
                 CONTACT
             </nuxt-link>
