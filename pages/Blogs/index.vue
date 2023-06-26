@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="blogs">
+      <!-- Navigation component -->
       <Nav />
+      
       <div class="blog">
         <div class="blog-wrapper">
           <div>
@@ -15,9 +17,10 @@
         </div>
       </div>
 
+      <!-- Blog navigation component -->
       <Blognav />
 
-      <!-- trending blogs   -->
+      <!-- Trending blogs section -->
       <div class="trending" id="trending">
         <div class="title">
           <h2>{{ trendingTitle }}</h2>
@@ -25,22 +28,28 @@
         <div class="container">
           <div class="trending-wrapper">
             <div class="trending-content">
+              <!-- Iterate over paginated blog contents -->
               <div v-for="(blog, index) in paginatedBlogContents" :key="index" class="card blogcontent1">
+                <!-- Blog Card component -->
                 <BlogCard :image=blog.acf.image :title=blog.title.rendered :slug=blog.slug
                   :content="trimContent(blog.content.rendered)" />
               </div>
 
               <div class="pagination">
+                <!-- Previous page button -->
                 <button class="pagination-arrow prev" @click.prevent="goToPreviousPage"><i
                     class="fas fa-chevron-left"></i></button>
 
                 <ul class="pagination-list">
+                  <!-- Iterate over page numbers -->
                   <li v-for="(page, index) in totalPages" :key="index">
+                    <!-- Page number button -->
                     <button class="pagination-link" :class="{ active: currentPage === page }"
                       @click.prevent="goToPage(page)">{{ page }}</button>
                   </li>
                 </ul>
 
+                <!-- Next page button -->
                 <button class="pagination-arrow next" @click.prevent="goToNextPage"><i
                     class="fas fa-chevron-right"></i></button>
               </div>
@@ -48,8 +57,10 @@
             </div>
           </div>
           <div class="sidebar">
-            <div class="facebook-page">
-              <p>{{ facebookPage }}</p>
+            <div  v-for="(fbpost, index) in fbposts" :key="index" class="facebook-page">
+              <!-- <p id="facebook-posts"></p>? -->
+              <p>{{ fbpost.message }}</p>
+
             </div>
             <div class="social-container">
               <h5>Follow us on</h5>
@@ -68,200 +79,425 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Campaigns   -->
-        <div class="campaigns" id="campaigns">
-          <h2>{{ campaignsTitle }}</h2>
-          <div class="campaigns-wrapper">
-            <div v-for="(campaign, index) in campaignContents" :key="index" class="campaign-card">
-              <CampaignCard :image=campaign.acf.image :title=campaign.title.rendered :slug=campaign.slug
-                :content=campaign.content.rendered />
+      <!-- Campaigns section -->
+      <div class="campaigns" id="campaigns">
+        <h2>{{ campaignsTitle }}</h2>
+        <div class="campaigns-wrapper">
+          <!-- Iterate over displayed campaigns -->
+          <div v-for="(campaign, index) in displayedCampaigns" :key="index" class="campaign-card">
+            <!-- Campaign Card component -->
+            <CampaignCard :image="campaign.acf.image" :title="campaign.title.rendered" :slug="campaign.slug" :content="campaigntrimContent(campaign.content.rendered)" 
+              :linkTitle="campaign.acf.add_url.title" :URL="campaign.acf.add_url.url" />
+          </div>
+        </div>
+        <div class="campaigns-arrow campaign-left" @click="campaignPreviousSlide">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="campaigns-arrow campaign-right" @click="campaignNextSlide">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <hr />
+
+        <!-- Events section -->
+        <div class="events" id="events">
+          <h2>{{ eventsTitle }}</h2>
+          <div class="events-wrapper">
+            <!-- Iterate over displayed events -->
+            <div v-for="(event, index) in displayedEvents" :key="index" class="event-card">
+              <!-- Event Card component -->
+              <EventCard :image="event.acf.image" :title="event.title.rendered" :content="event.content.rendered" :slug="event.slug"/>
             </div>
           </div>
-          <hr>
-
-          <!-- Events   -->
-
-          <div class="events" id="events">
-            <h2>{{ eventsTitle }}</h2>
-            <div class="events-wrapper">
-              <div v-for="(event, index) in eventContents" :key="index" class="event-card">
-                <EventCard :image=event.acf.image :title=event.title.rendered :content=event.content.rendered />
-              </div>
-            </div>
+          <div class="events-arrow events-left" @click="eventspreviousSlide">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="events-arrow events-right" @click="eventsnextSlide">
+            <i class="fas fa-chevron-right"></i>
           </div>
         </div>
       </div>
 
-      <!-- Awards and Recognition   -->
+      <!-- Awards and Recognition section -->
       <div class="awards" id="awards">
         <div class="awards-container">
           <h2>{{ awardsTitle }}</h2>
           <p>{{ awardsDescription }}</p>
         </div>
         <div class="awards-wrapper">
-          <div v-for="(award, index) in awards" :key="index" class="award">
-            <AwardCard :image=award.acf.image :title=award.title.rendered :content=award.content.rendered />
+          <!-- Iterate over displayed awards -->
+          <div v-for="(award, index) in displayedAwards" :key="index" class="award">
+            <!-- Award Card component -->
+            <AwardCard :image="award.acf.image" :title="award.title.rendered" :content="award.content.rendered" />
           </div>
-
-
         </div>
-        <div class="awards-arrow arrow-left"><i class="fas fa-chevron-left"></i></div>
-        <div class="awards-arrow arrow-right"><i class="fas fa-chevron-right"></i></div>
+        <div class="awards-arrow arrow-left" @click="previousSlide">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="awards-arrow arrow-right" @click="nextSlide">
+          <i class="fas fa-chevron-right"></i>
+        </div>
       </div>
 
-
-
-      <!-- Gallery   -->
+      <!-- Gallery section -->
       <div class="gallery" id="gallery">
         <div class="gallery-container">
           <h2>{{ galleryTitle }}</h2>
           <h6>{{ galleryDescription }}</h6>
           <div class="gallery-images">
+            <!-- Iterate over gallery images -->
             <div v-for="(gallery, index) in galleryImages" :key="index" class="gallery-img">
-  <nuxt-link to="/Gallery">
-    <div
-      :class="['image-container', { 'active-image': index === activeImageIndex }]"
-    >
-      <img :src="gallery.acf.image" alt="">
-      <div class="image-overlay">
-        <p class="gallery-title">{{ gallery.title.rendered }}</p>
-        <p class="gallery-content get-gallery" v-html="gallery.content.rendered"></p>
-      </div>
-    </div>
+              <nuxt-link to="/Gallery">
+                <div :class="['image-container', { 'active-image': index === activeImageIndex }]">
+                  <img :src="gallery.acf.image" alt="">
+                  <div class="image-overlay">
+                    <p class="gallery-title">{{ gallery.title.rendered }}</p>
+                    <p class="gallery-content get-gallery" v-html="gallery.content.rendered"></p>
+                  </div>
+                </div>
               </nuxt-link>
             </div>
           </div>
           <div class="gallery-pagination">
+            <!-- Iterate over gallery image dots -->
             <div v-for="(image, index) in galleryImages" :key="index" class="dot"
               :class="{ 'active': index === activeImageIndex }"></div>
           </div>
         </div>
       </div>
 
-
+      <div class="floating-button">
+        <!-- <input type="email" v-model="emailInput" placeholder="Enter your email"> -->
+    <button @click="subscribeToNewsletter">Subscribe to our newsletter</button>
+    <p v-if="successMessage">{{ successMessage }}</p>
+    <p v-if="errorMessage">{{ errorMessage }}</p>
+        <!-- <button>Subscribe to our newsletter</button> -->
+      </div>
 
     </div>
   </div>
 </template>
 
+
 <script>
+import emailjs from 'emailjs-com';
 import BlogCard from '../../components/BlogCard.vue';
 import CampaignCard from '../../components/CampaignCard.vue';
 import EventCard from '../../components/EventCard.vue';
 import AwardCard from '../../components/AwardCard.vue';
 
 export default {
-  props: ['image', 'content', 'slug', 'title'],
+  props: ['image', 'content', 'slug', 'title', 'linkTitle', 'URL'],
+
+  // Data properties
   data() {
     return {
+      emailInput: '',
+      successMessage: '',
+      errorMessage: '',
+      // Initialize an empty array to store the fetched Facebook posts
+      fbposts: [], 
+
       trendingTitle: 'Trending',
-      blogContents: [],
-      pagination: [1, 2, 3, 4, 5],
+      // Array to store blog data
+      blogContents: [], 
+      // Array to store pagination numbers
+      pagination: [1, 2, 3, 4, 5], 
       postsPerPage: 2,
       currentPage: 1,
       facebookPage: 'Roamtech Facebook Page',
+
       campaignsTitle: 'CAMPAIGNS',
-      campaignContents: [],
+      // Array to store campaign data
+      campaignContents: [], 
+      // Array to store currently displayed campaigns
+      displayedCampaigns: [], 
+      // Current index of displayed campaigns
+      campaigncurrentIndex: 0, 
+      // Number of campaigns to display per slide
+      campaignitemsPerSlide: 4, 
+
       eventsTitle: 'EVENTS',
-      eventContents: [],
+      // Array to store event data
+      eventContents: [], 
+      // Array to store currently displayed events
+      displayedEvents: [], 
+      // Number of events to display per slide
+      eventItemsPerSlide: 4, 
+      // Duration of event slide transition
+      eventSlideDuration: 1, 
+      // Current index of displayed events
+      eventCurrentIndex: 0, 
+
       awardsTitle: "AWARDS & RECOGNITION",
       awardsDescription: "Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq u",
-      awards: [],
+      // Array to store currently displayed awards
+      displayedAwards: [], 
+      // Number of awards to display per slide
+      itemsPerSlide: 3, 
+      // Duration of award slide transition
+      slideDuration: 5000, 
+      // Current index of displayed awards 
+      currentIndex: 0, 
+
       galleryTitle: "OUR GALLERY",
       galleryDescription: "Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq u",
-      galleryImages: [],
-      activeImageIndex: 0 // Set the initial active image index
+      // Array to store gallery images
+      galleryImages: [], 
+      // Set the initial active image index
+      activeImageIndex: 2 
     };
   },
-  components: { BlogCard, CampaignCard, EventCard, AwardCard },
+
+  // Components used in this Vue component
+  components: { BlogCard, CampaignCard, EventCard, AwardCard, },
+
+  // Computed properties
   computed: {
     totalPages() {
-      return Math.ceil(this.blogContents.length / this.postsPerPage);
+      // Calculate the total number of pages based on the blog contents and posts per page
+      return Math.ceil(this.blogContents.length / this.postsPerPage); 
     },
     paginatedBlogContents() {
+       // Calculate the start index of the current page
       const startIndex = (this.currentPage - 1) * this.postsPerPage;
-      const endIndex = startIndex + this.postsPerPage;
-      return this.blogContents.slice(startIndex, endIndex);
+      // Calculate the end index of the current page
+      const endIndex = startIndex + this.postsPerPage; 
+      // Return the sliced portion of blog contents for the current page
+      return this.blogContents.slice(startIndex, endIndex); 
     }
   },
+
+  //create lifecycle hook
   created() {
-    this.getPost();
-    this.getGallery();
-    this.startSlideshow();
+    // Fetch blog data
+    this.getPost(); 
+    // Fetch gallery images
+    this.getGallery(); 
+    // Fetch facebook posts
+    this.fetchFacebookPosts();
   },
+
+  // Methods
   methods: {
+    // Pagination methods
     goToPage(page) {
-      this.currentPage = page;
+      // Update the current page to the selected page
+      this.currentPage = page; 
     },
     goToPreviousPage() {
       if (this.currentPage > 1) {
-        this.currentPage--;
+        // Decrement the current page if it is greater than 1
+        this.currentPage--; 
       }
     },
     goToNextPage() {
       if (this.currentPage < this.totalPages) {
-        this.currentPage++;
+        // Increment the current page if it is less than the total pages
+        this.currentPage++; 
       }
     },
+
+    validateEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    },
+
+    
+  subscribeToNewsletter() {
+    // Fetch user's email from the form input field
+    const userEmail = this.emailInput;
+
+    // Check if the email input is empty or invalid
+    if (!userEmail || !this.validateEmail(userEmail)) {
+        this.errorMessage = 'Please enter a valid email';
+        return;
+      }
+
+    // Create a template parameters object with the user's email
+    const templateParams = {
+      email: userEmail
+    };
+
+    // Send the email using the EmailJS API
+    emailjs.send('service_0ccqvkr', 'template_hokizxk', templateParams, 'fqCCmAv5WkqrWDnAY')
+        .then((response) => {
+          this.successMessage = 'Email sent successfully';
+        })
+        .catch((error) => {
+          this.errorMessage = 'Error sending email';
+        });
+  },
+
+    fetchFacebookPosts() {
+      const accessToken = 'EAANjwi4lePUBAPZCAtzxjibXtdC3XC0qBwq59UvuOakBmyfEoZBkIWYucZBd4uJEGRBhE7nBNPjOx7uGeq5TcyTT8zM0w763vGLievCDPnZBvx5bOyZCvVHIl8Q2rR2dXTgBKERMt0VLltlbVGqJkLbX5rEpPXnFg6wnlJYZADlHovRNNKHJqm68EpCSjAZAu9OQclc4zEv2cYMkBiD2QCt';
+      const pageId = '109821408529015';
+      const apiUrl = `https://graph.facebook.com/${pageId}/posts?access_token=${accessToken}`;
+
+      this.$axios
+        .get(apiUrl)
+        .then(response => {
+          const posts = response.data.data;
+          this.fbposts = posts;
+        })
+        .catch(error => {
+          console.log('Error fetching Facebook posts:', error);
+                });
+      },
+
+    // Fetch blog data
     getPost() {
       this.$axios
         .get('http://localhost/wordpress/wp-json/wp/v2/posts')
         .then(response => {
-          this.blogContents = response.data;
+          // Store the fetched blog data in the blogContents array
+          this.blogContents = response.data; 
         })
         .catch(error => {
           console.error(error);
         });
 
       this.$axios
-        .get('http://localhost/wordpress/wp-json/wp/v2/campaigns')
-        .then(response => {
-          this.campaignContents = response.data;
+      .get('https://localhost/wordpress/wp-json/wp/v2/campaigns')
+        .then((response) => {
+          // Store the fetched campaign data in the campaignContents array
+          this.campaignContents = response.data; 
+          // Update the displayed campaigns based on the fetched data
+          this.updateDisplayedCampaigns(); 
         })
-        .catch(error => {
-          console.error(error);
+        .catch((error) => {
+          console.log(error);
         });
 
       this.$axios
-        .get('http://localhost/wordpress/wp-json/wp/v2/events')
-        .then(response => {
-          this.eventContents = response.data;
+        .get('https://localhost/wordpress/wp-json/wp/v2/events')
+        .then((response) => {
+          // Store the fetched event data in the eventContents array
+          this.eventContents = response.data; 
+          // Update the displayed events based on the fetched data
+          this.updateDisplayedEvents(); 
         })
-        .catch(error => {
-          console.error(error);
+        .catch((error) => {
+          console.log(error);
         });
 
       this.$axios
-        .get('http://localhost/wordpress/wp-json/wp/v2/awards')
-        .then(response => {
-          this.awards = response.data;
-          console.log(this.awards);
+        .get('https://localhost/wordpress/wp-json/wp/v2/awards')
+        .then((response) => {
+          // Store the fetched awards data in the awards array
+          this.awards = response.data; 
+          // Update the displayed awards based on the fetched data
+          this.updateDisplayedAwards(); 
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
+
+    // Awards methods
+    updateDisplayedAwards() {
+      const start = this.currentIndex;
+      const end = start + this.itemsPerSlide;
+      // Update the displayed awards based on the current index
+      this.displayedAwards = this.awards.slice(start, end); 
+    },
+    previousSlide() {
+      if (this.currentIndex > 0) {
+        // Decrement the current index by the number of items per slide
+        this.currentIndex -= this.itemsPerSlide; 
+        // Update the displayed awards based on the updated index
+        this.updateDisplayedAwards(); 
+      }
+    },
+    nextSlide() {
+      if (this.currentIndex + this.itemsPerSlide < this.awards.length) {
+        // Increment the current index by the number of items per slide
+        this.currentIndex += this.itemsPerSlide; 
+        // Update the displayed awards based on the updated index
+        this.updateDisplayedAwards(); 
+      }
+    },
+
+    // Events methods
+    updateDisplayedEvents() {
+      const start = this.eventCurrentIndex;
+      const end = start + this.eventItemsPerSlide;
+      // Update the displayed events based on the current index
+      this.displayedEvents = this.eventContents.slice(start, end); 
+    },
+    eventspreviousSlide() {
+      if (this.eventCurrentIndex > 0) {
+        // Decrement the current index by the number of items per slide
+        this.eventCurrentIndex -= this.eventItemsPerSlide; 
+        // Update the displayed events based on the updated index
+        this.updateDisplayedEvents(); 
+      }
+    },
+    eventsnextSlide() {
+      if (this.eventCurrentIndex + this.eventItemsPerSlide < this.eventContents.length) {
+        // Increment the current index by the number of items per slide
+        this.eventCurrentIndex += this.eventItemsPerSlide; 
+        // Update the displayed events based on the updated index
+        this.updateDisplayedEvents(); 
+      }
+    },
+
+    // Campaigns methods
+    updateDisplayedCampaigns() {
+      const start = this.campaigncurrentIndex;
+      const end = start + this.campaignitemsPerSlide;
+      // Update the displayed campaigns based on the current index
+      this.displayedCampaigns = this.campaignContents.slice(start, end); 
+    },
+    campaignPreviousSlide() {
+      if (this.campaigncurrentIndex > 0) {
+        // Decrement the current index by the number of items per slide
+        this.campaigncurrentIndex -= this.campaignitemsPerSlide; 
+        // Update the displayed campaigns based on the updated index
+        this.updateDisplayedCampaigns(); 
+      }
+    },
+    campaignNextSlide() {
+      if (this.campaigncurrentIndex + this.campaignitemsPerSlide < this.campaignContents.length) {
+        // Increment the current index by the number of items per slide
+        this.campaigncurrentIndex += this.campaignitemsPerSlide; 
+        // Update the displayed campaigns based on the updated index
+        this.updateDisplayedCampaigns(); 
+      }
+    },
+
+    // Fetch gallery images
     getGallery() {
       this.$axios
-        .get('http://localhost/wordpress/wp-json/wp/v2/gallery')
+        .get('http://localhost/wordpress/wp-json/wp/v2/home_page_gallery')
         .then(response => {
-          this.galleryImages = response.data;
+          // Store the fetched gallery images in the galleryImages array
+          this.galleryImages = response.data; 
         })
         .catch(error => {
           console.log(error);
         });
     },
-    startSlideshow() {
-    setInterval(() => {
-      this.nextImage();
-    }, 3000); // Change image every 3 seconds (adjust as needed)
-  },
-  nextImage() {
-    this.activeImageIndex = (this.activeImageIndex + 1) % this.galleryImages.length;
-  },
+    
+    // Trims the content to a desired word limit
     trimContent(content) {
-      const wordLimit = 20; // Define the desired word limit
+       // Define the desired word limit
+      const wordLimit = 50;
+      const words = content.split(' ');
+
+      if (words.length > wordLimit) {
+        const trimmedWords = words.slice(0, wordLimit);
+        return `${trimmedWords.join(' ')}...`;
+      }
+
+      return content;
+    },
+
+    // Trims the campaign content to a desired word limit
+    campaigntrimContent(content) {
+      // Define the desired word limit
+      const wordLimit = 50; 
       const words = content.split(' ');
 
       if (words.length > wordLimit) {
@@ -274,9 +510,29 @@ export default {
   },
 };
 
-
-
+// const facebookPage = '109821408529015';
+// const accessToken = 'EAANjwi4lePUBAJmGYBM13UBN0Y6MIsl0ciYUcPErLAOMAqZCU6A2PrVqv8Ela0lq3KGmu2YZBoZANP6OgZBX3o4Ax7zHXB48yXNKGREIaUisybL8xujVUJRW8e7XOBtd3pKbfe94UAzwyW8ZCvMz11z4WxzD9UZBc1M43sF2P5HVIZAuRgjH91YNGfKkflSzKTa1qjziEaLDOCKFdWk1jgf';
+  
+//   // Fetch Facebook posts
+//   fetch(`https://graph.facebook.com/${facebookPage}/posts?access_token=${accessToken}`)
+//   .then(response => response.json())
+//     .then(data => {
+//       const posts = data.data;
+//       let postsHTML = '';
+      
+//       // Create HTML for each post
+//       posts.forEach(post => {
+//         postsHTML += `<p>${post.message}</p>`;
+//       });
+      
+//       // Update the element with fetched posts
+//       document.getElementById('facebook-posts').innerHTML = postsHTML;
+//     })
+//     .catch(error => {
+//       console.log('Error fetching Facebook posts:', error);
+//     });
 </script>
+
 
 <style>
 .blog {
@@ -321,7 +577,6 @@ export default {
 .blog-wrapper {
   position: absolute;
   bottom: 50px;
-  /* adjust the value to position the element closer or farther from the bottom */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -354,8 +609,7 @@ export default {
 
 .blogcontent1 {
   background-color: #1b75bc;
-  height: 400px;
-  /* adjust as needed */
+  height: 300px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -365,7 +619,6 @@ export default {
 .blogcontent2 {
   background-color: #e6fdffc4;
   height: 400px;
-  /* adjust as needed */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -380,7 +633,8 @@ export default {
 
 .card-image {
   flex: 1;
-  height: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .card-image img {
@@ -573,6 +827,10 @@ export default {
   padding: 10px 10px 70px 10px;
 }
 
+.campaign-img img{
+  height: 250px;
+}
+
 .campaign-title {
   padding-top: 10px;
   padding-left: 10px;
@@ -597,6 +855,26 @@ export default {
   border-radius: 15px;
   font-weight: bold;
   font-size: .8rem;
+}
+
+.campaigns-arrow {
+  position: absolute;
+  top: 25%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.campaign-left {
+  left: 10px;
+}
+
+.campaign-right {
+  right: 10px;
 }
 
 hr {
@@ -628,6 +906,7 @@ hr {
   padding: 10px 10px 70px 10px;
 }
 
+
 .event-title {
   padding-top: 10px;
   padding-left: 10px;
@@ -640,6 +919,26 @@ hr {
   line-height: 1.1;
   padding: 10px 0 30px 10px;
   text-align: left;
+}
+
+.events-arrow {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.events-left {
+  left: 10px;
+}
+
+.events-right {
+  right: 10px;
 }
 
 
@@ -664,6 +963,7 @@ hr {
   padding-bottom: 200px;
 }
 
+
 .awards-wrapper {
   width: 60%;
   max-width: 1200px;
@@ -676,6 +976,8 @@ hr {
   margin-top: -100px;
 }
 
+
+
 .award-title {
   color: #1B75BC;
   padding-top: 10px;
@@ -685,6 +987,7 @@ hr {
 }
 
 .award-details {
+  max-width: 1200px;
   font-size: 0.8rem;
   font-weight: 100;
   line-height: 1.1;
@@ -832,4 +1135,21 @@ hr {
 
 .dot.active {
   background-color: #0069d9;
-}</style>
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .floating-button button {
+    padding: 10px 20px;
+    background: linear-gradient(to top, #1B75BC, #0E3B5E);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+</style>
