@@ -69,7 +69,7 @@
               </nuxt-link>
             </div>
           </div>
-          <a href="/Blogs" class="nav-link"> BLOGS </a>
+          <a href="/Blogs" class="nav-link"> BLOG </a>
           <nuxt-link to="/ContactUs" class="nav-link"> CONTACT </nuxt-link>
           <nuxt-link to="/#solutions" class="nav-btn"> Lets Engage </nuxt-link>
         </div>
