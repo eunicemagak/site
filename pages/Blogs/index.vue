@@ -9,9 +9,7 @@
           <div>
             <h1>OUR BLOG</h1>
             <p>
-              Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy
-              nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non
-              ummy nibh euismod tincidunt ut la ore et
+              Expert insights. Tailored just for you.
             </p>
           </div>
         </div>
@@ -57,11 +55,26 @@
             </div>
           </div>
           <div class="sidebar">
-            <div  v-for="(fbpost, index) in fbposts" :key="index" class="facebook-page">
+            <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0&appId=954110579144949&autoLogAppEvents=1" nonce="k96VD3h0"></script>             -->
+            <div class="facebook-page" >
+              <p>facebook page</p>
+              <!-- <div  v-for="(fbpost, index) in fbposts" :key="index" class="facebook-page" > -->
+              <!-- <div class="fb-content"> -->
               <!-- <p id="facebook-posts"></p>? -->
-              <p>{{ fbpost.message }}</p>
-
-            </div>
+              <!-- <img :src="fbpost.picture" alt="Feed Image" class="fb-image">
+              <p class="fb-message">{{ fbpost.message }}</p>
+              <p class="fb-message"> likes:{{ fbpost.likes }}</p> -->
+              <!-- <div class="fb-page" 
+              data-tabs="events"
+              data-href="https://www.facebook.com/rovlexwritings"
+              data-width="380"></div> -->
+              <!-- <div class="fb-page" data-href="https://www.facebook.com/rovlexwritings" 
+              data-tabs="timeline" data-width="" data-height="" data-small-header="false" 
+              data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/rovlexwritings" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/rovlexwritings">Rovlex Writings</a></blockquote>
+              </div> -->
+              </div>
             <div class="social-container">
               <h5>Follow us on</h5>
               <div class="social-icons">
@@ -169,9 +182,10 @@
 
       <div class="floating-button">
         <!-- <input type="email" v-model="emailInput" placeholder="Enter your email"> -->
-    <button @click="subscribeToNewsletter">Subscribe to our newsletter</button>
-    <p v-if="successMessage">{{ successMessage }}</p>
-    <p v-if="errorMessage">{{ errorMessage }}</p>
+        <!-- <button @click="subscribeToNewsletter">Subscribe to our newsletter</button> -->
+        <button>Subscribe to our newsletter</button>
+        <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/770b5fa4230188b2fbedf56ae/2772da04f451f063b522b039d.js");</script>        <!-- <p v-if="successMessage">{{ successMessage }}</p>
+        <p v-if="errorMessage">{{ errorMessage }}</p> -->
         <!-- <button>Subscribe to our newsletter</button> -->
       </div>
 
@@ -181,7 +195,7 @@
 
 
 <script>
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';s
 import BlogCard from '../../components/BlogCard.vue';
 import CampaignCard from '../../components/CampaignCard.vue';
 import EventCard from '../../components/EventCard.vue';
@@ -231,7 +245,7 @@ export default {
       eventCurrentIndex: 0, 
 
       awardsTitle: "AWARDS & RECOGNITION",
-      awardsDescription: "Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq u",
+      awardsDescription: "At Roamtech, we have a great story to tell. We uphold our mission by working hard every day to bring value to our clients and partners. Our unwavering pursuit of excellence in both service and products is not just a testament to our integrity, but also a testament to our belief that it is simply good business practice. When prestigious organizations and companies recognize our efforts, it serves as a powerful affirmation that we are on the right path, guided by our unwavering core values that continue to propel us forward.",
       // Array to store currently displayed awards
       displayedAwards: [], 
       // Number of awards to display per slide
@@ -242,7 +256,7 @@ export default {
       currentIndex: 0, 
 
       galleryTitle: "OUR GALLERY",
-      galleryDescription: "Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq uam bony non ummy nibh euismod tincidunt ut la ore et Yolor sit amet, consectetuer adi piscing elit, sed diam non ummy nibh euismod tincidunt ut la ore et dolore magna aliq u",
+      galleryDescription: "Welcome to our Roamtech gallery. Here is what it looks like to be part of our dedicated team.Telling stories that define us through images!",
       // Array to store gallery images
       galleryImages: [], 
       // Set the initial active image index
@@ -276,7 +290,7 @@ export default {
     // Fetch gallery images
     this.getGallery(); 
     // Fetch facebook posts
-    this.fetchFacebookPosts();
+    // this.fetchFacebookPosts();
   },
 
   // Methods
@@ -305,46 +319,46 @@ export default {
     },
 
     
-  subscribeToNewsletter() {
-    // Fetch user's email from the form input field
-    const userEmail = this.emailInput;
+  // subscribeToNewsletter() {
+  //   // Fetch user's email from the form input field
+  //   const userEmail = this.emailInput;
 
-    // Check if the email input is empty or invalid
-    if (!userEmail || !this.validateEmail(userEmail)) {
-        this.errorMessage = 'Please enter a valid email';
-        return;
-      }
+  //   // Check if the email input is empty or invalid
+  //   if (!userEmail || !this.validateEmail(userEmail)) {
+  //       this.errorMessage = 'Please enter a valid email';
+  //       return;
+  //     }
 
-    // Create a template parameters object with the user's email
-    const templateParams = {
-      email: userEmail
-    };
+  //   // Create a template parameters object with the user's email
+  //   const templateParams = {
+  //     email: userEmail
+  //   };
 
-    // Send the email using the EmailJS API
-    emailjs.send('service_0ccqvkr', 'template_hokizxk', templateParams, 'fqCCmAv5WkqrWDnAY')
-        .then((response) => {
-          this.successMessage = 'Email sent successfully';
-        })
-        .catch((error) => {
-          this.errorMessage = 'Error sending email';
-        });
-  },
+  //   // Send the email using the EmailJS API
+  //   emailjs.send('service_0ccqvkr', 'template_hokizxk', templateParams, 'fqCCmAv5WkqrWDnAY')
+  //       .then((response) => {
+  //         this.successMessage = 'Email sent successfully';
+  //       })
+  //       .catch((error) => {
+  //         this.errorMessage = 'Error sending email';
+  //       });
+  // },
 
-    fetchFacebookPosts() {
-      const accessToken = 'EAANjwi4lePUBAPZCAtzxjibXtdC3XC0qBwq59UvuOakBmyfEoZBkIWYucZBd4uJEGRBhE7nBNPjOx7uGeq5TcyTT8zM0w763vGLievCDPnZBvx5bOyZCvVHIl8Q2rR2dXTgBKERMt0VLltlbVGqJkLbX5rEpPXnFg6wnlJYZADlHovRNNKHJqm68EpCSjAZAu9OQclc4zEv2cYMkBiD2QCt';
-      const pageId = '109821408529015';
-      const apiUrl = `https://graph.facebook.com/${pageId}/posts?access_token=${accessToken}`;
+    // fetchFacebookPosts() {
+    //   const accessToken = 'EAANjwi4lePUBAKOuK89DhDczQVvuZBZCYzZAFifZCnQM8wMh10BsMEpU1xTBaVw3ZAZCsBWC5GB8mTF3JtWESuvPnWtlmsZC4oY9zZAEvOMANdyDs1jk6Wkp0c4XkMAZAG3Qy9arJ1OZB44ZCTvr5mfMwO4RuiZBisLjLjrDb42m1qmpDosIAwF6mnZA3';
+    //   const pageId = '109821408529015';
+    //   const apiUrl = `https://graph.facebook.com/${pageId}/posts?access_token=${accessToken}&fields=message,picture`;
 
-      this.$axios
-        .get(apiUrl)
-        .then(response => {
-          const posts = response.data.data;
-          this.fbposts = posts;
-        })
-        .catch(error => {
-          console.log('Error fetching Facebook posts:', error);
-                });
-      },
+    //   this.$axios
+    //     .get(apiUrl)
+    //     .then(response => {
+    //       const posts = response.data.data;
+    //       this.fbposts = posts.slice(0, 1); // Limit to 2 posts
+    //     })
+    //     .catch(error => {
+    //       console.log('Error fetching Facebook posts:', error);
+    //     });
+    //   },
 
     // Fetch blog data
     getPost() {
@@ -595,12 +609,12 @@ export default {
 .trending .container {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 90%;
+  padding-left: 100px;
 }
 
 .trending-content {
-  flex: 3;
-  padding-left: 100px;
+  flex:3 !important ;
 }
 
 .trending-content .card:not(:first-child) {
@@ -749,9 +763,9 @@ export default {
 
 
 .sidebar {
-  flex: 1;
-  margin-left: 20px;
-  padding: 0 20px;
+  flex: 2 !important;
+  margin-left: 10px;
+  padding: 0 10px;
 }
 
 .facebook-page {
@@ -761,7 +775,6 @@ export default {
   height: 86%;
   margin-bottom: 20px;
 }
-
 
 
 .social-container {
