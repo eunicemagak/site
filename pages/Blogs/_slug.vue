@@ -182,6 +182,7 @@ export default {
 .blog-title h3 {
   font-size: 24px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .blog-post {
@@ -215,6 +216,7 @@ export default {
   display: inline-block;
   margin-bottom: 50px;
   margin-left: 120px;
+  text-transform: capitalize;
 }
 
 .post-link .get-post::after {
@@ -262,6 +264,7 @@ export default {
   padding-left: 10px;
   font-size: 1.2rem;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .may-like-details {
@@ -313,6 +316,7 @@ padding: 5px 10px;
 border-radius: 15px;
 font-weight: bold;
 font-size: .8rem;
+text-transform: capitalize;
 }
 </style>
 

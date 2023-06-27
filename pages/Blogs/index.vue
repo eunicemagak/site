@@ -68,6 +68,7 @@
               data-tabs="events"
               data-href="https://www.facebook.com/rovlexwritings"
               data-width="380"></div> -->
+              <!--  -->
               <!-- <div class="fb-page" data-href="https://www.facebook.com/rovlexwritings" 
               data-tabs="timeline" data-width="" data-height="" data-small-header="false" 
               data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
@@ -497,7 +498,7 @@ export default {
     // Trims the content to a desired word limit
     trimContent(content) {
        // Define the desired word limit
-      const wordLimit = 50;
+      const wordLimit = 60;
       const words = content.split(' ');
 
       if (words.length > wordLimit) {
@@ -597,6 +598,10 @@ export default {
   z-index: 1;
 }
 
+.trending-wrapper{
+  flex:3;
+
+}
 
 .trending {
   padding-bottom: 50px;
@@ -613,9 +618,6 @@ export default {
   padding-left: 100px;
 }
 
-.trending-content {
-  flex:3 !important ;
-}
 
 .trending-content .card:not(:first-child) {
   margin-top: 20px;
@@ -656,6 +658,7 @@ export default {
   width: 100%;
 }
 
+
 .card-text {
   flex: 2;
   display: block;
@@ -666,7 +669,8 @@ export default {
   color: #fff;
   font-weight: bold;
   margin-bottom: 10px;
-  margin-left: 10px
+  margin-left: 10px;
+  text-transform: uppercase;
 }
 
 .blogcontent1 p {
@@ -686,6 +690,7 @@ export default {
   font-size: 12px;
   border-radius: 15px;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .blogcontent2 h3 {
@@ -763,7 +768,7 @@ export default {
 
 
 .sidebar {
-  flex: 2 !important;
+  flex: 1;
   margin-left: 10px;
   padding: 0 10px;
 }
@@ -849,6 +854,7 @@ export default {
   padding-left: 10px;
   font-size: 1.2rem;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .campaign-details {
@@ -925,6 +931,7 @@ hr {
   padding-left: 10px;
   font-size: 1.2rem;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .event-details {
@@ -997,6 +1004,7 @@ hr {
   padding-left: 10px;
   font-size: 1rem;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .award-details {
