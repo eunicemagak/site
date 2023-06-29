@@ -55,9 +55,10 @@
             </div>
           </div>
           <div class="sidebar">
-            <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0&appId=954110579144949&autoLogAppEvents=1" nonce="k96VD3h0"></script>             -->
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0&appId=227448536808905&autoLogAppEvents=1" nonce="kE2iHewq"></script>          
             <div class="facebook-page" >
-              <p>facebook page</p>
+ 
+              <!-- <p>facebook page</p> -->
               <!-- <div  v-for="(fbpost, index) in fbposts" :key="index" class="facebook-page" > -->
               <!-- <div class="fb-content"> -->
               <!-- <p id="facebook-posts"></p>? -->
@@ -69,12 +70,14 @@
               data-href="https://www.facebook.com/rovlexwritings"
               data-width="380"></div> -->
               <!--  -->
-              <!-- <div class="fb-page" data-href="https://www.facebook.com/rovlexwritings" 
+              <div class="fb-page" data-href="https://www.facebook.com/roamtech" 
               data-tabs="timeline" data-width="" data-height="" data-small-header="false" 
-              data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
-              <blockquote cite="https://www.facebook.com/rovlexwritings" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/rovlexwritings">Rovlex Writings</a></blockquote>
-              </div> -->
+              data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/roamtech" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/roamtech">Roamtech</a>
+              </blockquote>
+            </div>
+    
               </div>
             <div class="social-container">
               <h5>Follow us on</h5>
