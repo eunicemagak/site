@@ -42,6 +42,9 @@
                     <nuxt-link to="/Blogs" class="nav-link1">
                         BLOG
                     </nuxt-link>
+                    <nuxt-link to="/Careers" class="nav-link1">
+                        CAREERS
+                    </nuxt-link>
                     <nuxt-link to="/ContactUs" class="nav-link1">
                         CONTACT
                     </nuxt-link>

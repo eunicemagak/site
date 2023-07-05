@@ -185,11 +185,15 @@
       </div>
 
       <div class="floating-button">
+        <a href="http://eepurl.com/iuWsPs" target="_blank" rel="noopener noreferrer">
+        <button>Subscribe to our newsletter</button>
+        </a>
         <!-- <input type="email" v-model="emailInput" placeholder="Enter your email"> -->
         <!-- <button @click="subscribeToNewsletter">Subscribe to our newsletter</button> -->
-        <button>Subscribe to our newsletter</button>
-        <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/770b5fa4230188b2fbedf56ae/2772da04f451f063b522b039d.js");</script>        <!-- <p v-if="successMessage">{{ successMessage }}</p>
-        <p v-if="errorMessage">{{ errorMessage }}</p> -->
+        <!-- <button>Subscribe to our newsletter</button>
+        <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/770b5fa4230188b2fbedf56ae/2772da04f451f063b522b039d.js");</script>        
+        <p v-if="successMessage">{{ successMessage }}</p>
+        <p v-if="errorMessage">{{ errorMessage }}</p>  -->
         <!-- <button>Subscribe to our newsletter</button> -->
       </div>
 
@@ -1176,4 +1180,127 @@ hr {
     font-size: 12px;
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 800px) {
+    .blog {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  z-index: 0;
+}
+
+.blog::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top,
+      rgba(247, 251, 252, 0.9) 0%,
+      rgba(247, 251, 252, 0.7) 40%,
+      rgba(247, 251, 252, 0) 80%);
+  z-index: 1;
+}
+
+.trending .container {
+  display:block ;
+  width: 90%;
+  padding-left: 50px;
+  padding-right: 10px ;
+}
+
+.trending .title {
+  padding-left: 10px;
+}
+
+.awards-container p {
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 150px;
+}
+
+.gallery-container h6 {
+  color: #fff;
+  padding: 0px 20px 20px;
+}
+
+.gallery-title {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.gallery-content p {
+  font-size: 5px;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.image-container img {
+   margin-top: 0;
+}
+
+.campaigns h2 {
+  font-size: 1.5rem;
+  padding: 20px 70px;
+}
+
+.campaigns-wrapper {
+  width: 70%;
+  display: block;
+  grid-template-columns: repeat(1, 1fr); 
+}
+
+.campaign-card {
+  margin-bottom: 10px;
+}
+
+.campaigns-arrow {
+background-color: transparent;
+color: transparent;
+}
+
+.events h2 {
+  font-size: 1.5rem;
+  padding: 20px 70px;
+}
+
+.events-wrapper {
+  width: 70%;
+  display: block;
+  grid-template-columns: repeat(1, 1fr); 
+}
+
+.event-card {
+  margin-bottom: 10px;
+}
+
+.events-arrow {
+background-color: transparent;
+color: transparent;
+}
+
+.awards-wrapper {
+  width: 70%;
+  display: block;
+  grid-template-columns: repeat(1, 1fr); 
+}
+
+.award-card {
+  margin-bottom: 10px;
+}
+
+.awards-arrow {
+background-color: transparent;
+color: transparent;
+}
+
+}
 </style>

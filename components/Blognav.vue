@@ -75,4 +75,10 @@ export default {
   color: #1b75bc;
   font-size: 14px;
 }
+
+@media only screen and (max-width: 800px) {
+.sub-navbar {
+  height: 10px;
+}
+}
 </style>

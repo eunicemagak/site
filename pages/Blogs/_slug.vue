@@ -36,7 +36,7 @@
       <div class="may-likes-wrapper">
         <div class="may-like-card" v-for="like in displayedLikes" :key="like.id">
           <div class="may-like">
-            <div may-like-img>
+            <div class="may-like-img">
               <img :src="like.acf.image" alt="">
             </div>
             <!-- Like title -->
@@ -317,6 +317,74 @@ border-radius: 15px;
 font-weight: bold;
 font-size: .8rem;
 text-transform: capitalize;
+}
+
+@media only screen and (max-width: 800px) {
+  .each-blog {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative; 
+   z-index: 0; 
+  }
+
+  .blog-post {
+  margin: 20px 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.blog-title {
+  margin: 20px 0 0px 30px;
+  text-align: left;
+}
+
+.blog-title h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.blog-post img {
+  float: left;
+  margin-right: 20px;
+  width: 50%;
+  height: auto;
+}
+
+.may-likes-wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.may-likes h2 {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 20px 0px 20px 50px;
+}
+
+.like-arrow {
+  background-color: transparent;
+  color: transparent;
+}
+
+.may-like-img{
+  width: 50%;
+  height: auto;
+
+}
+
 }
 </style>
 
