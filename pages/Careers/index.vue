@@ -117,7 +117,7 @@ export default {
         fetchJobPosters() {
             this.$axios
                 // API endpoint to fetch job posters
-                .get('http://localhost/wordpress/wp-json/wp/v2/job_poster')
+                .get('https://rtblg.emalify.com/wp-json/wp/v2/job_poster')
                 .then(response => {
                     // Store fetched job posters in the data array
                     this.jobPosters = response.data;
@@ -131,7 +131,7 @@ export default {
         fetchJobListings() {
             this.$axios
                 // API endpoint to fetch job listings
-                .get('http://localhost/wordpress/wp-json/wp/v2/job_listing')
+                .get('https://rtblg.emalify.com/wp-json/wp/v2/job_listing')
                 // Store fetched job listings in the data array, including handling for missing job dates
                 .then(response => {
                     this.jobs = response.data.map(job => ({
@@ -155,7 +155,7 @@ export default {
 
             // API endpoint to fetch tags
             this.$axios
-                .get('http://localhost/wordpress/wp-json/wp/v2/tags', {
+                .get('https://rtblg.emalify.com/wp-json/wp/v2/tags', {
                     params: {
                         include: tagIds.join(','),
                     },

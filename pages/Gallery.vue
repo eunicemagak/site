@@ -66,7 +66,7 @@ export default {
   methods: {
     fetchGalleryImages() {
       this.$axios
-        .get('https://localhost/wordpress/wp-json/wp/v2/gallery')
+        .get('https://rtblg.emalify.com/wp-json/wp/v2/gallery')
         .then((response) => {
           this.galleryImages = response.data.map((item) => item.acf.image);
         })

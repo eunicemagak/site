@@ -93,7 +93,7 @@ export default {
   methods: {
     getPost() {
       // Fetch related posts data
-      axios.get(`http://localhost/wordpress/wp-json/wp/v2/posts`)
+      axios.get(`https://rtblg.emalify.com/wp-json/wp/v2/posts`)
         .then(response => {
           this.relatedPostsData = response.data;
         })
@@ -101,7 +101,7 @@ export default {
           console.log(error);
         });
       // Fetch blog posts data based on the current slug
-      axios.get(`http://localhost/wordpress/wp-json/wp/v2/posts?slug=${this.slug}`)
+      axios.get(`https://rtblg.emalify.com/wp-json/wp/v2/posts?slug=${this.slug}`)
         .then(response => {
           this.blogPostsData = response.data;
         })
@@ -109,7 +109,7 @@ export default {
           console.log(error);
         });
       // Fetch events posts data based on the current slug
-      axios.get(`http://localhost/wordpress/wp-json/wp/v2/events?slug=${this.slug}`)
+      axios.get(`https://rtblg.emalify.com/wp-json/wp/v2/events?slug=${this.slug}`)
         .then(response => {
           this.blogPostsData = response.data;
         })

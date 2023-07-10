@@ -136,7 +136,7 @@ export default {
     // Method to fetch job listings and job posters
     JobListing() {
       this.$axios
-        .get('http://localhost/wordpress/wp-json/wp/v2/job_poster')
+        .get('https://rtblg.emalify.com/wp-json/wp/v2/job_poster')
         .then(response => {
           // Store the fetched job poster data
           this.jobPosters = response.data;
@@ -148,7 +148,7 @@ export default {
         });
 
       this.$axios
-        .get(`http://localhost/wordpress/wp-json/wp/v2/job_listing?slug=${this.slug}`)
+        .get(`https://rtblg.emalify.com/wp-json/wp/v2/job_listing?slug=${this.slug}`)
         .then(response => {
           // Store the fetched job data
           this.jobs = response.data;
@@ -172,7 +172,7 @@ export default {
 
       // Make an HTTP GET request to fetch tag data using the tag IDs
       this.$axios
-        .get('http://localhost/wordpress/wp-json/wp/v2/tags', {
+        .get('https://rtblg.emalify.com/wp-json/wp/v2/tags', {
           params: {
             include: tagIds.join(','),
           },
