@@ -367,11 +367,10 @@ export default {
     //       console.log('Error fetching Facebook posts:', error);
     //     });
     //   },
-
     // Fetch blog data
     getPost() {
       this.$axios
-        .get('http://localhost/wordpress/wp-json/wp/v2/posts')
+        .get('https://rtblg.emalify.com/wp-json/wp/v2/posts')
         .then(response => {
           // Store the fetched blog data in the blogContents array
           this.blogContents = response.data; 
@@ -381,7 +380,7 @@ export default {
         });
 
       this.$axios
-      .get('https://localhost/wordpress/wp-json/wp/v2/campaigns')
+      .get('https://rtblg.emalify.com/wp-json/wp/v2/campaigns')
         .then((response) => {
           // Store the fetched campaign data in the campaignContents array
           this.campaignContents = response.data; 
@@ -393,7 +392,7 @@ export default {
         });
 
       this.$axios
-        .get('https://localhost/wordpress/wp-json/wp/v2/events')
+        .get('https://rtblg.emalify.com/wp-json/wp/v2/events')
         .then((response) => {
           // Store the fetched event data in the eventContents array
           this.eventContents = response.data; 
@@ -405,7 +404,7 @@ export default {
         });
 
       this.$axios
-        .get('https://localhost/wordpress/wp-json/wp/v2/awards')
+        .get('https://rtblg.emalify.com/wp-json/wp/v2/awards')
         .then((response) => {
           // Store the fetched awards data in the awards array
           this.awards = response.data; 
@@ -492,7 +491,7 @@ export default {
     // Fetch gallery images
     getGallery() {
       this.$axios
-        .get('http://localhost/wordpress/wp-json/wp/v2/home_page_gallery')
+        .get('https://rtblg.emalify.com/wp-json/wp/v2/home_page_gallery')
         .then(response => {
           // Store the fetched gallery images in the galleryImages array
           this.galleryImages = response.data; 
