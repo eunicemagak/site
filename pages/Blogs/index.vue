@@ -15,11 +15,15 @@
         </div>
       </div>
 
+      
+
       <!-- Blog navigation component -->
       <Blognav />
 
+
       <!-- Trending blogs section -->
       <div class="trending" id="trending">
+        <div class="trending-wrap">
         <div class="title">
           <h2>{{ trendingTitle }}</h2>
         </div>
@@ -34,23 +38,27 @@
               </div>
 
               <div class="pagination">
-                <!-- Previous page button -->
-                <button class="pagination-arrow prev" @click.prevent="goToPreviousPage"><i
-                    class="fas fa-chevron-left"></i></button>
+  <!-- Previous page button -->
+  <button class="pagination-arrow prev" @click.prevent="goToPreviousPage" :class="{ disabled: currentPage === 1 }">
+    <i class="fas fa-chevron-left"></i>
+  </button>
 
-                <ul class="pagination-list">
-                  <!-- Iterate over page numbers -->
-                  <li v-for="(page, index) in totalPages" :key="index">
-                    <!-- Page number button -->
-                    <button class="pagination-link" :class="{ active: currentPage === page }"
-                      @click.prevent="goToPage(page)">{{ page }}</button>
-                  </li>
-                </ul>
+  <ul class="pagination-list">
+    <!-- Iterate over page numbers -->
+    <li v-for="(page, index) in totalPages" :key="index">
+      <!-- Page number button -->
+      <button class="pagination-link" :class="{ active: currentPage === page }" @click.prevent="goToPage(page)">
+        {{ page }}
+      </button>
+    </li>
+  </ul>
 
-                <!-- Next page button -->
-                <button class="pagination-arrow next" @click.prevent="goToNextPage"><i
-                    class="fas fa-chevron-right"></i></button>
-              </div>
+  <!-- Next page button -->
+  <button class="pagination-arrow next" @click.prevent="goToNextPage" :class="{ disabled: currentPage === totalPages }">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+</div>
+
 
             </div>
           </div>
@@ -96,10 +104,12 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
 
       <!-- Campaigns section -->
       <div class="campaigns" id="campaigns">
+        <div class="campaign-wrap">
         <h2>{{ campaignsTitle }}</h2>
         <div class="campaigns-wrapper">
           <!-- Iterate over displayed campaigns -->
@@ -109,12 +119,12 @@
               :linkTitle="campaign.acf.add_url.title" :URL="campaign.acf.add_url.url" />
           </div>
         </div>
-        <div class="campaigns-arrow campaign-left" @click="campaignPreviousSlide">
-          <i class="fas fa-chevron-left"></i>
-        </div>
-        <div class="campaigns-arrow campaign-right" @click="campaignNextSlide">
-          <i class="fas fa-chevron-right"></i>
-        </div>
+        <div class="campaigns-arrow campaign-left" @click="campaignPreviousSlide" :class="{ disabled: campaigncurrentIndex === 0 }">
+    <i class="fas fa-chevron-left"></i>
+  </div>
+  <div class="campaigns-arrow campaign-right" @click="campaignNextSlide" :class="{ disabled: campaigncurrentIndex + campaignitemsPerSlide >= campaignContents.length }">
+    <i class="fas fa-chevron-right"></i>
+  </div>
         <hr />
 
         <!-- Events section -->
@@ -124,24 +134,29 @@
             <!-- Iterate over displayed events -->
             <div v-for="(event, index) in displayedEvents" :key="index" class="event-card">
               <!-- Event Card component -->
-              <EventCard :image="event.acf.image" :title="event.title.rendered" :content="event.content.rendered" :slug="event.slug"/>
+              <EventCard :image="event.acf.image" :title="event.title.rendered" :content="eventtrimContent(event.content.rendered)" :slug="event.slug"/>
             </div>
           </div>
-          <div class="events-arrow events-left" @click="eventspreviousSlide">
-            <i class="fas fa-chevron-left"></i>
-          </div>
-          <div class="events-arrow events-right" @click="eventsnextSlide">
-            <i class="fas fa-chevron-right"></i>
-          </div>
+          <div class="events-arrow events-left" @click="eventspreviousSlide" :class="{ disabled: eventCurrentIndex === 0 }">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+    <div class="events-arrow events-right" @click="eventsnextSlide" :class="{ disabled: eventCurrentIndex + eventItemsPerSlide >= eventContents.length }">
+      <i class="fas fa-chevron-right"></i>
+    </div>
         </div>
+      </div>
       </div>
 
       <!-- Awards and Recognition section -->
       <div class="awards" id="awards">
         <div class="awards-container">
+          <div class="award-title-wrap">
           <h2>{{ awardsTitle }}</h2>
           <p>{{ awardsDescription }}</p>
+          </div>
         </div>
+
+        <div class="awards-wrap">
         <div class="awards-wrapper">
           <!-- Iterate over displayed awards -->
           <div v-for="(award, index) in displayedAwards" :key="index" class="award">
@@ -149,17 +164,20 @@
             <AwardCard :image="award.acf.image" :title="award.title.rendered" :content="award.content.rendered" />
           </div>
         </div>
-        <div class="awards-arrow arrow-left" @click="previousSlide">
+        <div class="awards-arrow arrow-left" @click="previousSlide" :class="{ disabled: currentIndex === 0 }">          
           <i class="fas fa-chevron-left"></i>
         </div>
-        <div class="awards-arrow arrow-right" @click="nextSlide">
+        <div class="awards-arrow arrow-right" @click="nextSlide" :class="{ disabled: currentIndex + itemsPerSlide >= awards.length }">          
           <i class="fas fa-chevron-right"></i>
         </div>
+    </div>
+      </div>
       </div>
 
       <!-- Gallery section -->
       <div class="gallery" id="gallery">
         <div class="gallery-container">
+          <div class="gallery-wrap">
           <h2>{{ galleryTitle }}</h2>
           <h6>{{ galleryDescription }}</h6>
           <div class="gallery-images">
@@ -183,6 +201,7 @@
           </div>
         </div>
       </div>
+      </div>
 
       <div class="floating-button">
         <a href="http://eepurl.com/iuWsPs" target="_blank" rel="noopener noreferrer">
@@ -196,9 +215,8 @@
         <p v-if="errorMessage">{{ errorMessage }}</p>  -->
         <!-- <button>Subscribe to our newsletter</button> -->
       </div>
+      </div>
 
-    </div>
-  </div>
 </template>
 
 
@@ -255,6 +273,7 @@ export default {
       awardsTitle: "AWARDS & RECOGNITION",
       awardsDescription: "At Roamtech, we have a great story to tell. We uphold our mission by working hard every day to bring value to our clients and partners. Our unwavering pursuit of excellence in both service and products is not just a testament to our integrity, but also a testament to our belief that it is simply good business practice. When prestigious organizations and companies recognize our efforts, it serves as a powerful affirmation that we are on the right path, guided by our unwavering core values that continue to propel us forward.",
       // Array to store currently displayed awards
+      awards:[],
       displayedAwards: [], 
       // Number of awards to display per slide
       itemsPerSlide: 3, 
@@ -277,19 +296,26 @@ export default {
 
   // Computed properties
   computed: {
-    totalPages() {
-      // Calculate the total number of pages based on the blog contents and posts per page
-      return Math.ceil(this.blogContents.length / this.postsPerPage); 
-    },
-    paginatedBlogContents() {
-       // Calculate the start index of the current page
-      const startIndex = (this.currentPage - 1) * this.postsPerPage;
-      // Calculate the end index of the current page
-      const endIndex = startIndex + this.postsPerPage; 
-      // Return the sliced portion of blog contents for the current page
-      return this.blogContents.slice(startIndex, endIndex); 
-    }
+  totalPages() {
+    // Calculate the total number of pages based on the blog contents and posts per page
+    return Math.ceil(this.blogContents.length / this.postsPerPage);
   },
+  paginatedBlogContents() {
+    // Calculate the start index of the current page
+    const startIndex = (this.currentPage - 1) * this.postsPerPage;
+    // Calculate the end index of the current page
+    const endIndex = startIndex + this.postsPerPage;
+    // Return the sliced portion of blog contents for the current page
+    return this.blogContents.slice(startIndex, endIndex);
+  },
+  isPreviousButtonDisabled() {
+    return this.currentPage === 1;
+  },
+  isNextButtonDisabled() {
+    return this.currentPage === this.totalPages;
+  }
+},
+
 
   //create lifecycle hook
   created() {
@@ -370,7 +396,7 @@ export default {
     // Fetch blog data
     getPost() {
       this.$axios
-        .get('https://rtblg.emalify.com/wp-json/wp/v2/posts')
+        .get('posts')
         .then(response => {
           // Store the fetched blog data in the blogContents array
           this.blogContents = response.data; 
@@ -380,7 +406,7 @@ export default {
         });
 
       this.$axios
-      .get('https://rtblg.emalify.com/wp-json/wp/v2/campaigns')
+      .get('campaigns')
         .then((response) => {
           // Store the fetched campaign data in the campaignContents array
           this.campaignContents = response.data; 
@@ -392,7 +418,7 @@ export default {
         });
 
       this.$axios
-        .get('https://rtblg.emalify.com/wp-json/wp/v2/events')
+        .get('events')
         .then((response) => {
           // Store the fetched event data in the eventContents array
           this.eventContents = response.data; 
@@ -404,7 +430,7 @@ export default {
         });
 
       this.$axios
-        .get('https://rtblg.emalify.com/wp-json/wp/v2/awards')
+        .get('awards')
         .then((response) => {
           // Store the fetched awards data in the awards array
           this.awards = response.data; 
@@ -491,7 +517,7 @@ export default {
     // Fetch gallery images
     getGallery() {
       this.$axios
-        .get('https://rtblg.emalify.com/wp-json/wp/v2/home_page_gallery')
+        .get('home_page_gallery')
         .then(response => {
           // Store the fetched gallery images in the galleryImages array
           this.galleryImages = response.data; 
@@ -501,33 +527,46 @@ export default {
         });
     },
     
-    // Trims the content to a desired word limit
+    // Trims the content to a desired character limit
     trimContent(content) {
-       // Define the desired word limit
-      const wordLimit = 60;
-      const words = content.split(' ');
+      // Define the desired character limit
+      const characterLimit = 200;
 
-      if (words.length > wordLimit) {
-        const trimmedWords = words.slice(0, wordLimit);
-        return `${trimmedWords.join(' ')}...`;
+      if (content.length > characterLimit) {
+        const trimmedContent = content.slice(0, characterLimit);
+        return `${trimmedContent}...`;
       }
 
       return content;
     },
 
-    // Trims the campaign content to a desired word limit
+
+    // Trims the campaign content to a desired character limit
     campaigntrimContent(content) {
-      // Define the desired word limit
-      const wordLimit = 50; 
-      const words = content.split(' ');
+      // Define the desired character limit
+      const characterLimit = 200;
 
-      if (words.length > wordLimit) {
-        const trimmedWords = words.slice(0, wordLimit);
-        return `${trimmedWords.join(' ')}...`;
+      if (content.length > characterLimit) {
+        const trimmedContent = content.slice(0, characterLimit);
+        return `${trimmedContent}...`;
       }
 
       return content;
     },
+
+    // Trims the event content to a desired character limit
+    eventtrimContent(content) {
+      // Define the desired character limit
+      const characterLimit = 200;
+
+      if (content.length > characterLimit) {
+        const trimmedContent = content.slice(0, characterLimit);
+        return `${trimmedContent}...`;
+      }
+
+      return content;
+    },
+
   },
 };
 
@@ -556,12 +595,17 @@ export default {
 
 
 <style>
+.trending-wrap{
+  max-width: 1200px;
+  margin: auto;
+}
+
 .blog {
   background: url('./assets/images/blogsbg.png');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 50vh;
   position: relative;
   z-index: 0;
 }
@@ -575,7 +619,7 @@ export default {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 70%;
+  height: 50%;
   background: linear-gradient(to top,
       rgba(247, 251, 252, 0.9) 0%,
       rgba(247, 251, 252, 0.7) 40%,
@@ -820,6 +864,11 @@ export default {
   text-decoration: none;
 }
 
+.campaign-wrap{
+  max-width: 1200px;
+  margin: auto;
+  
+}
 
 .campaigns {
   background-color: #F7F7F7;
@@ -834,6 +883,7 @@ export default {
 }
 
 .campaigns-wrapper {
+  position: relative;
   margin-top: 50px;
   width: 90%;
   max-width: 1200px;
@@ -848,11 +898,26 @@ export default {
 .campaign-card {
   background-color: #fff;
   border-radius: 15px;
-  padding: 10px 10px 70px 10px;
+  padding: 10px 10px 40px 10px;
 }
 
-.campaign-img img{
-  height: 250px;
+.campaign-img {
+  position: relative;
+  width: 100%;
+}
+
+.campaign-img::before {
+  content: "";
+  display: block;
+  padding-bottom: 75.25%; /* Custom aspect ratio */
+}
+
+.campaign-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .campaign-title {
@@ -868,18 +933,22 @@ export default {
   line-height: 1.1;
   padding: 10px 0 30px 10px;
   text-align: left;
+  flex-grow: 1;
 }
 
 .get-campaign {
+  position: absolute;
+  bottom: -20px;
   text-align: center;
   background: #1B75BC;
   color: var(--white);
-  margin-bottom: 50px;
+  /* margin-bottom: 10px; */
   margin-left: 10px;
   padding: 5px 10px;
   border-radius: 15px;
   font-weight: bold;
   font-size: .8rem;
+  width: 50%;
 }
 
 .campaigns-arrow {
@@ -928,9 +997,27 @@ hr {
 .event-card {
   background-color: #fff;
   border-radius: 15px;
-  padding: 10px 10px 70px 10px;
+  padding: 10px 10px 0 10px;
 }
 
+.event-img {
+  position: relative;
+  width: 100%; /* Set the container width as needed */
+}
+
+.event-img::before {
+  content: "";
+  display: block;
+  padding-bottom: 75.25%; /* Custom aspect ratio */
+}
+
+.event-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 
 .event-title {
   padding-top: 10px;
@@ -967,11 +1054,55 @@ hr {
   right: 10px;
 }
 
+.awards-wrap{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.award-title-wrap{
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+.award {
+  max-width: 400px; /* Adjust the maximum width as needed */
+}
 
 .awards-container {
   background-color: #1B75BC;
   text-align: center;
 
+}
+
+.awards-wrapper {
+  margin-top: 50px;
+  width: 60%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
+  margin-top: -100px;
+  z-index: 2;
+  gap: 2rem;
+  justify-content: center;
+ }
+
+.award-img {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75.25%; /* Custom aspect ratio */
+}
+
+.award-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 
 .awards-container h2 {
@@ -988,21 +1119,6 @@ hr {
   padding-right: 300px;
   padding-bottom: 200px;
 }
-
-
-.awards-wrapper {
-  width: 60%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  gap: 2rem;
-  z-index: 2;
-  margin-top: -100px;
-}
-
-
 
 .award-title {
   color: #1B75BC;
@@ -1043,6 +1159,10 @@ hr {
   right: 100px;
 }
 
+.gallery-wrap{
+  max-width: 1200px;
+  margin: auto;
+}
 
 .gallery-container {
   background-color: #000000F2;
@@ -1179,6 +1299,12 @@ hr {
     font-size: 12px;
     cursor: pointer;
   }
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
   @media only screen and (max-width: 800px) {
     .blog {
