@@ -279,7 +279,7 @@ export default {
 .may-like-card {
   background-color: #fff;
   border-radius: 15px;
-  padding: 10px 10px 70px 10px;
+  padding: 10px 10px 30px 10px;
 }
 
 .may-like-img {
