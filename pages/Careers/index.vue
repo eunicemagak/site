@@ -235,7 +235,7 @@ export default {
 <style>
 .careers-wrap {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .careers {
@@ -245,7 +245,7 @@ export default {
   background-size: cover;
   height: 60vh;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .career-header h1 {
@@ -254,14 +254,13 @@ export default {
   font-weight: bold;
   text-align: left;
   padding-top: 150px;
-  padding-left: 150px;
   text-shadow: 0px 3px 6px #00000029;
   letter-spacing: 0px;
 }
 
 .careers-desc-wrap {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .careers-desc {
@@ -274,7 +273,7 @@ export default {
 }
 
 .careers-desc {
-  padding: 0 140px 0 70px;
+  /* padding: 0 0 0 70px; */
 }
 
 .careers-desc h1 {
@@ -303,12 +302,12 @@ export default {
 .careers-posters {
   background-color: #084576;
   padding: 80px;
-  padding-left: 150px;
+  /* padding-left: 150px; */
 }
 
 .posters-container {
-  margin-top: 50px;
-  width: 80%;
+  /* margin-top: 50px; */
+  width: 90%;
   max-width: 1200px;
   height: 100%;
   display: grid;
@@ -346,7 +345,7 @@ export default {
 
 .careers-latest {
   background-color: #FFFFFF;
-  padding: 50px 300px 50px 150px;
+  padding: 50px 300px 50px 70px;
 }
 
 .careers-title {
@@ -446,7 +445,7 @@ export default {
 }
 
 .jobPosters-right {
-  right: 180px;
+  right: 50px;
 }
 
 .careers-posters .jobPosters-arrow.disabled {

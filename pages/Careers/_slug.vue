@@ -258,7 +258,7 @@ export default {
   background-size: cover;
   height: 60vh;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .jobs-header h1 {
@@ -267,7 +267,7 @@ export default {
   font-weight: bold;
   text-align: left;
   padding-top: 150px;
-  padding-left: 150px;
+  /* padding-left: 150px; */
   text-shadow: 0px 3px 6px #00000029;
   letter-spacing: 0px;
 }
@@ -333,7 +333,7 @@ export default {
 
 .jobs-latest {
   background-color: #FFFFFF;
-  padding: 50px 300px 50px 150px;
+  padding: 50px 300px 50px 70px;
 }
 
 .jobs-title {
@@ -478,17 +478,17 @@ export default {
   color: #ccc;
 }
 
-.jobs-posters .jobPosters-arrow {
+/* .jobs-posters .jobPosters-arrow {
   right: -20px
-}
-
-/* .jobPosters-left {
-  left: 60px;
-}
-
-.jobPosters-right {
-  right: 70px;
 } */
+
+.jobs-posters .jobPosters-left {
+  left: 0px;
+}
+
+.jobs-posters .jobPosters-right {
+  right: 0px;
+}
 
 @media only screen and (max-width: 800px) {
   .jobs {
