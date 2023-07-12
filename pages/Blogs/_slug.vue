@@ -193,7 +193,7 @@ export default {
 
 
 .blog-title {
-  margin: 20px 110px;
+  margin: 20px 0px;
   text-align: left;
 }
 
@@ -204,8 +204,9 @@ export default {
 }
 
 .blog-post {
-  margin: 20px 100px;
-  padding: 20px;
+  /* margin: 20px 100px; */
+  margin-right: 100px;
+  padding-bottom: 20px;
   background-color: #fff;
   border-radius: 5px;
   overflow: hidden;
@@ -261,7 +262,7 @@ export default {
   color: var(--black);
   font-weight: bold;
   font-size: 2rem;
-  padding: 50px 100px;
+  padding: 50px 0;
 }
 
 .may-likes-wrapper {
@@ -340,7 +341,7 @@ export default {
 }
 
 .like-left {
-  left: 10px;
+  left: -20px;
 }
 
 .like-right {
