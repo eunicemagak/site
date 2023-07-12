@@ -7,8 +7,10 @@
 
       <div class="jobs-header">
         <div class="jobs-wrapper">
-          <div>
-            <h1>Discover<br>new career<br>opportunities</h1>
+          <div class="jobs-wrapper-wrap">
+            <div>
+              <h1>Discover<br>new career<br>opportunities</h1>
+            </div>
           </div>
         </div>
       </div>
@@ -17,57 +19,60 @@
     <!-- job slug section -->
     <div class="jobs-post">
       <div class="jobs-latest">
-        <div class="jobs-lists">
-          <!-- Display jobs slug using v-for loop -->
-          <div v-for="job in jobs" :key="job.id" class="jobs-list-full">
-            <div class="jobs-title">
-              <h5>{{ job.title.rendered }}</h5>
-            </div>
-            <div class="jobs-company">
-              <h6>{{ job.acf.company_name }}</h6>
-            </div>
-            <div class="jobs-tags">
-              <!-- Display job tags with their names instead of IDs using v-for loop -->
-              <p v-for="tagId in job.tags" :key="tagId">{{ getTagName(tagId) }}</p>
-            </div>
-            <div class="jobs-description">
-              <h6 v-html="job.acf.job_description"></h6>
-            </div>
-            <div class="jobs-email">
-              <p>{{ job.acf.careers_email }}</p>
+        <div class="jobs-latest-wrap">
+          <div class="jobs-lists">
+            <!-- Display jobs slug using v-for loop -->
+            <div v-for="job in jobs" :key="job.id" class="jobs-list-full">
+              <div class="jobs-title">
+                <h5>{{ job.title.rendered }}</h5>
+              </div>
+              <div class="jobs-company">
+                <h6>{{ job.acf.company_name }}</h6>
+              </div>
+              <div class="jobs-tags">
+                <!-- Display job tags with their names instead of IDs using v-for loop -->
+                <p v-for="tagId in job.tags" :key="tagId">{{ getTagName(tagId) }}</p>
+              </div>
+              <div class="jobs-description">
+                <h6 v-html="job.acf.job_description"></h6>
+              </div>
+              <div class="jobs-email">
+                <p>{{ job.acf.careers_email }}</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- subscribe to our newsletter section -->
-        <div class="jobs-newsletter">
-          <div class="jobs-newsletter-content">
-            <div class="jobs-newsletter-title">
-              <h5>Stay Updated</h5>
-            </div>
-            <div class="jobs-newsletter-desc">
-              <p>Join our newsletter and get the latest job listings and career insights delivered straight to your inbox
-              </p>
-            </div>
-            <div class="jobs-newsletter-radio">
-              <input type="radio" name="option" value="option1" id="option1">
-              <label for="option1">Job Seeker</label>
+          <!-- subscribe to our newsletter section -->
+          <div class="jobs-newsletter">
+            <div class="jobs-newsletter-content">
+              <div class="jobs-newsletter-title">
+                <h5>Stay Updated</h5>
+              </div>
+              <div class="jobs-newsletter-desc">
+                <p>Join our newsletter and get the latest job listings and career insights delivered straight to your
+                  inbox
+                </p>
+              </div>
+              <div class="jobs-newsletter-radio">
+                <input type="radio" name="option" value="option1" id="option1">
+                <label for="option1">Job Seeker</label>
 
-              <input type="radio" name="option" value="option2" id="option2">
-              <label for="option2">Employer</label>
-            </div>
-            <div class="jobs-newsletter-subscribe">
-              <form class="jobs-subscribe-form">
-                <!-- <input type="email" id="email" name="email" placeholder="Enter your email" required> -->
-                <!-- <button type="submit">Notify Me</button> -->
-                <a href="http://eepurl.com/iuWnuA" target="_blank" rel="noopener noreferrer">
-                  <button type="button">Notify Me</button>
-                </a>
+                <input type="radio" name="option" value="option2" id="option2">
+                <label for="option2">Employer</label>
+              </div>
+              <div class="jobs-newsletter-subscribe">
+                <form class="jobs-subscribe-form">
+                  <!-- <input type="email" id="email" name="email" placeholder="Enter your email" required> -->
+                  <!-- <button type="submit">Notify Me</button> -->
+                  <a href="http://eepurl.com/iuWnuA" target="_blank" rel="noopener noreferrer">
+                    <button type="button">Notify Me</button>
+                  </a>
 
-              </form>
-            </div>
-            <div class="jobs-newsletter-privacypolicy">
-              <p>We care about the protection of your data. Read our Privacy Policy</p>
+                </form>
+              </div>
+              <div class="jobs-newsletter-privacypolicy">
+                <p>We care about the protection of your data. Read our Privacy Policy</p>
+              </div>
             </div>
           </div>
         </div>
@@ -75,20 +80,24 @@
     </div>
 
     <div class="jobs-posters">
-      <div class="jobs-posters-container" ref="postersContainer">
-        <!-- Display job posters using v-for loop -->
-        <div v-for="(poster, index) in displayedjobPosters" :key="index" class="poster-item">
-          <img :src="poster.acf.job_poster" alt="" />
+      <div class="jobs-posters-wrap">
+        <div class="jobs-posters-container" ref="postersContainer">
+          <div v-for="(poster, index) in displayedjobPosters" :key="index" class="poster-item">
+            <img :src="poster.acf.job_poster" alt="" />
+          </div>
+        </div>
+        <div class="jobPosters-arrow jobPosters-left" @click="jobPostersPreviousSlide"
+          :class="{ disabled: isJobPostersPreviousDisabled }">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="jobPosters-arrow jobPosters-right" @click="jobPostersNextSlide"
+          :class="{ disabled: isJobPostersNextDisabled }">
+          <i class="fas fa-chevron-right"></i>
         </div>
       </div>
-      <div class="jobPosters-arrow jobPosters-left" @click="jobPostersPreviousSlide">
-        <i class="fas fa-chevron-left"></i>
-      </div>
-      <div class="jobPosters-arrow jobPosters-right" @click="jobPostersNextSlide">
-        <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
 
+
+    </div>
   </div>
 </template>
 
@@ -116,7 +125,6 @@ export default {
   // lifecycle hook
   created() {
     this.JobListing();
-    this.updateDisplayedjobPosters();
     // this.fetchJobDetails();
   },
 
@@ -129,6 +137,12 @@ export default {
         return map;
       }, {});
     },
+    isJobPostersPreviousDisabled() {
+      return this.jobPosterscurrentIndex === 0;
+    },
+    isJobPostersNextDisabled() {
+      return this.jobPosterscurrentIndex + this.jobPostersitemsPerSlide >= this.jobPosters.length;
+    },
   },
 
 
@@ -136,7 +150,7 @@ export default {
     // Method to fetch job listings and job posters
     JobListing() {
       this.$axios
-        .get('https://rtblg.emalify.com/wp-json/wp/v2/job_poster')
+        .get('job_poster')
         .then(response => {
           // Store the fetched job poster data
           this.jobPosters = response.data;
@@ -148,7 +162,7 @@ export default {
         });
 
       this.$axios
-        .get(`https://rtblg.emalify.com/wp-json/wp/v2/job_listing?slug=${this.slug}`)
+        .get(`job_listing?slug=${this.slug}`)
         .then(response => {
           // Store the fetched job data
           this.jobs = response.data;
@@ -172,7 +186,7 @@ export default {
 
       // Make an HTTP GET request to fetch tag data using the tag IDs
       this.$axios
-        .get('https://rtblg.emalify.com/wp-json/wp/v2/tags', {
+        .get('tags', {
           params: {
             include: tagIds.join(','),
           },
@@ -231,14 +245,18 @@ export default {
 };
 </script>
 
-
 <style>
+.jobs-wrapper-wrap {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .jobs {
   background: url('./assets/images/jobbg.png');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 60vh;
   position: relative;
   z-index: 0;
 }
@@ -258,24 +276,59 @@ export default {
   padding: 100px 0;
 }
 
+.jobs-posters-wrap {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .jobs-posters {
   background-color: #E6FDFF;
   padding: 80px;
-  padding-left: 150px;
 }
 
-.jobs-posters-container {
-  display: flex;
-}
-
-.poster-item {
+/* .poster-item {
   width: 250px;
   height: auto;
   padding-right: 10px;
+} */
+
+.jobs-posters-container {
+  margin-top: 50px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.poster-item {
+  position: relative;
+  width: 100%;
+  /* Set the container width as needed */
+  padding-bottom: 75.25%;
+  /* Custom aspect ratio */
+
+}
+
+.poster-item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 
 .jobs-post {
   background-color: #FFFFFF;
+}
+
+.jobs-latest-wrap {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .jobs-latest {
@@ -419,13 +472,23 @@ export default {
   cursor: pointer;
 }
 
-.jobPosters-left {
+.jobs-posters .jobPosters-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+.jobs-posters .jobPosters-arrow {
+  right: -20px
+}
+
+/* .jobPosters-left {
   left: 60px;
 }
 
 .jobPosters-right {
   right: 70px;
-}
+} */
 
 @media only screen and (max-width: 800px) {
   .jobs {
@@ -473,5 +536,4 @@ export default {
   }
 
 
-}
-</style>
+}</style>

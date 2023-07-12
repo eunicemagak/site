@@ -7,31 +7,29 @@
         <p>{{ galleryHeaderDescription }}</p>
       </div>
     </div>
-    <Blognav />
     <div class="gallery-pics">
-      <h3>{{ galleryTitle }}</h3>
-      <div class="flex-images">
-        <img v-for="(image, index) in displayedImages" :src="image" :key="index" />
-      </div>
-      <div class="pagination">
-        <a href="#" class="pagination-arrow prev" @click="previousPage">
-          <i class="fas fa-chevron-left"></i>
-        </a>
+      <div class="gallaries-wrap">
+        <h3>{{ galleryTitle }}</h3>
+        <div class="flex-images">
+          <img v-for="(image, index) in displayedImages" :src="image" :key="index" />
+        </div>
+        <div class="pagination">
+          <a href="#" class="pagination-arrow prev" @click="previousPage" :class="{ disabled: currentPage === 1 }">
+            <i class="fas fa-chevron-left"></i>
+          </a>
 
-        <ul class="pagination-list">
-          <li v-for="(page, index) in totalPages" :key="index">
-            <a
-              href="#"
-              class="pagination-link"
-              :class="{ active: page === currentPage }"
-              @click="changePage(page)"
-            >{{ page }}</a>
-          </li>
-        </ul>
+          <ul class="pagination-list">
+            <li v-for="(page, index) in totalPages" :key="index">
+              <a href="#" class="pagination-link" :class="{ active: page === currentPage }" @click="changePage(page)">{{
+                page }}</a>
+            </li>
+          </ul>
 
-        <a href="#" class="pagination-arrow next" @click="nextPage">
-          <i class="fas fa-chevron-right"></i>
-        </a>
+          <a href="#" class="pagination-arrow next" @click="nextPage" :class="{ disabled: currentPage === totalPages }">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <!-- ... -->
       </div>
     </div>
   </div>
@@ -59,6 +57,12 @@ export default {
       const endIndex = startIndex + this.itemsPerPage;
       return this.galleryImages.slice(startIndex, endIndex);
     },
+    isPreviousDisabled() {
+      return this.currentPage === 1;
+    },
+    isNextDisabled() {
+      return this.currentPage === this.totalPages;
+    },
   },
   created() {
     this.fetchGalleryImages();
@@ -66,7 +70,7 @@ export default {
   methods: {
     fetchGalleryImages() {
       this.$axios
-        .get('https://rtblg.emalify.com/wp-json/wp/v2/gallery')
+        .get('gallery')
         .then((response) => {
           this.galleryImages = response.data.map((item) => item.acf.image);
         })
@@ -93,13 +97,19 @@ export default {
 
 
 
+
 <style>
+.gallaries-wrap {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .our-gallery .gallery {
   background: url('./assets/images/gallerybg.png');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 50vh;
   position: relative;
   z-index: 0;
 }
@@ -113,7 +123,7 @@ export default {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 70%;
+  height: 60%;
   background: linear-gradient(to top, #1b9dbc 0%, rgba(18, 18, 20, 0) 80%);
   z-index: 1;
 }
@@ -203,46 +213,52 @@ export default {
   text-decoration: none;
 }
 
+.our-gallery .pagination .pagination-arrow.disabled {
+  background-color: gray;
+  /* Change the color for disabled state */
+  cursor: not-allowed;
+  /* Change the cursor style for disabled state */
+}
+
 @media only screen and (max-width: 800px) {
-.our-gallery .gallery {
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-  position: relative;
-  z-index: 0;
-}
+  .our-gallery .gallery {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+    z-index: 0;
+  }
 
-.our-gallery .gallery::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(to top, #1b9dbc 0%, rgba(18, 18, 20, 0) 80%);
-  z-index: 1;
-}
+  .our-gallery .gallery::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, #1b9dbc 0%, rgba(18, 18, 20, 0) 80%);
+    z-index: 1;
+  }
 
-.our-gallery .gallery-pics h3 {
-  margin: 20px 0 20px 30px
-}
+  .our-gallery .gallery-pics h3 {
+    margin: 20px 0 20px 30px
+  }
 
-.our-gallery .flex-images {
-  display: block;
-  margin: 10px 20px;
-}
+  .our-gallery .flex-images {
+    display: block;
+    margin: 10px 20px;
+  }
 
-.our-gallery .flex-images img {
-  width: auto;
-  margin: 5px;
-  padding: 5px;
-  box-sizing: border-box;
-}
+  .our-gallery .flex-images img {
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
 
 }
-
 </style>

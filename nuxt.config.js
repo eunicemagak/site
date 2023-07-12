@@ -46,6 +46,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/axios',
     'nuxt-material-design-icons',
   ],
 
@@ -55,6 +56,9 @@ export default {
       lang: 'en',
     },
   },
+
+  axios:{
+    baseURL: 'https://rtblg.emalify.com/wp-json/wp/v2/' },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

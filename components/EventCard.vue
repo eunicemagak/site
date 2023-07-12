@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="`blogs/${slug}`" class="event">
     <!-- Event image -->
-    <div event-img>
+    <div class=" event-img">
       <img :src="image" alt="">
     </div>
     <!-- Event title -->

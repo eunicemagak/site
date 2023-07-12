@@ -1,17 +1,19 @@
 <template>
   <div class="sub-navbar">
     <!-- blog sub navbar that scrolls to different categories -->
-    <div class="nav-links1">
-      <nuxt-link to="#trending" class="nav-link1"> Latest </nuxt-link>
-      <nuxt-link to="#campaigns" class="nav-link1"> Campaigns </nuxt-link>
-      <nuxt-link to="#events" class="nav-link1"> Upcoming Events </nuxt-link>
-      <nuxt-link to="#awards" class="nav-link1">
-        Awards & Recognition
-      </nuxt-link>
-      <nuxt-link to="#gallery" class="nav-link1"> Gallery </nuxt-link>
-      <div class="nav-search">
-        <input type="text" placeholder="Search" v-model="searchText" @keyup.enter="search" />
+    <div class="nav-wrap">
+      <div class="nav-links1">
+        <nuxt-link to="#trending" class="nav-link1"> Latest </nuxt-link>
+        <nuxt-link to="#campaigns" class="nav-link1"> Campaigns </nuxt-link>
+        <nuxt-link to="#events" class="nav-link1"> Upcoming Events </nuxt-link>
+        <nuxt-link to="#awards" class="nav-link1">
+          Awards & Recognition
+        </nuxt-link>
+        <nuxt-link to="#gallery" class="nav-link1"> Gallery </nuxt-link>
+        <div class="nav-search">
+    <input type="text" placeholder="Search" v-model="searchText" @keyup.enter="search" />
     <i class="fa fa-search" @click="search"></i>
+  </div>
       </div>
     </div>
   </div>
@@ -26,24 +28,34 @@ export default {
   },
   methods: {
     search() {
-      const searchQuery = this.searchText.trim(); // Remove any leading or trailing whitespace
+      const searchQuery = this.searchText.trim().toLowerCase(); // Convert the search query to lowercase
       if (searchQuery.length === 0) {
         // If the search query is empty, do nothing
         return;
       }
 
-      const found = window.find(searchQuery); // Search for the query in the page
-      if (found) {
-        // If the query is found, scroll to the first occurrence
-        window.scrollTo(0, window.pageYOffset + window.getSelection().getRangeAt(0).getBoundingClientRect().top - 50);
-      } else {
-        // If the query is not found, show an alert message
-        alert(`No results found for "${searchQuery}"`);
+      const cards = document.querySelectorAll('.card'); // Select all the cards
+      let found = false;
+      for (const card of cards) {
+        const cardText = card.innerText.toLowerCase(); // Convert the card text to lowercase
+        if (cardText.includes(searchQuery)) {
+          card.classList.add('selected'); // Add a CSS class to highlight the matched card
+          card.scrollIntoView({ behavior: 'smooth' }); // Scroll to the matched card
+          found = true;
+        } else {
+          card.classList.remove('selected'); // Remove the CSS class from other cards
+        }
+      }
+
+      if (!found) {
+        // If no cards match the search query, show an alert message
+        alert(`No results found for "${this.searchText}"`);
       }
     }
   }
 };
 </script>
+
 
 <style>
 .sub-navbar {
@@ -51,6 +63,11 @@ export default {
   width: 100%;
   height: 70px;
   padding-left: 100px;
+}
+
+.nav-wrap {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .nav-search {
@@ -77,8 +94,8 @@ export default {
 }
 
 @media only screen and (max-width: 800px) {
-.sub-navbar {
-  height: 10px;
-}
+  .sub-navbar {
+    height: 10px;
+  }
 }
 </style>
