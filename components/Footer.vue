@@ -24,24 +24,22 @@
                     </div>
                 </form>
             </div>
-                <div id="myToast"
-                    class="hidden absolute right-10 top-10 px-5 py-4 border-r-8 border-green-500 bg-white drop-shadow-lg">
-                    <p class="text-sm">
-                        <!-- Polish the toast with an circle blue "i" (stands for information) -->
-                        <span
-                            class="mr-2 inline-block px-3 py-1 rounded-full bg-green-500 text-white font-extrabold">i</span>
-                        Thank You For Contacting Us, We Will Get Back To You Soonest Possible
-                    </p>
-                </div>
-                <div id="failToast"
-                    class="hidden absolute right-10 top-10 px-5 py-4 border-r-8 border-red-500 bg-white drop-shadow-lg">
-                    <p class="text-sm">
-                        <!-- Polish the toast with an circle blue "i" (stands for information) -->
-                        <span
-                            class="mr-2 inline-block px-3 py-1 rounded-full bg-red-500 text-white font-extrabold">x</span>
-                        We Experienced Some Difficulty While Submiting, Please Try Again
-                    </p>
-                </div>
+            <div id="myToast"
+                class="hidden absolute right-10 top-10 px-5 py-4 border-r-8 border-green-500 bg-white drop-shadow-lg">
+                <p class="text-sm">
+                    <!-- Polish the toast with an circle blue "i" (stands for information) -->
+                    <span class="mr-2 inline-block px-3 py-1 rounded-full bg-green-500 text-white font-extrabold">i</span>
+                    Thank You For Contacting Us, We Will Get Back To You Soonest Possible
+                </p>
+            </div>
+            <div id="failToast"
+                class="hidden absolute right-10 top-10 px-5 py-4 border-r-8 border-red-500 bg-white drop-shadow-lg">
+                <p class="text-sm">
+                    <!-- Polish the toast with an circle blue "i" (stands for information) -->
+                    <span class="mr-2 inline-block px-3 py-1 rounded-full bg-red-500 text-white font-extrabold">x</span>
+                    We Experienced Some Difficulty While Submiting, Please Try Again
+                </p>
+            </div>
         </div>
         <div class="contact-info">
             <div class="footer-info">
@@ -105,7 +103,7 @@ export default {
     methods: {
         sendEmail() {
             this.submitting = true,
-                emailjs.sendForm('service_as7dy6i', 'template_kmgin4a', this.$refs.form, 'HMiVWnwfe2x0rf2rv')
+                emailjs.sendForm('service_t6bpoa9', 'template_afcqtjj', this.$refs.form, 'BTCiFyuUyldeYFn-E')
                     .then((result) => {
                         this.submitting = false
                         document.getElementById("myToast").classList.remove("hidden");
