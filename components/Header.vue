@@ -67,6 +67,11 @@
               >
                 Games & Lotteries
               </nuxt-link>
+              <a href="https://emalify.com/bulkemail" 
+                class="nav-link" 
+                @click="toggleDropdown($event)">
+                Bulk Email
+              </a>
             </div>
           </div>
           <nuxt-link to="/Blogs" class="nav-link"> BLOG </nuxt-link>

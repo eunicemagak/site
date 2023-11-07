@@ -150,7 +150,7 @@
           <img src="../assets/images/emalichat.png" alt="">
         </div>
         <h4 class="solution-title">
-          Emalichat
+          EMALICHAT
         </h4>
         <p class="solution-details">
           Engage customers on all social media plaforms from one point.
@@ -159,6 +159,20 @@
             LEARN MORE
           </nuxt-link>
       </div>
+      <div class="solution">
+        <div solution-img>
+          <img src="../assets/images/bulkemail.png" alt="">
+        </div>
+        <h4 class="solution-title">
+          BULK EMAIL
+        </h4>
+        <p class="solution-details">
+          Engage more customers and boost sales with bulk emails
+        </p>
+        <a href="https://emalify.com/bulkemail" class="get-solution">
+          LEARN MORE
+        </a>
+      </div>      
     </div>
   </div>
   <div class="pandc">
